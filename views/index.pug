@@ -1,0 +1,17 @@
+extends layout
+
+block content
+  main
+    .container
+      div
+        .page
+            if ParamsGet.Recettes && ParamsGet.Menus
+              h1 ERROR
+              h4 Unavailable resquest
+            else if ParamsGet.Recettes
+              include Recettes
+            else if ParamsGet.Menus
+              include Menus
+            else      
+              include Today
+    .news

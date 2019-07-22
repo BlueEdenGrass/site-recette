@@ -1,0 +1,90 @@
+-var findDate =  function(mydate, diff){ var dt = new Date(mydate); return new Date((dt.setDate(dt.getDate()+diff))).toLocaleDateString();}
+-nextDate=[Today, findDate(Today, 1), findDate(Today, 2), findDate(Today, 3), findDate(Today, 4), findDate(Today, 5), findDate(Today, 6)]
+if ParamsGet.Menus=="All"
+  table.nextmenus
+    thead
+      tr
+        th#headline1 Date
+        th#headline2 Matin
+        th#headline3 Midi
+        th#headline4 Soir
+    tbody
+      each date in nextDate
+        -checkmenu = true
+        each menu in Menus
+          if menu.Date==date
+            -checkmenu = false
+            tr
+              th#bodyline1(style="padding: 0 15px"): a(href="/?Menus="+date)=new Date(date).toDateString()
+              -checkrecette = true
+              each recette in Recettes
+                if recette.Nom == menu.Matin[0]
+                  -checkrecette = false
+                  td#bodyline2
+                    a.Recette(href="/?Recettes="+recette.Nom)
+                      img(src="images/"+recette.Image, alt="No available" height="100" width="150", srcset="")
+                      br
+                      =recette.Nom
+              if checkrecette
+                td Aucune programmation 
+              -checkrecette = true
+              each recette in Recettes
+                if recette.Nom == menu.Midi[0]
+                  -checkrecette = false
+                  td#bodyline3
+                    a.Recette(href="/?Recettes="+recette.Nom)
+                      img(src="images/"+recette.Image, alt="No available" height="100" width="150", srcset="")
+                      br
+                      =recette.Nom
+              if checkrecette
+                td Aucune programmation 
+              -checkrecette = true
+              each recette in Recettes
+                if recette.Nom == menu.Soir[0]
+                  -checkrecette = false
+                  td#bodyline4
+                    a.Recette(href="/?Recettes="+recette.Nom)
+                      img(src="images/"+recette.Image, alt="No available" height="100" width="150", srcset="")
+                      br
+                      =recette.Nom
+              if checkrecette
+                td Aucune programmation 
+                
+        if checkmenu
+          tr
+            th(style="padding: 0 15px"): a(href="/?Menus="+date)=new Date(date).toDateString()
+            td Aucune programmation
+            td Aucune programmation
+            td Aucune programmation
+
+else
+  each menu in Menus
+    if menu.Date == ParamsGet.Menus
+      table.nextmenus
+        tr
+          th(style="padding: 0 15px") Matin:
+          each recette in Recettes
+            if menu.Matin.includes(recette.Nom)
+              td
+                a.Recette(href="/?Recettes="+recette.Nom)
+                  img(src="images/"+recette.Image, alt="No available" height="125" width="200", srcset="")
+                  br
+                  =recette.Nom
+        tr
+          th(style="padding: 0 15px") Midi:
+          each recette in Recettes
+            if menu.Midi.includes(recette.Nom)
+              td
+                a.Recette(href="/?Recettes="+recette.Nom)
+                  img(src="images/"+recette.Image, alt="No available" height="125" width="200", srcset="")
+                  br
+                  =recette.Nom
+        tr
+          th(style="padding: 0 15px") Soir:
+          each recette in Recettes
+            if menu.Soir.includes(recette.Nom)
+              td
+                a.Recette(href="/?Recettes="+recette.Nom)
+                  img(src="images/"+recette.Image, alt="No available" height="125" width="200", srcset="")
+                  br
+                  =recette.Nom

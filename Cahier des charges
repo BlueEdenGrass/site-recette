@@ -1,0 +1,4 @@
+Ce que doit faire le site
+  -Afficher la liste de recettes et permettre une recherche par nom ou tag
+  -Afficher le menu de jour avec le denrée manquante et permettre une recherche pour afficher le menu d'une date ou la date d'un menu
+  -Afficher le calendrier des menu de la semaine

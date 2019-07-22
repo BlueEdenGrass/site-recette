@@ -1,0 +1,31 @@
+if Menus
+  each menu in Menus
+    if menu.Date == Today
+      table.nextmenus
+        tr
+          th(style="padding: 0 15px") Matin:
+          each recette in Recettes
+            if menu.Matin.includes(recette.Nom)
+              td
+                a.Recette(href="/?Recettes="+recette.Nom)
+                  img(src="images/"+recette.Image, alt="No available" height="125" width="200", srcset="")
+                  br
+                  =recette.Nom
+        tr
+          th(style="padding: 0 15px") Midi:
+          each recette in Recettes
+            if menu.Midi.includes(recette.Nom)
+              td
+                a.Recette(href="/?Recettes="+recette.Nom)
+                  img(src="images/"+recette.Image, alt="No available" height="125" width="200", srcset="")
+                  br
+                  =recette.Nom
+        tr
+          th(style="padding: 0 15px") Soir:
+          each recette in Recettes
+            if menu.Soir.includes(recette.Nom)
+              td
+                a.Recette(href="/?Recettes="+recette.Nom)
+                  img(src="images/"+recette.Image, alt="No available" height="125" width="200", srcset="")
+                  br
+                  =recette.Nom

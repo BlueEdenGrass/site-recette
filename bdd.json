@@ -1,0 +1,137 @@
+{
+  "Recettes":[
+    {
+      "Nom": "Lasagnes",
+      "Image": "Lasagnes.jpg",
+      "Ingredients": [ 
+        [1, "Sachet", "Pâtes à lasagne"],
+        [500, "Gramme", "Champignon"],
+        [3, "Unité", "Poivron"],
+        [1, "Conserve", "Sauce tomate"],
+        [200, "Gramme", "Fromage rapée"],
+        [100, "Gramme", "Beurre"],    
+        [100, "Gramme", "Farine"],
+        [1, "Litre", "Lait"],
+        [2, "Unité", "Oignon"]
+      ],
+      "Preparation": "Commencer par faire ceci, puis faire cela sans oublier le truc machin chose bidule chouette.mettre au four prechaufé à 4500° eteindre le four et patienté 2ans. et c pret"
+    },
+    {
+      "Nom": "Dhal de lentilles",
+      "Image": "DhalDeLentilles.jpg",
+      "Ingredients": [ 
+        [500, "Gramme", "Lentilles"],
+        [0.5, "Unité", "Giraumon"],
+        [100, "Gramme", "Cive"],    
+        [100, "Gramme", "Persil"],
+        [5, "Unité", "Gousse d'ail"],
+        [1, "Unité", "Citron"],
+        [2, "Unité", "Oignon"]
+      ],
+      "Preparation": "Commencer par faire ceci, puis faire cela sans oublier le truc machin chose bidule chouette.mettre au four prechaufé à 4500° eteindre le four et patienté 2ans. et c pret"
+    },
+    {
+      "Nom": "Accras",
+      "Image": "Accras.jpeg",
+      "Ingredients": [
+        [300, "Gramme", "Farine"],
+        [0.5, "Unité", "Moringa"],
+        [100, "Gramme", "Cive"],    
+        [100, "Gramme", "Persil"],
+        [2, "Unité", "Gousse d'ail"],
+        [1, "Unité", "Piment végétarien"],
+        [1, "Unité", "Oignon"],
+        [1, "Cuillère à café", "Bicarbonate"]
+      ],
+      "Preparation": "Commencer par faire ceci, puis faire cela sans oublier le truc machin chose bidule chouette.mettre au four prechaufé à 4500° eteindre le four et patienté 2ans. et c pret"      
+    },
+    {
+      "Nom": "Sauce tomate",
+      "Image": "Sauce-tomate.jpeg",
+      "Ingredients": [
+        [1, "Unité", "Tomate"],
+        [0.25, "Unité", "Gousse d'ail"],
+        [1, "Unité", "Oignon"],
+        [4, "Cuillère à soupe", "Huile"]
+      ],
+      "Preparation": "Commencer par faire ceci, puis faire cela sans oublier le truc machin chose bidule chouette.mettre au four prechaufé à 4500° eteindre le four et patienté 2ans. et c pret"      
+    },
+    {
+      "Nom": "Citronade",
+      "Image": "Citronnade.jpg",
+      "Ingredients": [
+        [5, "Cuillère à soupe", "Sucre"],
+        [3, "Unité", "citron"],
+        [0.5, "Litre", "Eau"]
+      ],
+      "Preparation": "Commencer par faire ceci, puis faire cela sans oublier le truc machin chose bidule chouette.mettre au four prechaufé à 4500° eteindre le four et patienté 2ans. et c pret"      
+    },
+    {
+      "Nom": "Milkshake à la banane",
+      "Image": "Milkshake-Banane.jpg",
+      "Ingredients": [
+        [0.4, "Litre", "Lait"],
+        [1, "Unité", "Citron"],
+        [3, "Unité", "Banane"],
+        [0.25, "Cuillère à café", "Muscade"],
+        [0.5, "Cuillère à café", "Cannelle"]
+      ],
+      "Preparation": "Commencer par faire ceci, puis faire cela sans oublier le truc machin chose bidule chouette.mettre au four prechaufé à 4500° eteindre le four et patienté 2ans. et c pret"      
+    },
+    {
+      "Nom": "Pomme de terre sauté",
+      "Image": "Pomme-de-terre-sauté.jpeg",
+      "Ingredients": [
+        [500, "Gramme", "Pomme de terre"],
+        [0.5, "Gousse", "Ail"],
+        [1, "Unité", "Citron"],
+        [1, "Cuillère à café", "Sel"]
+      ],
+      "Preparation": "Commencer par faire ceci, puis faire cela sans oublier le truc machin chose bidule chouette.mettre au four prechaufé à 4500° eteindre le four et patienté 2ans. et c pret"      
+    },
+    {
+      "Nom": "Pain compelet",
+      "Image": "pain-complet.webp",
+      "Ingredients": [
+        [250, "Gramme", "Farine80"],
+        [250, "Gramme", "Farine150"],
+        [0.4, "Litre", "Eau"],
+        [2, "Cuillère à soupe", "Levure boulangère"],
+        [1, "Cuillère à soupe", "Sel"],
+        [3, "Cuillère à soupe", "huile"]
+      ],
+      "Preparation": "Commencer par faire ceci, puis faire cela sans oublier le truc machin chose bidule chouette.mettre au four prechaufé à 4500° eteindre le four et patienté 2ans. et c pret"      
+    },
+    {
+      "Nom": "Gratin de patate",
+      "Image": "Gratin-de-patate.jpg",
+      "Ingredients": [
+        [500, "Gramme", "Pomme de terre"],
+        [1, "Litre", "Lait"],
+        [100, "Gramme", "Farine"],
+        [0.1, "Litre", "Huile"]
+      ],
+      "Preparation": "Commencer par faire ceci, puis faire cela sans oublier le truc machin chose bidule chouette.mettre au four prechaufé à 4500° eteindre le four et patienté 2ans. et c pret"      
+    }
+  ],
+  "Menus":[
+    {
+      "Date": "7/22/2019",
+      "Matin": ["Dhal de lentilles"],
+      "Midi": ["Lasagnes"],
+      "Soir": []
+    },
+    {
+      "Date": "7/26/2019",
+      "Matin": ["Milkshake à la banane"],
+      "Midi": ["Sauce tomate"],
+      "Soir": ["Citronade","Accras"]
+    },
+    {
+      "Date": "7/24/2019",
+      "Matin": ["Pain compelet", "Citronade"],
+      "Midi": ["Gratin de patate", "Citronade"],
+      "Soir": ["Pomme de terre sauté", "Citronade"]
+    }
+  ]
+}

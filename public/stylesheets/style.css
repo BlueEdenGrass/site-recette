@@ -179,13 +179,9 @@ main {
 }
 
 .line>div {
-  height:71px;
   background:ivory;
   margin:3px;
  }
  .line>div a{
-  height:71px;
-  background:ivory;
-  margin:3px;
   color: #aa0006
  }

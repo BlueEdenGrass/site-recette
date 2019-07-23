@@ -1,3 +1,38 @@
 -var findDate =  function(mydate, diff){ var dt = new Date(mydate); return new Date((dt.setDate(dt.getDate()+diff))).toLocaleDateString();}
 -nextDate=[Today, findDate(Today, 1), findDate(Today, 2), findDate(Today, 3), findDate(Today, 4), findDate(Today, 5), findDate(Today, 6)]
 
+.calendar
+  .head
+    div
+      p title of column
+    div
+      p title of column
+    div
+      p title of column
+    div
+      p title of column
+  .body
+    each date in nextDate
+      -checkmenu = true
+        each menu in Menus
+          if menu.Date==date
+            -checkmenu = false
+            .line
+              div
+                a(href="/?Menus="+date)=new Date(date).toDateString()
+              -checkrecette = true
+              each recette in Recettes
+                if recette.Nom == menu.Matin[0]
+                  -checkrecette = false
+                  div
+                    a.Recette(href="/?Recettes="+recette.Nom)
+                      img(src="images/"+recette.Image, alt="No available" height="100" width="150", srcset="")
+                      br
+                      =recette.Nom
+        if checkmenu
+          .line
+            div
+              a(href="/?Menus="+date)=new Date(date).toDateString()
+            div Aucune programmation
+            div Aucune programmation
+            div Aucune programmation

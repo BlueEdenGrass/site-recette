@@ -112,6 +112,58 @@
         [0.1, "Litre", "Huile"]
       ],
       "Preparation": "Commencer par faire ceci, puis faire cela sans oublier le truc machin chose bidule chouette.mettre au four prechaufé à 4500° eteindre le four et patienté 2ans. et c pret"      
+    },
+    {
+      "Nom": "Naan",
+      "Image": "Naan.jpg",
+      "Ingredients": [
+        [200, "Gramme", "Farine"],
+        [125, "Gramme", "Yaourt"],
+        [0.7, "Litre", "Eau"],
+        [1, "Cuillère à soupe", "Huile"],
+        [1, "Cuillère à caf, Sucre"],
+        [0.5, "Cuillère à café", "Bicarbonate"]
+      ],
+      "Preparation": "Commencer par faire ceci, puis faire cela sans oublier le truc machin chose bidule chouette.mettre au four prechaufé à 4500° eteindre le four et patienté 2ans. et c pret"      
+    },
+    {
+      "Nom": "Purée d'aubergines",
+      "Image": "Purée-daubergine.jpg",
+      "Ingredients": [
+        [2, "Unité", "Aubergine"],
+        [1, "Unité", "Tomate bien mûre"],
+        [2, "Gousse", "Ail"],
+        [2, "Cuillère à soupe", "Yaourt velouté"],
+        [3, "Unité", "citron"],
+        [0.5, "Litre", "Eau"]
+      ],
+      "Preparation": "Commencer par faire ceci, puis faire cela sans oublier le truc machin chose bidule chouette.mettre au four prechaufé à 4500° eteindre le four et patienté 2ans. et c pret"      
+    },
+    {
+      "Nom": "Pâte brisée",
+      "Image": "patebrisee.webp",
+      "Ingredients": [
+        [250, "Gramme", "Farine"],
+        [125, "Gramme", "Beurre"],
+        [0.4, "Litre", "Eau"],
+        [1, "Unité", "Jaune d'oeuf"],
+        [1, "Cuillère à soupe", "Sel"],
+        [3, "Cuillère à soupe", "huile"]
+      ],
+      "Preparation": "Commencer par faire ceci, puis faire cela sans oublier le truc machin chose bidule chouette.mettre au four prechaufé à 4500° eteindre le four et patienté 2ans. et c pret"      
+    },
+    {
+      "Nom": "Soupe de lentilles",
+      "Image": "soupedelentille.webp",
+      "Ingredients": [
+        [250, "Gramme", "Lentilles"],
+        [2, "Unité", "Oignon"],
+        [3, "Gousse", "Ail"],
+        [0.5, "Bouquet", "Persil"],
+        [1, "Cuillère à soupe", "Coriandre en poudre"],
+        [1, "Cuillère à soupe", "Thym"]
+      ],
+      "Preparation": "Commencer par faire ceci, puis faire cela sans oublier le truc machin chose bidule chouette.mettre au four prechaufé à 4500° eteindre le four et patienté 2ans. et c pret"      
     }
   ],
   "Menus":[

@@ -20,7 +20,7 @@
             -checkmenu = false
             .line
               div
-                a(href="/?Menus="+date)=new Date(date).toDateString()
+                a(href="/?Menus="+date)=new Date(date).toLocaleDateString()
               -checkrecette = true
               each recette in Recettes
                 if recette.Nom == menu.Matin[0]
@@ -33,7 +33,7 @@
         if checkmenu
           .line
             div
-              a(href="/?Menus="+date)=new Date(date).toDateString()
+              a(href="/?Menus="+date)=new Date(date).toLocaleDateString()
             div Aucune programmation
             div Aucune programmation
             div Aucune programmation

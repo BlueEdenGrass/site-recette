@@ -165,10 +165,11 @@ main {
 .calendar .head{
   display: inline-flex;
   width: 100%;
-  background-color: #ffffffdb;
+  background-color: crimson;
 }
 .calendar .body .line{
   display: inline-flex;
+
   width: 100%;
 }
 .head>div, .line>div{
@@ -176,9 +177,15 @@ main {
   text-align: center;
   padding: 5px;
 }
-.carre {
-  width:100px;
-  height:100px;
-  background:rgb(197, 197, 235);
-  margin:10px auto;
+
+.line>div {
+  height:71px;
+  background:ivory;
+  margin:3px;
+ }
+ .line>div a{
+  height:71px;
+  background:ivory;
+  margin:3px;
+  color: #aa0006
  }

@@ -169,18 +169,18 @@ main {
 }
 .calendar .body .line{
   display: inline-flex;
-
   width: 100%;
 }
 .head>div, .line>div{
-  width: 25%;
+  width: 23%;
   text-align: center;
-  padding: 5px;
+  margin: 0.5%;
+  padding: 0.5%;
+
 }
 
 .line>div {
   background:ivory;
-  margin:3px;
  }
  .line>div a{
   color: #aa0006

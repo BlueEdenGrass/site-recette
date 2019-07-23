@@ -19,7 +19,7 @@
             -checkmenu = false
             .line
               div
-                a(href="/?Menus="+date)=new Date(jour, mois, annee).toDateString()
+                a(href="/?Menus="+date)=new Date(date).toDateString()
               -checkrecette = true
               each recette in Recettes
                 if recette.Nom == menu.Matin[0]

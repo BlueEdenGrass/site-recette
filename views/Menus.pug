@@ -5,14 +5,14 @@
   .head
 
     div
-      p title of column
+      h3 title of column
     div
-      p title of column
+      h3 title of column
     div
-      p title of column
+      h3 title of column
     div
-      p title of column
-  .body
+      h3 title of column
+  .body.scroll
     each date in nextDate
       -checkmenu = true
         each menu in Menus
@@ -20,7 +20,11 @@
             -checkmenu = false
             .line
               div
-                a(href="/?Menus="+date)=new Date(date).toDateString()
+                table
+                  tbody
+                    tr
+                      td
+                        a.Menu(href="/?Menus="+date)=new Date(date).toDateString()
               -checkrecette = true
               each recette in Recettes
                 if recette.Nom == menu.Matin[0]
@@ -30,10 +34,38 @@
                       img(src="images/"+recette.Image, alt="No available" height="100" width="150", srcset="")
                       br
                       =recette.Nom
+              if checkrecette
+                td Aucune programmation
+                -checkrecette = true
+              each recette in Recettes
+                if recette.Nom == menu.Midi[0]
+                  -checkrecette = false
+                  div
+                    a.Recette(href="/?Recettes="+recette.Nom)
+                      img(src="images/"+recette.Image, alt="No available" height="100" width="150", srcset="")
+                      br
+                      =recette.Nom
+              if checkrecette
+                td Aucune programmation
+              -checkrecette = true
+              each recette in Recettes
+                if recette.Nom == menu.Soir[0]
+                  -checkrecette = false
+                  div
+                    a.Recette(href="/?Recettes="+recette.Nom)
+                      img(src="images/"+recette.Image, alt="No available" height="100" width="150", srcset="")
+                      br
+                      =recette.Nom
+              if checkrecette
+                td Aucune programmation
         if checkmenu
           .line
             div
-              a(href="/?Menus="+date)=new Date(date).toDateString()
+              table
+                tbody
+                  tr
+                    td
+                      a.Menu(href="/?Menus="+date)=new Date(date).toDateString()
             div Aucune programmation
             div Aucune programmation
             div Aucune programmation

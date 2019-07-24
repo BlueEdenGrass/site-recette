@@ -30,7 +30,7 @@ if ParamsGet.Menus=="All"
                       br
                       =recette.Nom
               if checkrecette
-                td Aucune programmation
+                div Aucune programmation
                 -checkrecette = true
               each recette in Recettes
                 if recette.Nom == menu.Midi[0]
@@ -41,7 +41,7 @@ if ParamsGet.Menus=="All"
                       br
                       =recette.Nom
               if checkrecette
-                td Aucune programmation
+                div Aucune programmation
               -checkrecette = true
               each recette in Recettes
                 if recette.Nom == menu.Soir[0]
@@ -52,7 +52,7 @@ if ParamsGet.Menus=="All"
                       br
                       =recette.Nom
               if checkrecette
-                td Aucune programmation
+                div Aucune programmation
         if checkmenu
           .line
             div
@@ -65,6 +65,7 @@ if ParamsGet.Menus=="All"
             div Aucune programmation
             div Aucune programmation
 else
+  h1: span.fondcraie The Menus Of #{ParamsGet.Menus}
   -checkmenu = true
   each menu in Menus
     if menu.Date.includes(ParamsGet.Menus)
@@ -84,7 +85,7 @@ else
                       br
                       =recette.Nom
               if checkrecette
-                td Aucune programmation
+                div Aucune programmation
             tr
               th: h3.fondcraie Midi: 
               -checkrecette = true
@@ -97,7 +98,7 @@ else
                       br
                       =recette.Nom
               if checkrecette
-                td Aucune programmation
+                div Aucune programmation
             tr
               th: h3.fondcraie Soir: 
               -checkrecette = true
@@ -110,6 +111,6 @@ else
                       br
                       =recette.Nom
               if checkrecette
-                td Aucune programmation
+                div Aucune programmation
   if checkmenu
     h3(style="text-align:center; font-family: monospace;") Aucun menu n'est programmé pour cette date

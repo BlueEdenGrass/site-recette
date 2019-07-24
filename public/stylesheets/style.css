@@ -209,6 +209,11 @@ main {
   display: inline-flex;
   width: 100%;
 }
+.calendar .body .line:not(:first-child){
+  border-top: 2px solid #fff; 
+  border-radius: 300px/10px;
+  padding-top: 15px;
+}
 .head>div, .line>div{
   width: 23%;
   text-align: center;

@@ -115,7 +115,7 @@
     },
     {
       "Nom": "Naan",
-      "Image": "Naan.jpg",
+      "Image": "naan.jpg",
       "Ingredients": [
         [200, "Gramme", "Farine"],
         [125, "Gramme", "Yaourt"],
@@ -128,7 +128,7 @@
     },
     {
       "Nom": "Purée d'aubergines",
-      "Image": "Purée-daubergine.jpg",
+      "Image": "Puree-daubergine.jpg",
       "Ingredients": [
         [2, "Unité", "Aubergine"],
         [1, "Unité", "Tomate bien mûre"],
@@ -141,7 +141,7 @@
     },
     {
       "Nom": "Pâte brisée",
-      "Image": "patebrisee.webp",
+      "Image": "patebrisee.JPG",
       "Ingredients": [
         [250, "Gramme", "Farine"],
         [125, "Gramme", "Beurre"],
@@ -154,7 +154,7 @@
     },
     {
       "Nom": "Soupe de lentilles",
-      "Image": "soupedelentille.webp",
+      "Image": "soupedelentilles.jpg",
       "Ingredients": [
         [250, "Gramme", "Lentilles"],
         [2, "Unité", "Oignon"],

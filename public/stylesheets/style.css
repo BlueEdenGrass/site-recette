@@ -52,6 +52,10 @@ header
     height: 3em;
     background-size: 0.4em;
 }
+header a
+{
+    margin: auto;
+}
 /* Main */
 main {
   position: absolute;
@@ -144,4 +148,3 @@ main {
    height: 3em;
    width: 100%;
  }
- /* commentaire bateaux */

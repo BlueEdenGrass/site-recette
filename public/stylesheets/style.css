@@ -190,7 +190,7 @@ main {
 .line>div:not(:first-child) {
   background: ivory;
  }
- .line>div:not(:first-child) a{
+ .line>div:not(:first-child) a, .line>div:not(:first-child){
   color: #aa0006
  }
  .line>div table{

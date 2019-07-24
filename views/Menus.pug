@@ -15,7 +15,6 @@
   .body.scroll
     each date in nextDate
       -checkmenu = true
-      -number=1
         each menu in Menus
           if date.includes(menu.Date[0])&&date.includes(menu.Date[1])&&date.includes(menu.Date[2])
             -checkmenu = false

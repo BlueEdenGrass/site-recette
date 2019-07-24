@@ -59,6 +59,7 @@ header a
     color: transparent;
     -webkit-text-stroke-color: black;
     -webkit-text-stroke-width: thin;
+    text-decoration: none;
 }
 /* Main */
 main {

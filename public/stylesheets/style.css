@@ -120,6 +120,7 @@ main {
 .news{
   position: relative;
   width: 23vw;
+  min-width: 200px;
   z-index: 0;
   border: .25em dashed white;
 }
@@ -220,8 +221,18 @@ main {
   font-size: 1.2em;
  }
  .affichemenu{
-  border: solid #fff 2px;
-  margin: 3.5% auto;
+  position: absolute;
+  top: 5em;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  border: 5px dotted white;
+
+ }
+ .affichemenu table{
+  margin: 1.5vh auto;
+  text-align: center;
  }
  footer{
    position: fixed;

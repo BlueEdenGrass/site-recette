@@ -200,6 +200,8 @@ main {
   font-size: 1.2em;
  }
  footer{
+   position: fixed;
+   bottom: 0;
    background-color: brown;
    height: 3em;
  }

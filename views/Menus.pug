@@ -17,8 +17,7 @@
       -checkmenu = true
       -number=1
         each menu in Menus
-          p=menu.Date+"|"+new Date(date).toLocaleDateString()
-          if menu.Date==date
+          if date.includes(menu.Date[0])&&date.includes(menu.Date[1])&&date.includes(menu.Date[2])
             -checkmenu = false
             .line
               div

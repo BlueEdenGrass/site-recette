@@ -56,6 +56,9 @@ header a
 {
     margin: auto;
     font-size: 1.2em;
+    color: transparent;
+    -webkit-text-stroke-color: black;
+    -webkit-text-stroke-width: thin;
 }
 /* Main */
 main {

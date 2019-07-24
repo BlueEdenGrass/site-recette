@@ -1,21 +1,17 @@
 -var findDate =  function(mydate, diff){ var dt = new Date(mydate); return new Date((dt.setDate(dt.getDate()+diff))).toLocaleDateString();}
 -nextDate=[Today, findDate(Today, 1), findDate(Today, 2), findDate(Today, 3), findDate(Today, 4), findDate(Today, 5), findDate(Today, 6)]
-
-.calendar
-  .head
-
-    div
-    div
-      h3.fondcraie Matin
-    div
-      h3.fondcraie Midi
-    div
-      h3.fondcraie Soir
-  .body.scroll
-    each date in nextDate
-      -checkmenu = true
+if ParamsGet.Menus=="All"
+  .calendar
+    .head
+      div: h3.fondcraie Menus
+      div: h3.fondcraie Matin
+      div: h3.fondcraie Midi
+      div: h3.fondcraie Soir
+    .body.scroll
+      each date in nextDate
+        -checkmenu = true
         each menu in Menus
-          if date==menu.Date[0]||date==menu.Date[1]||date==menu.Date[2]
+          if menu.Date.includes(date)
             -checkmenu = false
             .line
               div
@@ -68,3 +64,51 @@
             div Aucune programmation
             div Aucune programmation
             div Aucune programmation
+else
+  -checkmenu = true
+  each menu in Menus
+    if menu.Date.includes(ParamsGet.Menus)
+      -checkmenu = false
+      table.affichemenu
+        tbody
+          tr
+            th: h3.fondcraie Matin
+            -checkrecette = true
+            each recette in Recettes
+              if menu.Matin.includes(recette.Nom) 
+                -checkrecette = false
+                td
+                  a.Recette(href="/?Recettes="+recette.Nom)
+                    img(src="images/"+recette.Image, alt="No available" height="100" width="150", srcset="")
+                    br
+                    =recette.Nom
+            if checkrecette
+              td Aucune programmation
+          tr
+            th: h3.fondcraie Midi
+            -checkrecette = true
+            each recette in Recettes
+              if menu.Midi.includes(recette.Nom)
+                -checkrecette = false
+                td
+                  a.Recette(href="/?Recettes="+recette.Nom)
+                    img(src="images/"+recette.Image, alt="No available" height="100" width="150", srcset="")
+                    br
+                    =recette.Nom
+            if checkrecette
+              td Aucune programmation
+          tr
+            th: h3.fondcraie Soir
+            -checkrecette = true
+            each recette in Recettes
+              if menu.Soir.includes(recette.Nom)
+                -checkrecette = false
+                td
+                  a.Recette(href="/?Recettes="+recette.Nom)
+                    img(src="images/"+recette.Image, alt="No available" height="100" width="150", srcset="")
+                    br
+                    =recette.Nom
+            if checkrecette
+              td Aucune programmation
+  if checkmenu
+    h3(style="text-align:center; font-family: monospace;") Aucun menu n'est programmé pour cette date

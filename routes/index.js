@@ -1,6 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const db = require('../bdd.json');
+const _ = require('lodash')
 /* GET home page. */
 router.all('/', function(req, res, next) {
   let _GET=[]
@@ -20,7 +21,7 @@ router.all('/', function(req, res, next) {
   res.render('index', { 
     Title: 'Recettes à gogo',
     Menus: db.Menus,
-    Recettes: db.Recettes,
+    Recettes: _.sortBy(db.Recettes, 'Nom'),
     Today: D,
     ParamsGet: _GET
   });

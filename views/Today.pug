@@ -1,32 +1,48 @@
-if Menus
-  p test
-  each menu in Menus
-    if menu.Date == Today
-      table.nextmenus
+h1: span.fondcraie Today menu is
+-checkmenu = true
+each menu in Menus
+  if menu.Date.includes(Today)
+    -checkmenu = false
+    table.affichemenu
+      tbody
         tr
-          th(style="padding: 0 15px") Matin:
+          th: h3.fondcraie Matin
+          -checkrecette = true
           each recette in Recettes
-            if menu.Matin.includes(recette.Nom)
+            if menu.Matin.includes(recette.Nom) 
+              -checkrecette = false
               td
                 a.Recette(href="/?Recettes="+recette.Nom)
-                  img(src="images/"+recette.Image, alt="No available" height="125" width="200", srcset="")
+                  img(src="images/"+recette.Image, alt="No available" height="100" width="150", srcset="")
                   br
                   =recette.Nom
+          if checkrecette
+            td Aucune programmation
         tr
-          th(style="padding: 0 15px") Midi:
+          th: h3.fondcraie Midi
+          -checkrecette = true
           each recette in Recettes
             if menu.Midi.includes(recette.Nom)
+              -checkrecette = false
               td
                 a.Recette(href="/?Recettes="+recette.Nom)
-                  img(src="images/"+recette.Image, alt="No available" height="125" width="200", srcset="")
+                  img(src="images/"+recette.Image, alt="No available" height="100" width="150", srcset="")
                   br
                   =recette.Nom
+          if checkrecette
+            td Aucune programmation
         tr
-          th(style="padding: 0 15px") Soir:
+          th: h3.fondcraie Soir
+          -checkrecette = true
           each recette in Recettes
             if menu.Soir.includes(recette.Nom)
+              -checkrecette = false
               td
                 a.Recette(href="/?Recettes="+recette.Nom)
-                  img(src="images/"+recette.Image, alt="No available" height="125" width="200", srcset="")
+                  img(src="images/"+recette.Image, alt="No available" height="100" width="150", srcset="")
                   br
                   =recette.Nom
+          if checkrecette
+            td Aucune programmation
+if checkmenu
+  h3(style="text-align:center; font-family: monospace;") NOTHING, Aucun menu n'est programmé pour Aujourdhuit

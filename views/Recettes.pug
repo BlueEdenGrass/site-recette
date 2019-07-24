@@ -1,23 +1,22 @@
 if ParamsGet.Recettes == "All"
   h1: span.fondcraie Liste des Recettes
   div.liste-recettes.scroll
-    ul
+    ul.columns2
       each recette in Recettes
-        li: h4: a.Recette(href="/?Recettes="+recette.Nom)=recette.Nom
+        li: h3: a.Recette(href="/?Recettes="+recette.Nom)=recette.Nom
 else
   each recette in Recettes
     if ParamsGet.Recettes == recette.Nom
-      div
-        .flex
-          img(src="images/"+recette.Image, alt="No available" width="40%", srcset="")
-          .imgside
-            h1=recette.Nom
-            ul Ingredients:
-              li.nopuce
-              each ingredient in recette.Ingredients
-                case ingredient[1]
-                  when "Unité": li=ingredient[0]+" "+ingredient[2]
-                  default: li=ingredient[0]+" "+ingredient[1]+" de "+ingredient[2]    
+      .flex.scroll
+        img(src="images/"+recette.Image, alt="No available" width="40%", srcset="")
+        .imgside
+          h1: span.fondcraie=recette.Nom
+          ul Ingredients:
+            li.nopuce
+            each ingredient in recette.Ingredients
+              case ingredient[1]
+                when "Unité": li=ingredient[0]+" "+ingredient[2]
+                default: li=ingredient[0]+" "+ingredient[1]+" de "+ingredient[2]    
         p 
           span.soustitre Préparation:
           br

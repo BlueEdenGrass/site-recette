@@ -51,69 +51,6 @@ header
     background-size: 0.4em;
     overflow: visible;
 }
-#mainnavbar
-{
-    border: solid 0.1em #4fa8e2;
-    border-top: none;
-    background-image: url(../img/navbg.gif);
-    background-size: 0.4em;
-    margin-left: 6.55em;
-    height: inherit;
-    padding-left: 2.5px;
-    transition: padding .25s ease;
-}
-.logo
-{
-    height: inherit;
-    z-index: inherit;
-    float: left;
-    position: absolute;
-    left: 0;
-    border-right: solid 0.25em #f1f1e9;
-    width: 6.5em;
-}
-#cache-misere
-{
-    border: solid .05em #f1f1e9;
-    position: absolute;
-    top: 0;
-    right: 0;
-    height: 2.9em;
-    z-index: inherit;
-}
-#mainnavbar a 
-{
-    display: table-cell;
-    color: black;
-    text-align: center;
-    text-decoration: none;
-    padding: 14px 10px;
-    font-size: 17px;
-}
-#mainnavbar a:first-child
-{
-    color: #aa0006;
-}
-#mainnavbar a:hover
-{
-    background-color: #00000025;
-    color: #aa0006;
-}
-#mainnavbar a.active
-{
-    background-color: #4fa8e2;
-    color: white;
-    border-radius: 2.5px; 
-}
-#mainnavbar a.active:first-child
-{
-    background-color: #aa0006;
-    color: white;
-}
-#mainnavbar .icon
-{
-    display: none;
-}
 /* Main */
 main {
   position: absolute;
@@ -186,7 +123,6 @@ main {
   margin: 0.5%;
   padding: 0.5%;
 }
-
 .line>div:not(:first-child) {
   background: ivory;
  }
@@ -202,6 +138,11 @@ main {
  footer{
    position: fixed;
    bottom: 0;
-   background-color: brown;
    height: 3em;
+   width: 100%;
+ }
+ body{
+  background-image: url(../images/contour.jpg);
+  background-attachment: fixed;
+  background-size: cover;
  }

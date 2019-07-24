@@ -4,6 +4,9 @@
 html,body {
   margin: 0;
   padding: 0;
+  background-image: url(../images/contour.jpg);
+  background-attachment: fixed;
+  background-size: cover;
 }
 .scroll{
   overflow-y: scroll;
@@ -44,12 +47,10 @@ header
     position: fixed;
     z-index: 50;
     width: 100vw;
-    text-align: right;
+    text-align: center;
+    display: inline-block;
     height: 3em;
-    border-bottom: solid 0.1em #4fa8e2;
-    background-image: url(../img/navbg.gif);
     background-size: 0.4em;
-    overflow: visible;
 }
 /* Main */
 main {
@@ -61,7 +62,9 @@ main {
   right: 0;
   bottom: 3em;
   left: 0;
-  background-color: #ffffffcc;
+  background-image: url(../images/blackboard.jpg);
+  background-attachment: fixed;
+  background-size: cover;
   display: flex;
 }
 .container{
@@ -140,9 +143,4 @@ main {
    bottom: 0;
    height: 3em;
    width: 100%;
- }
- body{
-  background-image: url(../images/contour.jpg);
-  background-attachment: fixed;
-  background-size: cover;
  }

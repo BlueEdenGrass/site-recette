@@ -48,7 +48,7 @@ header
     z-index: 50;
     width: 100vw;
     text-align: center;
-    display: inline-block;
+    display: inline-flex;
     height: 3em;
     background-size: 0.4em;
 }

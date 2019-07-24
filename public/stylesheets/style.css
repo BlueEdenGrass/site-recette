@@ -110,6 +110,9 @@ main {
   border-radius: 5px;
   height: 6vh;
   margin: 2vh 2%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .fondcraie{
   background-clip: text;

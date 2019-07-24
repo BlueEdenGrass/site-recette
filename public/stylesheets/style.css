@@ -141,8 +141,3 @@ main {
    height: 3em;
    width: 100%;
  }
- body{
-  background-image: url(../images/wood.png);
-  background-attachment: fixed;
-  background-size: cover;
- }

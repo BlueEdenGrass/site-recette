@@ -168,25 +168,25 @@
   ],
   "Menus":[
     {
-      "Date": ["22", "7", "2019"],
+      "Date": ["22/7/2019", "7/22/2019", "2019/7/22"],
       "Matin": ["Dhal de lentilles"],
       "Midi": ["Lasagnes"],
       "Soir": []
     },
     {
-      "Date": ["26", "7", "2019"],
+      "Date": ["26/7/2019", "7/26/2019", "2019/7/26"],
       "Matin": ["Milkshake à la banane"],
       "Midi": ["Sauce tomate"],
       "Soir": ["Citronade","Accras"]
     },
     {
-      "Date": ["24", "7", "2019"],
+      "Date": ["24/7/2019", "7/24/2019", "2019/7/24"],
       "Matin": ["Pain complet", "Citronade"],
       "Midi": ["Gratin de patate", "Citronade"],
       "Soir": ["Pomme de terre sauté", "Citronade"]
     },
     {
-      "Date": ["28", "7", "2019"],
+      "Date": ["28/7/2019", "7/28/2019", "2019/7/28"],
       "Matin": ["Citronade"],
       "Midi": ["Naan", "Citronade"],
       "Soir": ["Soupe de lentilles"]

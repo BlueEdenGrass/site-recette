@@ -16,7 +16,7 @@
     each date in nextDate
       -checkmenu = true
         each menu in Menus
-          if date.includes(menu.Date[0])&&date.includes(menu.Date[1])&&date.includes(menu.Date[2])
+          if date==menu.Date[0]||date==menu.Date[1]||date==menu.Date[2]
             -checkmenu = false
             .line
               div

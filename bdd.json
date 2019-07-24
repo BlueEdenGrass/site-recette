@@ -184,6 +184,12 @@
       "Matin": ["Pain complet", "Citronade"],
       "Midi": ["Gratin de patate", "Citronade"],
       "Soir": ["Pomme de terre sauté", "Citronade"]
+    },
+    {
+      "Date": ["28", "7", "2019"],
+      "Matin": ["Purée d'aubergine", "Citronade"],
+      "Midi": ["Naan", "Citronade"],
+      "Soir": ["Soupe de lentilles", "Citronade"]
     }
   ]
 }

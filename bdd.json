@@ -90,7 +90,7 @@
       "Preparation": "Commencer par faire ceci, puis faire cela sans oublier le truc machin chose bidule chouette.mettre au four prechaufé à 4500° eteindre le four et patienté 2ans. et c pret"      
     },
     {
-      "Nom": "Pain compelet",
+      "Nom": "Pain complet",
       "Image": "pain-complet.webp",
       "Ingredients": [
         [250, "Gramme", "Farine80"],
@@ -181,7 +181,7 @@
     },
     {
       "Date": "7/24/2019",
-      "Matin": ["Pain compelet", "Citronade"],
+      "Matin": ["Pain complet", "Citronade"],
       "Midi": ["Gratin de patate", "Citronade"],
       "Soir": ["Pomme de terre sauté", "Citronade"]
     }

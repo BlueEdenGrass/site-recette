@@ -25,9 +25,6 @@ router.all('/', function(req, res, next) {
   for(key in req.query){
     _GET[key]=req.query[key]
   }
-  for(key in req.body){
-    _POST[key]=req.body[key]
-  }
   res.render('index', { 
     Title: 'Recettes à gogo',
     Menus: db.Menus,

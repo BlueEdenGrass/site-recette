@@ -1,0 +1,65 @@
+h4(style="display: inline-flex")
+  label(for="SearchInput") Search 
+  input#SearchInput(name="Search" type='text' disabled)
+  label(for="InSelect")  in 
+  +newSelect(['select','Menus','Recettes'])(id="InSelect" name="In")
+  label(for="BySelect")  by 
+  +newSelect(['select'])(id="BySelect" name="By")
+  div#Keyword
+script.
+  let In, By;
+  const Search = document.getElementById("SearchInput")
+  In = document.getElementById('InSelect').onchange = function(){
+    if (this.value == 'Select'){
+      Search.value = "";
+      Search.setAttributee("disabled", "");
+      Search.attributes["type"].value = "text"
+      for(i=By.length-1; i>=0; i-=1){By.remove(i)}
+    }
+    else if (this.value == 'Menus'){
+      for(i=By.length-1; i>=0; i-=1){By.remove(i)}
+      let myOptions=['Recettes', 'Date']
+      for(i=1; i<=myOptions.length; i++){
+        opt=document.createElement("option");
+        opt.value = myOptions[i-1];
+        opt.text = myOptions[i-1];
+        By.add(opt, i)
+      }
+      Search.attributes["type"].value = "text", Search.removeAttribute("disabled");
+    }
+    else if (this.value == 'Recettes'){
+      for(i=By.length-1; i>0; i-=1){By.remove(i)}
+      let myOptions=['Nom', 'Ingredients']
+      for(i=1; i<=myOptions.length; i++){
+        let opt=document.createElement("option");
+        opt.value = myOptions[i-1];
+        opt.text = myOptions[i-1];
+        By.add(opt,i)
+      }
+    }
+    else {
+      for(i=By.length-1; i>=0; i-=1){By.remove(i)}
+      let myOptions=['Select']
+      for(i=1; i<=myOptions.length; i++){
+        opt=document.createElement("option");
+        opt.value = myOptions[i-1];
+        opt.text = myOptions[i-1];
+        By.add(opt, i)
+      }
+      Search.attributes["type"].value = "text";
+      Search.value = "";
+      Search.setAttribute("disabled", "")
+    }
+  }
+  By = document.getElementById("BySelect")
+  By.onchange = function(){
+    if (this.value == 'Date') Search.attributes["type"].value = "date", Search.removeAttribute("disabled");
+    else if (this.value == 'Recettes') Search.attributes["type"].value = "text", Search.removeAttribute("disabled");
+    else if (this.value == 'Ingredients') Search.attributes["type"].value = "text", Search.removeAttribute("disabled");
+    else if (this.value == 'Nom') Search.attributes["type"].value = "text", Search.removeAttribute("disabled");
+    else {
+      Search.value = "Unknown request";
+      Search.setAttribute("disabled", "")
+    }
+  }
+

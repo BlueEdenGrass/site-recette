@@ -1,3 +1,7 @@
+mixin newSelect(b)
+  select&attributes(attributes)
+    each val in b
+      option(value=val)=val
 doctype html
 html
   head

@@ -3,9 +3,11 @@ extends layout
 block content
   main
     .container
-      div
+      div 
         .page
-            if ParamsGet.Recettes && ParamsGet.Menus
+            if search
+              include search
+            else if ParamsGet.Recettes && ParamsGet.Menus
               h1 ERROR
               h4 Unavailable resquest
             else if ParamsGet.Recettes

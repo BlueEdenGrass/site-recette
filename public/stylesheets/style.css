@@ -46,13 +46,13 @@ a.Recette, a.Menu{
 /*style */
 header
 {
-    position: fixed;
-    z-index: 50;
-    width: 100vw;
-    text-align: center;
-    display: inline-flex;
-    height: 3em;
-    background-size: 0.4em;
+  position: fixed;
+  z-index: 50;
+  width: 100vw;
+  text-align: center;
+  display: inline-flex;
+  height: 3em;
+  background-size: 0.4em;
 }
 header a
 {
@@ -62,6 +62,23 @@ header a
     -webkit-text-stroke-color: black;
     -webkit-text-stroke-width: thin;
     text-decoration: none;
+}
+#SearchLink{
+  background-image: url(../images/ico-search.png);
+  background-size: contain;
+  height: 40px;
+  width: 40px;
+  opacity: 0.3;
+}
+header a.active
+{
+  color: #000;
+  border-top: 1px #000 solid;
+  border-bottom: 1px #000 solid;
+}
+#SearchLink.active{
+  opacity: 1;
+  border: 1px #000 solid;
 }
 /* Main */
 main {
@@ -241,8 +258,10 @@ main {
 
  }
  .affichemenu table{
-  margin: 1.5vh auto;
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100%;
  }
  footer{
    position: fixed;

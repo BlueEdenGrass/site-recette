@@ -263,6 +263,19 @@ main {
   justify-content: center;
   min-height: 100%;
  }
+ 
+ #lignecraie input, #lignecraie select {
+  border: 0;
+  border-bottom: 2px dashed #fff;
+  text-align: center;
+  background: #343434;
+  color: #fff;
+  outline: none;
+  font-family: craie;
+  font: inherit;
+  font-size: inherit;
+
+ }
  footer{
    position: fixed;
    bottom: 0;

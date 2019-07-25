@@ -2,8 +2,9 @@ script.
   window.onload = function(){
     url = window.location;
     url=url.toString()
-    if ( url.includes("Menus") ) document.getElementById('MenusLink').className+= " active";
-    else if ( url.includes("Recettes") ) document.getElementById('RecettesLink').className+= " active";
+    if( url.includes('/Search')) document.getElementById('SearchLink').className+= " active";
+    else if ( url.includes("?Menus") ) document.getElementById('MenusLink').className+= " active";
+    else if ( url.includes("?Recettes") ) document.getElementById('RecettesLink').className+= " active";
     else document.getElementById('HomeLink').className+= " active";
   }
   window.onresize = function(){

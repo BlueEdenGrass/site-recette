@@ -66,9 +66,10 @@ header a
 #SearchLink{
   background-image: url(../images/ico-search.png);
   background-size: contain;
-  height: 40px;
-  width: 40px;
-  opacity: 0.3;
+  height: 35px;
+  width: 35px;
+  opacity: 0.5;
+  border: 5px #a55f12 inset;
 }
 header a.active
 {
@@ -78,7 +79,7 @@ header a.active
 }
 #SearchLink.active{
   opacity: 1;
-  border: 1px #000 solid;
+  border-style: ridge;
 }
 /* Main */
 main {
@@ -263,7 +264,6 @@ main {
   justify-content: center;
   min-height: 100%;
  }
- 
  #lignecraie input, #lignecraie select {
   border: 0;
   border-bottom: 2px dashed #fff;

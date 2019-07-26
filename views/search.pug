@@ -1,27 +1,18 @@
 form#lignecraie(method='post')
   label(for="SearchInput") Search 
-  input#SearchInput(name='Search' type='text' placeholder='Disabled' disabled)
+  input#SearchInput(name='Search' type='text' placeholder='Disabled' data-datable="DDMMYYYY" disabled)
   label(for="InSelect")  in 
   +newSelect(['select','Menus','Recettes'])(id="InSelect" name="In")
   label(for="BySelect")  by 
   +newSelect(['select'])(id="BySelect" name="By")
   button: img(src="../images/ico-checkmark.png", alt="")
-ul
-  each key in eval(ParamsPost.In)
-    -check = 0
-    if By == Recettes
-      -Search=Search.split(',');
-      each val in Search
-        if key.Matin.includes(val) || key.Midi.includes(val) || key.Soir.includes(val)
-          -check+=1
-    else
-      -Search=Search.split(',');
-      each val in Search
-        if eval('key.'+By).toString.includes(val)
-          -check+=1
-    if check==Search.length
-      
-        li=key.
+if ParamsPost.Search  
+  ul
+    each key in eval(ParamsPost.In)
+      if ParamsPost.In == 'Menus'
+        li=key.Date.toDateString()
+      else
+        li=key.Nom
 
 script.
   let In, By;

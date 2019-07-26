@@ -1,4 +1,4 @@
-form#lignecraie
+form#lignecraie(method='post')
   label(for="SearchInput") Search 
   input#SearchInput(name='Search' type='text' placeholder='Disabled' disabled)
   label(for="InSelect")  in 
@@ -6,6 +6,23 @@ form#lignecraie
   label(for="BySelect")  by 
   +newSelect(['select'])(id="BySelect" name="By")
   button: img(src="../images/ico-checkmark.png", alt="")
+ul
+  each key in eval(ParamsPost.In)
+    -check = 0
+    if By == Recettes
+      -Search=Search.split(',');
+      each val in Search
+        if key.Matin.includes(val) || key.Midi.includes(val) || key.Soir.includes(val)
+          -check+=1
+    else
+      -Search=Search.split(',');
+      each val in Search
+        if eval('key.'+By).toString.includes(val)
+          -check+=1
+    if check==Search.length
+      
+        li=key.
+
 script.
   let In, By;
   const Search = document.getElementById("SearchInput")

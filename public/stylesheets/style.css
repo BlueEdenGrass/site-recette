@@ -264,18 +264,37 @@ main {
   justify-content: center;
   min-height: 100%;
  }
- #lignecraie input, #lignecraie select {
+ #lignecraie{
+  font-size: 2vw;
+  text-align: center;
+  padding: 5px 0;
+ }
+ #lignecraie input, #lignecraie select, #lignecraie button {
   border: 0;
   border-bottom: 2px dashed #fff;
   text-align: center;
-  background: #343434;
+  background: transparent;
   color: #fff;
   outline: none;
   font-family: craie;
   font: inherit;
   font-size: inherit;
-
  }
+ #lignecraie option{
+  background: #343434;
+ }
+ #lignecraie>select>option>span:hover{
+  background: #fff;
+  color: #343434;
+ }
+ #lignecraie button{
+   border: none;
+   margin: 0 1.5%;
+ }
+ #lignecraie button img{
+  margin-bottom: -30%;
+  width: 2.5vw;
+}
  footer{
    position: fixed;
    bottom: 0;

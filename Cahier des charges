@@ -2,3 +2,27 @@ Ce que doit faire le site
   -Afficher la liste de recettes et permettre une recherche par nom ou tag
   -Afficher le menu de jour avec le denrée manquante et permettre une recherche pour afficher le menu d'une date ou la date d'un menu
   -Afficher le calendrier des menu de la semaine
+
+-console.log('in',ParamsPost.In,eval(ParamsPost.In));
+    each key in eval(ParamsPost.In)
+      -check = 0
+      if ParamsPost.By == 'Recettes'
+        -ParamsPost.Search = ParamsPost.Search.toString().split(',');
+        each val in ParamsPost.Search
+          -console.log('val:',val);
+          if key.Matin.includes(val) || key.Midi.includes(val) || key.Soir.includes(val)
+            -check+=1
+      else
+        -ParamsPost.Search=ParamsPost.Search.split(',');
+        p=ParamsPost.Search
+        each val in ParamsPost.Search
+          if eval('key.'+ParamsPost.By).toString().includes(val)
+            -check+=1
+      -console.log("check", check)
+      -console.log('search', ParamsPost.Search)
+      if check==ParamsPost.Search.length
+      -console.log("check", check)
+        if ParamsPost.By == 'Menus'
+          li=key.Date
+        else
+          li=key.Nom

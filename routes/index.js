@@ -19,18 +19,21 @@ router.all('/', function(req, res, next) {
     Today: D,
     ParamsGet: _GET
   });
-});router.all('/Search', function(req, res, next) {
-  let _GET=[]
-  let D = new Date().toLocaleDateString();
+});
+router.all('/Search', function(req, res, next) {
+  let _GET=[], _POST=[];
   for(key in req.query){
     _GET[key]=req.query[key]
   }
+  for(key in req.body){
+    _POST[key]=req.body[key]
+  }
+  console.log(_POST)
   res.render('index', { 
     Title: 'Recettes à gogo',
     Menus: db.Menus,
-    Recettes: _.sortBy(db.Recettes, 'Nom'),
-    Today: D,
-    ParamsGet: _GET,
+    Recettes: db.Recettes,
+    ParamsPost: _POST,
     search: true
   });
 });

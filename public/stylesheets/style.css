@@ -66,9 +66,10 @@ header a
 #SearchLink{
   background-image: url(../images/ico-search.png);
   background-size: contain;
-  height: 40px;
-  width: 40px;
-  opacity: 0.3;
+  height: 35px;
+  width: 35px;
+  opacity: 0.5;
+  border: 5px #a55f12 inset;
 }
 header a.active
 {
@@ -78,7 +79,7 @@ header a.active
 }
 #SearchLink.active{
   opacity: 1;
-  border: 1px #000 solid;
+  border-style: ridge;
 }
 /* Main */
 main {
@@ -263,6 +264,37 @@ main {
   justify-content: center;
   min-height: 100%;
  }
+ #lignecraie{
+  font-size: 2vw;
+  text-align: center;
+  padding: 5px 0;
+ }
+ #lignecraie input, #lignecraie select, #lignecraie button {
+  border: 0;
+  border-bottom: 2px dashed #fff;
+  text-align: center;
+  background: transparent;
+  color: #fff;
+  outline: none;
+  font-family: craie;
+  font: inherit;
+  font-size: inherit;
+ }
+ #lignecraie option{
+  background: #343434;
+ }
+ #lignecraie>select>option>span:hover{
+  background: #fff;
+  color: #343434;
+ }
+ #lignecraie button{
+   border: none;
+   margin: 0 1.5%;
+ }
+ #lignecraie button img{
+  margin-bottom: -30%;
+  width: 2.5vw;
+}
  footer{
    position: fixed;
    bottom: 0;

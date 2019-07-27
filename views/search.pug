@@ -1,6 +1,6 @@
 form#lignecraie(method='post')
   label(for="SearchInput") Search 
-  input#SearchInput(name='Search' type='text' placeholder='Disabled' data-datable="DDMMYYYY" disabled)
+  span#SearchInput: input(name='Search' type='text' placeholder='Disabled' disabled)
   label(for="InSelect")  in 
   +newSelect(['select','Menus','Recettes'])(id="InSelect" name="In")
   label(for="BySelect")  by 
@@ -16,12 +16,14 @@ if ParamsPost.Search
 
 script.
   let In, By;
-  const Search = document.getElementById("SearchInput")
+  const Search = document.getElementById("SearchInput");
+  const baseInput = Search.children[0].toString();
   In = document.getElementById('InSelect').onchange = function(){
+    if(Search.children.length>1) Search.innerHTML=baseInput;
     if (this.value == 'Select'){
-      Search.value = "";
-      Search.setAttributee("disabled", "");
-      Search.attributes["type"].value = "text"
+      Search.children[0].value = "";
+      Search.children[0].setAttributee("disabled", "");
+      Search.children[0].attributes["type"].value = "text"
       for(i=By.length-1; i>=0; i-=1){By.remove(i)}
     }
     else if (this.value == 'Menus'){
@@ -33,7 +35,7 @@ script.
         opt.text = myOptions[i-1];
         By.add(opt, i)
       }
-      Search.attributes["type"].value = "text", Search.attributes["Placeholder"].value = "ex: Recette 1, Recette 2", Search.removeAttribute("disabled");
+      Search.children[0].attributes["type"].value = "text", Search.children[0].attributes["Placeholder"].value = "ex: Recette 1, Recette 2", Search.removeAttribute("disabled");
     }
     else if (this.value == 'Recettes'){
       for(i=By.length-1; i>=0; i-=1){By.remove(i)}
@@ -44,7 +46,7 @@ script.
         opt.text = myOptions[i-1];
         By.add(opt,i)
       }
-      Search.attributes["type"].value = "text", Search.attributes["Placeholder"].value = "ex: Ma recette", Search.removeAttribute("disabled");
+      Search.children[0].attributes["type"].value = "text", Search.children[0].attributes["Placeholder"].value = "ex: Ma recette", Search.removeAttribute("disabled");
     }
     else {
       for(i=By.length-1; i>=0; i-=1){By.remove(i)}
@@ -55,21 +57,30 @@ script.
         opt.text = myOptions[i-1];
         By.add(opt, i)
       }
-      Search.attributes["type"].value = "text";
-      Search.value = "";
-      Search.setAttribute("disabled", "");
-      Search.attributes["Placeholder"].value = "Disabled";
+      Search.children[0].attributes["type"].value = "text";
+      Search.children[0].value = "";
+      Search.children[0].setAttribute("disabled", "");
+      Search.children[0].attributes["Placeholder"].value = "Disabled";
     }
   }
   By = document.getElementById("BySelect")
   By.onchange = function(){
-    if (this.value == 'Date') Search.attributes["type"].value = "date", Search.value = "", Search.removeAttribute("disabled");
-    else if (this.value == 'Recettes') Search.attributes["type"].value = "text", Search.value = "", Search.attributes["Placeholder"].value = "ex: Recette 1, Recette 2", Search.removeAttribute("disabled");
-    else if (this.value == 'Ingredients') Search.attributes["type"].value = "text", Search.attributes["Placeholder"].value = "ex: Ingredient 1, Ingredient 2", Search.removeAttribute("disabled");
-    else if (this.value == 'Nom') Search.attributes["type"].value = "text", Search.attributes["Placeholder"].value = "ex: Ma recette", Search.removeAttribute("disabled");
+    if (this.value == 'Date') {
+      Search.innerHTML="<input type='number' Placeholder='Day' min=1 max=31 style='width:10%;'><input value='2018-05'  type='month' style='padding:1px; text-align: left; width: 29%;'>";
+      Search.children[1].onchange = function(){ if(this.value=="") this.value='2018-05'}
+    }
+    else if (this.value == 'Recettes') {
+      Search.innerHTML=JSON.parse(baseInput);
+      Search.children[0].attributes["type"].value = "text";
+      Search.children[0].value = "";
+      Search.children[0].attributes["Placeholder"].value = "ex: Recette 1, Recette 2";
+      Search.children[0].removeAttribute("disabled");
+    }
+    else if (this.value == 'Ingredients') Search.children[0].attributes["type"].value = "text", Search.children[0].attributes["Placeholder"].value = "ex: Ingredient 1, Ingredient 2", Search.removeAttribute("disabled");
+    else if (this.value == 'Nom') Search.children[0].attributes["type"].value = "text", Search.children[0].attributes["Placeholder"].value = "ex: Ma recette", Search.removeAttribute("disabled");
     else {
-      Search.value = "Unknown request";
-      Search.setAttribute("disabled", "")
+      Search.children[0].value = "Unknown request";
+      Search.children[0].setAttribute("disabled", "")
     }
   }
 

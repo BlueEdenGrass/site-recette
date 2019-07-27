@@ -69,7 +69,7 @@ header a
   height: 35px;
   width: 35px;
   opacity: 0.5;
-  border: 5px #a55f12 inset;
+  border: 5px #ba7522 outset;
 }
 header a.active
 {
@@ -79,7 +79,7 @@ header a.active
 }
 #SearchLink.active{
   opacity: 1;
-  border-style: ridge;
+  border-style: inset;
 }
 /* Main */
 main {

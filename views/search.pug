@@ -16,9 +16,9 @@ if ParamsPost.Search
 script.
   let In, By;
   const Search = document.getElementById("SearchInput");
-  const baseInput = Search.children[0].toString();
+  const baseInput = Search.children[0].cloneNode(true);
   In = document.getElementById('InSelect').onchange = function(){
-    if(Search.children.length>1) Search.innerHTML=baseInput;
+    if(Search.children.length>1) Search.innerHTML="", Search.appendChild(baseInput);
     if (this.value == 'Select'){
       Search.children[0].value = "";
       Search.children[0].setAttributee("disabled", "");
@@ -69,7 +69,7 @@ script.
       Search.children[1].onchange = function(){ if(this.value=="") this.value='2018-05'}
     }
     else if (this.value == 'Recettes') {
-      Search.innerHTML=JSON.parse(baseInput);
+      Search.innerHTML="", Search.appendChild(baseInput);
       Search.children[0].attributes["type"].value = "text";
       Search.children[0].value = "";
       Search.children[0].attributes["Placeholder"].value = "ex: Recette 1, Recette 2";

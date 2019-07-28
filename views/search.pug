@@ -8,14 +8,10 @@ form#lignecraie(method='post')
   button: img(src="../images/ico-checkmark.png", alt="")
 
 if ParamsPost.Search
-  p=ParamsPost.Search
   ul
     each key in eval(ParamsPost.In)
-      if ParamsPost.By == 'Date'
-        
-
       if ParamsPost.In == 'Menus'
-        li=key.Date.toDateString()
+        li=key.Date[4]
       else
         li=key.Nom
 script.

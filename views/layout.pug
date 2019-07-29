@@ -1,7 +1,10 @@
-mixin newSelect(b)
+mixin newSelect(a, b)
   select&attributes(attributes)
-    each val in b
-      option(value=val)=val
+    each val in a
+      if val==b
+        option(value=val selected)=val
+      else
+        option(value=val)=val
 doctype html
 html
   head

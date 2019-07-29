@@ -60,7 +60,7 @@ if ParamsGet.Menus=="All"
               table
                 tbody
                   tr
-                    td
+                    th
                       a.Menu(href="/?Menus="+date)=new Date(date).toDateString() 
             div Aucune programmation
             div Aucune programmation
@@ -75,7 +75,7 @@ else
         table
           tbody
             tr
-              th: h3.fondcraie Matin: 
+              th.fondcraie Matin: 
               -checkrecette = true
               each recette in Recettes
                 if menu.Matin.includes(recette.Nom) 

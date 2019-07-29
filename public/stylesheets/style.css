@@ -262,7 +262,7 @@ main {
   text-align: center;
   padding: 5px 0;
  }
- #lignecraie input, #lignecraie select, #lignecraie button {
+ #lignecraie select, #lignecraie button {
   height: 3vw;
   border: 0;
   border-bottom: 2px dashed #fff;

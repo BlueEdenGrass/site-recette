@@ -25,7 +25,8 @@ form#lignecraie(method='post' autocomplete="off")
 
 .liste.scroll
   if ParamsPost.Search
-    ul
+    -found=0;
+    ul.columns2
       each key in eval(ParamsPost.In)
         -match = false
         if ParamsPost.By == 'Date'
@@ -47,19 +48,22 @@ form#lignecraie(method='post' autocomplete="off")
             -match=true
         else if ParamsPost.By == 'Recettes'
           -search = ParamsPost.Search.split(',')
-          -function includeArray(array1, array2){count=0; for(i=0; i<array2.length; i++){if(array1.includes( array2[i].charAt(0).toUpperCase()+array2[i].slice(1).toLowerCase() )) count++;} if(array2.length==count) return true; else return false }
+          -function includeArray(array1, array2){count=0; for(i=0; i<array2.length; i++){if(array1.toString().includes( array2[i].charAt(0).toUpperCase()+array2[i].slice(1).toLowerCase() )) count++;} if(array2.length==count) return true; else return false }
           if includeArray(key.Matin, search) || includeArray(key.Midi, search) || includeArray(key.Soir, search)
             -match=true
         else if ParamsPost.By == 'select'
           -alert('invalid request')
         else
-          if eval('key.'+ParamsPost.By)==(ParamsPost.Search.charAt(0).toUpperCase()+ParamsPost.Search.slice(1).toLowerCase())
+          if eval('key.'+ParamsPost.By).toString().includes(ParamsPost.Search.charAt(0).toUpperCase()+ParamsPost.Search.slice(1).toLowerCase())
             -match=true
         if match
+          -found++
           if ParamsPost.In == 'Menus'
             li: a.Menu(href="/?Menus="+new Date(key.Date[4]).toLocaleDateString())=new Date(key.Date[4]).toDateString()
           else
             li: a.Recette(href="/?Recettes="+key.Nom)=key.Nom
+    if found==0
+      h3(style="text-align: center") Aucun resultat
 script.
   let In, By;
   const Search = document.getElementById("SearchInput");

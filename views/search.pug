@@ -32,7 +32,7 @@ form#lignecraie(method='post' autocomplete="off")
         if ParamsPost.By == 'Date'
           -mydate=ParamsPost.Search2.split('-')
           -search=mydate[1]+'-'+ParamsPost.Search+'-'+mydate[0]
-          if key.Date.includes(search)
+          if key.Date==new Date(search).valueOf()
             -match=true
         else if ParamsPost.By == 'Ingredients'
           -myIngredients = ParamsPost.Search.split(',')
@@ -59,7 +59,7 @@ form#lignecraie(method='post' autocomplete="off")
         if match
           -found++
           if ParamsPost.In == 'Menus'
-            li: a.Menu(href="/?Menus="+new Date(key.Date[4]).toLocaleDateString())=new Date(key.Date[4]).toDateString()
+            li: a.Menu(href="/?Menus="+new Date(search).toLocaleDateString())=new Date(search).toDateString()
           else
             li: a.Recette(href="/?Recettes="+key.Nom)=key.Nom
     if found==0

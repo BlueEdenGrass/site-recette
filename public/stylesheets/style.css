@@ -235,6 +235,9 @@ main {
   text-align: center;
   margin: 0.5%;
   padding: 0.5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .line>div table{
   width: 100%;

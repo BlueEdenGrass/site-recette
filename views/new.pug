@@ -1,0 +1,33 @@
+extends layout
+
+block content
+  main
+    .container
+      .page
+        +newSelect(a, b)#Type
+        div#Menus
+          table
+            tbody
+              tr
+                th
+                  label(for="MenuDate") Menu du :
+                td
+                  input#MenuDate(type="date")
+              tr
+                th
+                  label(for="MenuMatin") Programmation du matin :
+                td
+                  input#MenuMatin(type="text")
+              tr
+                th
+                  label(for="MenuMidi") Programmation du midi :
+                td
+                  input#MenuMidi(type="text")
+              tr
+                th
+                  label(for="MenuSoir") Programmation du soir :
+                td
+                  input#MenuSoir(type="text")
+        div
+    .news
+      include course

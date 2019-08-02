@@ -1,6 +1,5 @@
--var findDate =  function(mydate, diff){ var dt = new Date(mydate); return new Date((dt.setDate(dt.getDate()+diff))).toLocaleDateString();}
+-var findDate =  function(mydate, diff){ return mydate+(86400000*diff)}
 -nextDate=[Today, findDate(Today, 1), findDate(Today, 2), findDate(Today, 3), findDate(Today, 4), findDate(Today, 5), findDate(Today, 6)]
-
 if ParamsGet.Menus=="All"
   .calendar
     .head
@@ -12,15 +11,15 @@ if ParamsGet.Menus=="All"
       each date in nextDate
         -checkmenu = true
         each menu in Menus
-          if menu.Date.includes(date)
+          if menu.Date==date
             -checkmenu = false
             .line
               div
                 table
                   tbody
                     tr
-                      td
-                        a.Menu(href="/?Menus="+date)=new Date(date).toDateString()
+                      th
+                        a.Menu(href="/?Menus="+new Date(date).toLocaleDateString())=new Date(date).toDateString()
               -checkrecette = true
               each recette in Recettes
                 if recette.Nom == menu.Matin[0]
@@ -61,7 +60,7 @@ if ParamsGet.Menus=="All"
                 tbody
                   tr
                     th
-                      a.Menu(href="/?Menus="+date)=new Date(date).toDateString() 
+                      a(href="/?Menus="+new Date(date).toLocaleDateString())=new Date(date).toDateString() 
             div Aucune programmation
             div Aucune programmation
             div Aucune programmation
@@ -69,7 +68,7 @@ else
   h1: span.fondcraie The Menus Of #{ParamsGet.Menus}
   -checkmenu = true
   each menu in Menus
-    if menu.Date.includes(ParamsGet.Menus)
+    if menu.Date == new Date(ParamsGet.Menus).valueOf()
       -checkmenu = false
       .affichemenu.scroll
         table
@@ -86,7 +85,7 @@ else
                       br
                       =recette.Nom
               if checkrecette
-                div Aucune programmation
+                td Aucune programmation
             tr
               th: h3.fondcraie Midi: 
               -checkrecette = true
@@ -99,7 +98,7 @@ else
                       br
                       =recette.Nom
               if checkrecette
-                div Aucune programmation
+                td Aucune programmation
             tr
               th: h3.fondcraie Soir: 
               -checkrecette = true
@@ -112,6 +111,6 @@ else
                       br
                       =recette.Nom
               if checkrecette
-                div Aucune programmation
+                td Aucune programmation
   if checkmenu
     h3(style="text-align:center; font-family: monospace;") Aucun menu n'est programmé pour cette date

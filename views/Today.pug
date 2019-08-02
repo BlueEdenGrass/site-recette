@@ -1,7 +1,7 @@
 h1: span.fondcraie Today menu is
 -checkmenu = true
 each menu in Menus
-  if menu.Date.includes(Today)
+  if menu.Date==Today
     -checkmenu = false
     .affichemenu.scroll
       table
@@ -47,4 +47,4 @@ each menu in Menus
               td Aucune programmation
 
 if checkmenu
-  h3(style="text-align:center; font-family: monospace;") NOTHING, Aucun menu n'est programmé pour Aujourdhui
+  h3(style="text-align:center; font-family: monospace;") NOTHING, Aucun menu n'est programmé pour Aujourd'hui

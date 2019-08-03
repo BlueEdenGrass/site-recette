@@ -11,7 +11,6 @@ router.all('/', function(req, res, next) {
   let _GET=[]
   let D = new Date().toLocaleDateString();
   D = new Date(D).valueOf();
-  console.log('number', D);
   for(key in req.query){
     _GET[key]=req.query[key]
   }

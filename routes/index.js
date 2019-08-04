@@ -2,7 +2,7 @@ const express = require('express');
 const router = express.Router();
 const fs = require('fs');
 const _ = require('lodash')
-const db = JSON.parse(fs.readFileSync('bdd.json', 'utf-8'));
+let db = JSON.parse(fs.readFileSync('bdd.json', 'utf-8'));
 
 /* GET home page. */
   //JSON.stringify(db, null, 2)
@@ -41,25 +41,24 @@ router.all('/Search', function(req, res, next) {
     ParamsPost: _POST,
     search: true
   });
-});
-router.get('/New', function(req, res, next) {
-  res.render('index', { 
-    Title: 'Recettes à gogo',
-    Menus: db.Menus,
-    Recettes: db.Recettes,
-    ParamsPost: _POST,
-    search: true
-  });
-});
+});/*
 router.post('/New', function(req, res, next) {
   for(key in req.body){
     _POST[key]=req.body[key]
   }
-  res.render('new', { 
-    Title: 'Recettes à gogo',
-    ParamsPost: _POST,
-  });
-});
+  if(_POST['NewFeature']=='Menus'){
 
+  }
+  else if(_POST['NewFeature']=='Recettes'){
+    let NewRecette;
+    NewRecette.Nom=_POST[];
+    NewRecette.Image="";
+    NewRecette.Ingredients=[];
+    NewRecette.Preparation;
+    db.Recettes.push(NewRecette)
+  }
+   res.redirect('/');
+});
+*/
 
 module.exports = router;

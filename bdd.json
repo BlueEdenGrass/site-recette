@@ -1,4 +1,42 @@
 {
+  "Ingredients":[
+    ["Sachet","Pâtes à lasagne"],
+    ["Gramme","Champignon"],
+    ["Unité","Poivron"],
+    ["Litre","Sauce tomate"],
+    ["Gramme","Fromage rapée"],
+    ["Gramme","Beurre"],
+    ["Litre","Lait"],
+    ["Unité","Oignon"],
+    ["Gramme","Lentille"],
+    ["Gramme","Giraumon"],
+    ["+","Cive"],
+    ["+","Persil"],
+    ["Gousse","Ail"],
+    ["Unité","Citron"],
+    ["epice","Moringa"],
+    ["Unité","Piment végétarien"],
+    ["+","Bicarbonate"],
+    ["Unité","Tomate"],
+    ["+","Huile"],
+    ["Gramme","Sucre"],
+    ["Litre","Eau"],
+    ["Unité","Banane"],
+    ["+","Muscade"],
+    ["+","Cannelle"],
+    ["Gramme","Pomme de terre"],
+    ["+","Sel"],
+    ["Gramme","Farine80"],
+    ["Gramme","Farine150"],
+    ["Gramme","Farine110"],
+    ["Sachet","Levure boulangère"],
+    ["Sachet","Levure chimique"],
+    ["+","Yaourt"],
+    ["+","Aubergine"],
+    ["Unité","Oeuf"],
+    ["+","Coriandre"],
+    ["+","Thym"]
+  ],
   "Recettes":[
     {
       "Nom": "Lasagnes",
@@ -20,7 +58,7 @@
       "Nom": "Dhal de lentilles",
       "Image": "DhalDeLentilles.jpg",
       "Ingredients": [ 
-        [500, "Gramme", "Lentilles"],
+        [500, "Gramme", "Lentille"],
         [0.5, "Unité", "Giraumon"],
         [100, "Gramme", "Cive"],    
         [100, "Gramme", "Persil"],
@@ -61,7 +99,7 @@
       "Image": "Citronnade.jpg",
       "Ingredients": [
         [5, "Cuillère à soupe", "Sucre"],
-        [3, "Unité", "citron"],
+        [3, "Unité", "Citron"],
         [0.5, "Litre", "Eau"]
       ],
       "Preparation": "Commencer par faire ceci, puis faire cela sans oublier le truc machin chose bidule chouette.mettre au four prechaufé à 4500° eteindre le four et patienté 2ans. et c pret"      
@@ -98,7 +136,7 @@
         [0.4, "Litre", "Eau"],
         [2, "Cuillère à soupe", "Levure boulangère"],
         [1, "Cuillère à soupe", "Sel"],
-        [3, "Cuillère à soupe", "huile"]
+        [3, "Cuillère à soupe", "Huile"]
       ],
       "Preparation": "Commencer par faire ceci, puis faire cela sans oublier le truc machin chose bidule chouette.mettre au four prechaufé à 4500° eteindre le four et patienté 2ans. et c pret"      
     },
@@ -108,7 +146,7 @@
       "Ingredients": [
         [500, "Gramme", "Pomme de terre"],
         [1, "Litre", "Lait"],
-        [100, "Gramme", "Farine"],
+        [100, "Gramme", "Farine110"],
         [0.1, "Litre", "Huile"]
       ],
       "Preparation": "Commencer par faire ceci, puis faire cela sans oublier le truc machin chose bidule chouette.mettre au four prechaufé à 4500° eteindre le four et patienté 2ans. et c pret"      
@@ -117,11 +155,11 @@
       "Nom": "Naan",
       "Image": "naan.jpg",
       "Ingredients": [
-        [200, "Gramme", "Farine"],
+        [200, "Gramme", "Farine110"],
         [125, "Gramme", "Yaourt"],
         [0.7, "Litre", "Eau"],
         [1, "Cuillère à soupe", "Huile"],
-        [1, "Cuillère à caf, Sucre"],
+        [1, "Cuillère à café, Sucre"],
         [0.5, "Cuillère à café", "Bicarbonate"]
       ],
       "Preparation": "Commencer par faire ceci, puis faire cela sans oublier le truc machin chose bidule chouette.mettre au four prechaufé à 4500° eteindre le four et patienté 2ans. et c pret"      
@@ -131,10 +169,10 @@
       "Image": "Puree-daubergine.jpg",
       "Ingredients": [
         [2, "Unité", "Aubergine"],
-        [1, "Unité", "Tomate bien mûre"],
+        [1, "Unité", "Tomate"],
         [2, "Gousse", "Ail"],
-        [2, "Cuillère à soupe", "Yaourt velouté"],
-        [3, "Unité", "citron"],
+        [2, "Cuillère à soupe", "Yaourt"],
+        [3, "Unité", "Citron"],
         [0.5, "Litre", "Eau"]
       ],
       "Preparation": "Commencer par faire ceci, puis faire cela sans oublier le truc machin chose bidule chouette.mettre au four prechaufé à 4500° eteindre le four et patienté 2ans. et c pret"      
@@ -143,12 +181,12 @@
       "Nom": "Pâte brisée",
       "Image": "patebrisee.JPG",
       "Ingredients": [
-        [250, "Gramme", "Farine"],
+        [250, "Gramme", "Farine110"],
         [125, "Gramme", "Beurre"],
         [0.4, "Litre", "Eau"],
-        [1, "Unité", "Jaune d'oeuf"],
+        [1, "Unité", "Oeuf"],
         [1, "Cuillère à soupe", "Sel"],
-        [3, "Cuillère à soupe", "huile"]
+        [3, "Cuillère à soupe", "Huile"]
       ],
       "Preparation": "Commencer par faire ceci, puis faire cela sans oublier le truc machin chose bidule chouette.mettre au four prechaufé à 4500° eteindre le four et patienté 2ans. et c pret"      
     },
@@ -156,11 +194,11 @@
       "Nom": "Soupe de lentilles",
       "Image": "soupedelentilles.jpg",
       "Ingredients": [
-        [250, "Gramme", "Lentilles"],
+        [250, "Gramme", "Lentille"],
         [2, "Unité", "Oignon"],
         [3, "Gousse", "Ail"],
         [0.5, "Bouquet", "Persil"],
-        [1, "Cuillère à soupe", "Coriandre en poudre"],
+        [1, "Cuillère à soupe", "Coriandre"],
         [1, "Cuillère à soupe", "Thym"]
       ],
       "Preparation": "Commencer par faire ceci, puis faire cela sans oublier le truc machin chose bidule chouette.mettre au four prechaufé à 4500° eteindre le four et patienté 2ans. et c pret"      

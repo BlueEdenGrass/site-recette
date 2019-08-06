@@ -1,4 +1,4 @@
-#new.modals
+form(action="/new", method="post")#new.modals
   +newSelect(a, b)#Type
   div#MenusForm
     table
@@ -8,7 +8,55 @@
             label(for="MenuDate") Menu du :
           td
             input#MenuDate(type="date")
-              tr
+        tr
+          th
+            label(for="MenuMatin") Programmation du matin :
+          td
+            input#MenuMatin(type="text")
+        tr
+          th
+            label(for="MenuMidi") Programmation du midi :
+          td
+            input#MenuMidi(type="text")
+        tr
+          th
+            label(for="MenuSoir") Programmation du soir :
+          td
+            input#MenuSoir(type="text")
+
+  div#RecettesForm
+    table
+      tbody
+        tr
+          th
+            label(for="RecetteNom") Nom de la recette :
+          td
+            input#RecetteNom(type="text")
+        tr
+          th
+            label(for="RecetteIngredients") Programmation du matin :
+          td
+            input#RecetteIngredients(type="text")
+        tr
+          th
+            label(for="RecetteImage") Programmation du midi :
+          td
+            input#MenuMidi(type="text")
+        tr
+          th
+            label(for="MenuSoir") Programmation du soir :
+          td
+            input#MenuSoir(type="text")
+
+  div#IngredientsForm
+    table
+      tbody
+        tr
+          th
+            label(for="MenuDate") Menu du :
+          td
+            input#MenuDate(type="date")
+        tr
           th
             label(for="MenuMatin") Programmation du matin :
           td

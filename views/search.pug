@@ -64,6 +64,9 @@ form#lignecraie(method='post' autocomplete="off")
             li: a.Recette(href="/?Recettes="+key.Nom)=key.Nom
     if found==0
       h3(style="text-align: center") Aucun resultat
+form(action="/test", method="post")
+  input(type="file" name='test')
+  button go
 script.
   let In, By;
   const Search = document.getElementById("SearchInput");

@@ -1,7 +1,7 @@
 functions = {
   NewMenu: function(params, db) {
     let MyMenu;
-    MyMenu.Date=new Date(params['MenuDate']).valueOf;
+    MyMenu.Date=new Date(Recettesrams.'.enuDate']).valueOf;
     for (let i = 0; i < params.MenuMatin.split(';').length; i++) {
       
       if(!db.Recettes.some(row => row.Nom==params.MenuMatin.split(';')[i])) return [false, params.MenuMatin.split(';')[i]+" ne fait pas partie des recettes connues"];
@@ -23,39 +23,19 @@ functions = {
     fs.writeFile('bdd.json', JSON.stringify(db, null, 2), dummy)
   },
   NewRecette: function(params, db, file) {
-    let MyRecette;
-    if(params[N_Name].length<2){
+    let MyRecette={Nom:"",Image:"",Ingredients:[],Preparation:""};
+    if(params.RecettesName.length<2){
 
-      if(db.Recettes.some(row => row.includes(params[N_Name]))) MyRecette.Nom=params[N_Name];
-      else [false, "Le nom des recette doit avoir au moins 2 caractères"];
+      if(db.Recettes.some(row => row.includes(params.RecettesNames))) MyRecette.Nom=params.RecettesName;
+      else [false, "Ce nom de recette est déja utilisé"];
 
     } else {
 
-    return [false, "Ce nom de recette est déja utilisé"];
+      return [false, "Le nom des recette doit avoir au moins 2 caractères"];
 
     }
 
-    if(file.RecettesImage) {
-
-      fileName=params[N_Name].trim()+fileRecettesImage.name.split('.').pop();
-      file.RecettesImage.mv(__dirname + '/public/images/' + fileName , function(err) {
-
-        if(err){
-
-        console.log(err);
-
-        } else {
-
-          MyRecette.Image=file.RecettesImage.name
-          console.log("uploaded");
-
-        }
-
-      });
-
-    }
-
-    N_Ingredients=params["Ingredient"].split(';');
+    let N_Ingredients=params.RecettesIngredient.split(';');
     for (let i = 0; i < N_Ingredients.length; i++) {
 
       N_Ingredients[i].split(',');
@@ -64,7 +44,6 @@ functions = {
     
     }
 
-    MyRecette.Ingredients=[];
     for (let i = 0; i < N_Ingredients.length; i++) {
 
       db.Ingredients.forEach(key => { if(key.includes(N_Ingredients[i][1])) MyRecette.Ingredients.push(N_Ingredients[i][0], key[0],key[1]); });
@@ -73,9 +52,31 @@ functions = {
     
     MyRecette.Ingredients=N_Ingredients;
     MyRecette.Preparation=N_Preparation;
-    db.Recettes.push(MyRecette);
-    fs.writeFile('bdd.json', JSON.stringify(db, null, 2), dummy)
-    return [true, "recette ajouté"];
+
+    if(file.RecettesImage) {
+
+      fileName=params.RecettesName+'.'+file.RecettesImage.name.split('.').pop();
+      file.RecettesImage.mv(__dirname + '/public/images/' + fileName , function(err) {
+
+        if(err){
+
+          console.log(err);
+          return [false, "erreur lors du chargement de l'image"]
+
+        } else {
+
+          MyRecette.Image=fileName
+          console.log("uploaded");
+          db.Recettes.push(MyRecette);
+          fs.writeFile('test.json', JSON.stringify(db, null, 2), dummy)
+          return [true, "/"+params.lang+"/?Recettes="+MyRecette.Nom];
+
+        }
+
+      });
+
+    }
+
   }
 }
 functions

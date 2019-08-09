@@ -67,7 +67,6 @@ if ParamsGet.Menus=="All"
 else
   if lang[1] == 'fr-FR'
     -ParamsGet.Menus= ParamsGet.Menus.slice(3,5)+ParamsGet.Menus.slice(2,3)+ParamsGet.Menus.slice(0,2)+ParamsGet.Menus.slice(5,6)+ParamsGet.Menus.slice(6)
-    -console.log
   h1: span.fondcraie=new Date(ParamsGet.Menus).toLocaleDateString(lang[1], Doption)
   -checkmenu = true
   each menu in Menus

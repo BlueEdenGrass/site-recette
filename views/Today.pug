@@ -1,10 +1,11 @@
 h1: span.fondcraie Today menu is
 -checkmenu = true
 each menu in Menus
+  -console.log(Today, menu.Date)
   if menu.Date==Today
     -checkmenu = false
     .affichemenu.scroll
-      table
+      table(style="text-align: center;")
         tbody
           tr
             th: h3.fondcraie Matin: 
@@ -14,7 +15,7 @@ each menu in Menus
                 -checkrecette = false
                 td
                   a.Recette(href="/?Recettes="+recette.Nom)
-                    img(src="images/"+recette.Image, alt="No available" height="100" width="150", srcset="")
+                    img(src="/images/"+recette.Image, alt="No available" height="100" width="150", srcset="")
                     br
                     =recette.Nom
             if checkrecette
@@ -27,7 +28,7 @@ each menu in Menus
                 -checkrecette = false
                 td
                   a.Recette(href="/?Recettes="+recette.Nom)
-                    img(src="images/"+recette.Image, alt="No available" height="100" width="150", srcset="")
+                    img(src="/images/"+recette.Image, alt="No available" height="100" width="150", srcset="")
                     br
                     =recette.Nom
             if checkrecette
@@ -40,7 +41,7 @@ each menu in Menus
                 -checkrecette = false
                 td
                   a.Recette(href="/?Recettes="+recette.Nom)
-                    img(src="images/"+recette.Image, alt="No available" height="100" width="150", srcset="")
+                    img(src="/images/"+recette.Image, alt="No available" height="100" width="150", srcset="")
                     br
                     =recette.Nom
             if checkrecette

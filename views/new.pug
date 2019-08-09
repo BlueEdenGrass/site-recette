@@ -1,73 +1,73 @@
-form(action="/new", method="post")#new.modals
-  +newSelect(a, b)#Type
-  div#MenusForm
-    table
-      tbody
-        tr
-          th
-            label(for="MenuDate") Menu du :
-          td
-            input#MenuDate(type="date")
-        tr
-          th
-            label(for="MenuMatin") Programmation du matin :
-          td
-            input#MenuMatin(type="text")
-        tr
-          th
-            label(for="MenuMidi") Programmation du midi :
-          td
-            input#MenuMidi(type="text")
-        tr
-          th
-            label(for="MenuSoir") Programmation du soir :
-          td
-            input#MenuSoir(type="text")
+#forms(style='diplay:none')
+  table
+    tbody
+      tr
+        th
+          label(for="MenuDate") Menu du :
+        td
+          input#MenuDate(type="date" name="MenuDate")
+      tr
+        th
+          label(for="MenuMatin") Programmation du matin :
+        td
+          input#MenuMatin(type="text" name="MenuMatin")
+      tr
+        th
+          label(for="MenuMidi") Programmation du midi :
+        td
+          input#MenuMidi(type="text" name="MenuMidi")
+      tr
+        th
+          label(for="MenuSoir") Programmation du soir :
+        td
+          input#MenuSoir(type="text" name="MenuSoir")
 
-  div#RecettesForm
-    table
-      tbody
-        tr
-          th
-            label(for="RecetteNom") Nom de la recette :
-          td
-            input#RecetteNom(type="text")
-        tr
-          th
-            label(for="RecetteIngredients") Programmation du matin :
-          td
-            input#RecetteIngredients(type="text")
-        tr
-          th
-            label(for="RecetteImage") Programmation du midi :
-          td
-            input#MenuMidi(type="text")
-        tr
-          th
-            label(for="MenuSoir") Programmation du soir :
-          td
-            input#MenuSoir(type="text")
+  table
+    tbody
+      tr
+        th
+          label(for="RecetteNom") Nom :
+        td
+          input#RecetteNom(type="text" name="RecetteNom")
+      tr
+        th
+          label(for="RecetteImage") Image :
+        td
+          input#RecetteImage(type="file" name="RecetteImage")
+      tr
+        th
+          label(for="RecetteIngredients") Ingredients :
+        td
+          input#RecetteIngredients(type="text" name="RecetteIngredients")
+      tr
+        th
+          label(for="Preparation") Preparation :
+        td
+          input#Preparation(type="text" name="Preparation")
 
-  div#IngredientsForm
-    table
-      tbody
-        tr
-          th
-            label(for="MenuDate") Menu du :
-          td
-            input#MenuDate(type="date")
-        tr
-          th
-            label(for="MenuMatin") Programmation du matin :
-          td
-            input#MenuMatin(type="text")
-        tr
-          th
-            label(for="MenuMidi") Programmation du midi :
-          td
-            input#MenuMidi(type="text")
-        tr
-          th
-            label(for="MenuSoir") Programmation du soir :
-          td
-            input#MenuSoir(type="text")
+  table
+    tbody
+      tr
+        th
+          label(for="Mesure") Mesure:
+        td
+          +newSelect(['Gramme','Litre','Unité',''], b)#Mesure
+      tr
+        th
+          label(for="MenuMatin") Programmation du matin :
+        td
+          input#MenuMatin(type="text" name="MenuMatin")
+      tr
+        th
+          label(for="MenuMidi") Programmation du midi :
+        td
+          input#MenuMidi(type="text" name="MenuMidi")
+      tr
+        th
+          label(for="MenuSoir") Programmation du soir :
+        td
+          input#MenuSoir(type="text" name="MenuSoir")
+
+form#new.modals(action="/new", method="post" encType="multipart/form-data")
+  +newSelect(a, b)#FormType
+  #newstuff

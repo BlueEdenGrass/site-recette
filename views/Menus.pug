@@ -19,14 +19,14 @@ if ParamsGet.Menus=="All"
                   tbody
                     tr
                       th
-                        a.Menu(href="/?Menus="+new Date(date).toLocaleDateString())=new Date(date).toDateString()
+                        a.Menu(href="/?Menus="+new Date(date).toLocaleDateString(lang[1]))=new Date(date).toLocaleDateString(lang[1], Doption)
               -checkrecette = true
               each recette in Recettes
                 if recette.Nom == menu.Matin[0]
                   -checkrecette = false
                   div
                     a.Recette(href="/?Recettes="+recette.Nom)
-                      img(src="images/"+recette.Image, alt="No available" height="100" width="150", srcset="")
+                      img(src="/images/"+recette.Image, alt="No available" height="100" width="150", srcset="")
                       br
                       =recette.Nom
               if checkrecette
@@ -37,7 +37,7 @@ if ParamsGet.Menus=="All"
                   -checkrecette = false
                   div
                     a.Recette(href="/?Recettes="+recette.Nom)
-                      img(src="images/"+recette.Image, alt="No available" height="100" width="150", srcset="")
+                      img(src="/images/"+recette.Image, alt="No available" height="100" width="150", srcset="")
                       br
                       =recette.Nom
               if checkrecette
@@ -48,7 +48,7 @@ if ParamsGet.Menus=="All"
                   -checkrecette = false
                   div
                     a.Recette(href="/?Recettes="+recette.Nom)
-                      img(src="images/"+recette.Image, alt="No available" height="100" width="150", srcset="")
+                      img(src="/images/"+recette.Image, alt="No available" height="100" width="150", srcset="")
                       br
                       =recette.Nom
               if checkrecette
@@ -60,12 +60,15 @@ if ParamsGet.Menus=="All"
                 tbody
                   tr
                     th
-                      a(href="/?Menus="+new Date(date).toLocaleDateString())=new Date(date).toDateString() 
+                      a(href="/?Menus="+new Date(date).toLocaleDateString(lang[1]))=new Date(date).toLocaleDateString(lang[1], Doption)
             div Aucune programmation
             div Aucune programmation
             div Aucune programmation
 else
-  h1: span.fondcraie The Menus Of #{ParamsGet.Menus}
+  if lang[1] == 'fr-FR'
+    -ParamsGet.Menus= ParamsGet.Menus.slice(3,5)+ParamsGet.Menus.slice(2,3)+ParamsGet.Menus.slice(0,2)+ParamsGet.Menus.slice(5,6)+ParamsGet.Menus.slice(6)
+    -console.log
+  h1: span.fondcraie=new Date(ParamsGet.Menus).toLocaleDateString(lang[1], Doption)
   -checkmenu = true
   each menu in Menus
     if menu.Date == new Date(ParamsGet.Menus).valueOf()
@@ -81,7 +84,7 @@ else
                   -checkrecette = false
                   td
                     a.Recette(href="/?Recettes="+recette.Nom)
-                      img(src="images/"+recette.Image, alt="No available" height="100" width="150", srcset="")
+                      img(src="/images/"+recette.Image, alt="No available" height="100" width="150", srcset="")
                       br
                       =recette.Nom
               if checkrecette
@@ -94,7 +97,7 @@ else
                   -checkrecette = false
                   td
                     a.Recette(href="/?Recettes="+recette.Nom)
-                      img(src="images/"+recette.Image, alt="No available" height="100" width="150", srcset="")
+                      img(src="/images/"+recette.Image, alt="No available" height="100" width="150", srcset="")
                       br
                       =recette.Nom
               if checkrecette
@@ -107,7 +110,7 @@ else
                   -checkrecette = false
                   td
                     a.Recette(href="/?Recettes="+recette.Nom)
-                      img(src="images/"+recette.Image, alt="No available" height="100" width="150", srcset="")
+                      img(src="/images/"+recette.Image, alt="No available" height="100" width="150", srcset="")
                       br
                       =recette.Nom
               if checkrecette

@@ -1,5 +1,6 @@
 #InputType(style='display:none;')
   input(name='Search' type='text' placeholder='Disabled' disabled require)
+
 form#lignecraie(method='post' autocomplete="off")
   label(for="SearchInput") Search
   span#SearchInput
@@ -59,14 +60,12 @@ form#lignecraie(method='post' autocomplete="off")
         if match
           -found++
           if ParamsPost.In == 'Menus'
-            li: a.Menu(href="/?Menus="+new Date(search).toLocaleDateString())=new Date(search).toDateString()
+            li: a.Menu(href="/?Menus="+new Date(key.Date).toLocaleDateString(lang[1]))=new Date(key.Date).toLocaleDateString(lang[1], Doption)
           else
             li: a.Recette(href="/?Recettes="+key.Nom)=key.Nom
     if found==0
       h3(style="text-align: center") Aucun resultat
-form(action="/test", method="post")
-  input(type="file" name='test')
-  button go
+
 script.
   let In, By;
   const Search = document.getElementById("SearchInput");

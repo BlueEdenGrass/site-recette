@@ -1,7 +1,7 @@
 #InputType(style='display:none;')
   input(name='Search' type='text' placeholder='Disabled' disabled require)
 
-form#lignecraie(method='post' autocomplete="off")
+form.lignecraie(method='post' autocomplete="off")
   label(for="SearchInput") Search
   span#SearchInput
     if ParamsPost.In == 'Menus'

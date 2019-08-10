@@ -1,7 +1,9 @@
 functions = {
   NewMenu: function(params, db) {
+    debugger
     let MyMenu;
-    MyMenu.Date=new Date(Recettesrams.'.enuDate']).valueOf;
+    if(Object.prototype.toString.call(new Date) === "[object Date]") MyMenu.Date=new Date(params.MenuDate).valueOf;
+    else return [false, "Invalid Date"];
     for (let i = 0; i < params.MenuMatin.split(';').length; i++) {
       
       if(!db.Recettes.some(row => row.Nom==params.MenuMatin.split(';')[i])) return [false, params.MenuMatin.split(';')[i]+" ne fait pas partie des recettes connues"];
@@ -20,7 +22,8 @@ functions = {
 
     }
     MyMenu.Soir=params.MenuSoir.split(';');
-    fs.writeFile('bdd.json', JSON.stringify(db, null, 2), dummy)
+    fs.writeFile('test.json', JSON.stringify(db, null, 2), dummy)
+    return [true,"/"+params.lang+"?Menus="+MyMenu.Date]
   },
   NewRecette: function(params, db, file) {
     let MyRecette={Nom:"",Image:"",Ingredients:[],Preparation:""};
@@ -69,7 +72,7 @@ functions = {
           console.log("uploaded");
           db.Recettes.push(MyRecette);
           fs.writeFile('test.json', JSON.stringify(db, null, 2), dummy)
-          return [true, "/"+params.lang+"/?Recettes="+MyRecette.Nom];
+          return [true, "/"+params.lang+"?Recettes="+MyRecette.Nom];
 
         }
 

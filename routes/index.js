@@ -6,6 +6,7 @@ const db = "JSON.parse(fs.readFileSync('bdd.json', 'utf-8'))";
 let functions = "eval(fs.readFileSync('functions.js', 'utf-8'))";
 const languages = [[""], ["fr/","fr-FR"], ['en/','en-US']];
 let newError = false;
+
 for (let i = 0; i < languages.length; i++) {
 
   router.all('/'+languages[i][0], function(req, res, next) {
@@ -62,23 +63,11 @@ for (let i = 0; i < languages.length; i++) {
 router.post('/New', function(req, res, next) {
 
   let msg;
+  if(req.body.lang=="") req.body.lang='en/';
+  console.log('eval(functions).'+req.body.NewFeature+'(req.body, eval(db), req.files)')
+    debugger
+    msg=eval('eval(functions).'+req.body.NewFeature+'(req.body, eval(db), req.files)');
 
-  if(req.body['NewFeature']=='Menus'){
-
-    msg=eval(functions).NewMenu(req.body, eval(db));
-
-  }
-
-  else if(req.body['NewFeature']=='Recettes'){
-
-    msg=eval(functions).NewRecette(req.body, eval(db), req.files);
-
-  }
-  else if(req.body['NewFeature']=='Ingredient'){
-
-    msg=eval(functions).NewIngredient(req.body, eval(db));
-
-  }
 
   if(msg[0]) res.redirect(msg[1]);
   else newError=msg[1], res.redirect('back');

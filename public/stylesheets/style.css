@@ -13,14 +13,6 @@ html,body {
   background-attachment: fixed;
   background-size: cover;
 }
-.modal{
-  display: none;
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-}
 .scroll{
   overflow-y: scroll;
 }
@@ -104,6 +96,22 @@ main {
   border: ridge 4px #b66f22;
   border-bottom-style: groove;
   border-right-style: groove;
+}
+.modals{
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 2.5%;
+  border: dashed white 0.25em;
+  background-image: url(../images/blackboard.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+}
+.modals.active{
+  display: block;
 }
 .container{
   position: relative;
@@ -203,6 +211,7 @@ main {
   display: grid;
   grid-template-columns: auto auto;
 }
+
 .flex{
   display: inline-flex;
   position: absolute;
@@ -278,12 +287,12 @@ main {
   justify-content: center;
   min-height: 100%;
 }
-#lignecraie{
+.lignecraie{
   font-size: 2vw;
   text-align: center;
   padding: 5px 0;
 }
-#lignecraie input, #lignecraie select, #lignecraie button {
+.lignecraie input, .lignecraie select, .lignecraie button {
   height: 3vw;
   border: 0;
   border-bottom: 2px dashed #fff;
@@ -295,22 +304,22 @@ main {
   font: inherit;
   font-size: inherit;
 }
-#lignecraie option{
+.lignecraie option{
   background: #343434;
 }
-#lignecraie>select>option>span:hover{
+.lignecraie>select>option>span:hover{
   background: #fff;
   color: #343434;
 }
-#lignecraie button{
+.lignecraie button{
    border: none;
    margin: 0 1.5%;
 }
-#lignecraie button img{
+.lignecraie button img{
   margin-bottom: -30%;
   width: 2.5vw;
 }
-#lignecraie label{
+.lignecraie label{
  margin:0 0.5%;
 }
 footer{

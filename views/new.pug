@@ -1,4 +1,4 @@
-#forms(style='diplay:none')
+#forms(style='display:none')
   table
     tbody
       tr
@@ -68,6 +68,16 @@
         td
           input#MenuSoir(type="text" name="MenuSoir")
 
-form#new.modals(action="/new", method="post" encType="multipart/form-data")
-  +newSelect(a, b)#FormType
-  #newstuff
+form#new.modals.active(action="/new", method="post" encType="multipart/form-data")
+  .lignecraie
+    input(type="hidden" value=lang[0])
+    table(style='margin:auto;')
+      tr
+        td: label(for="FormType") New :
+        td: select#FormType(name="NewFeature")
+          option(value="NewMenu") Menu
+          option(value="NewRecette") Recette
+          option(value="NewIngredient") Menu
+
+    #newstuff
+    button(style='margin:auto') valider

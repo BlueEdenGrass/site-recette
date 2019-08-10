@@ -1,14 +1,15 @@
-header
-  a#HomeLink.navlink(href='/'+lang[0])
-    span.langue.french.active Accueil
-    span.langue.english Home
-    span.langue.spanish bienvenida
-  a#RecettesLink.navlink(href='/'+lang[0]+'?Recettes=All')
-    span.langue.french.active Recettes
-    span.langue.english Quality procces
-    span.langue.spanish Calidad
-  a#MenusLink.navlink(href='/'+lang[0]+'?Menus=All')
-    span.langue.french.active Menus
-    span.langue.english Placement
-    span.langue.spanish Colocacion
-  a#SearchLink.navlink(href='/'+lang[0]+'Search')
+if lang
+  header
+    a#HomeLink.navlink(href='/'+lang[0])
+      span.langue.french.active Accueil
+      span.langue.english Home
+      span.langue.spanish bienvenida
+    a#RecettesLink.navlink(href='/'+lang[0]+'?Recettes=All')
+      span.langue.french.active Recettes
+      span.langue.english Quality procces
+      span.langue.spanish Calidad
+    a#MenusLink.navlink(href='/'+lang[0]+'?Menus=All')
+      span.langue.french.active Menus
+      span.langue.english Placement
+      span.langue.spanish Colocacion
+    a#SearchLink.navlink(href='/'+lang[0]+'Search')

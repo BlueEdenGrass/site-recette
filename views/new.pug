@@ -80,4 +80,6 @@ form#new.modals(action="/new", method="post" encType="multipart/form-data")
           option(value="NewIngredient") Ingredient
 
     #formfield
-    button valider
+    div
+      span(onclick="Modals('new','close')") Fermer
+      button valider

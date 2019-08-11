@@ -7,6 +7,13 @@ script.
   else if ( url.includes("?Recettes") ) document.getElementById('RecettesLink').className+= " active";
   else document.getElementById('HomeLink').className+= " active";
   
+  function Modals(action){
+    let target = document.getElementById('new');
+    if (target.classList.contains('active'))target.classList.remove('active');
+    if(action=="open") target.className += "  active";
+
+  }
+
   const forms = document.getElementById("forms");
   const tables = forms.children;
   const FormType=document.getElementById("FormType");

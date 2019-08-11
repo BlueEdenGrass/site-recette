@@ -61,14 +61,13 @@ for (let i = 0; i < languages.length; i++) {
 }
 
 router.post('/New', function(req, res, next) {
-
+  debugger;
   let msg;
-  if(req.body.lang=="") req.body.lang='en/';
-  console.log('eval(functions).'+req.body.NewFeature+'(req.body, eval(db), req.files)')
-    debugger
-    msg=eval('eval(functions).'+req.body.NewFeature+'(req.body, eval(db), req.files)');
-
-
+  if(req.body.lang==""||!languages.some(row => row.includes(req.body.lang))) req.body.lang='en/';
+  arr=["NewMenu", "NewRecette", "NewIngredient"]
+  if(arr.includes(req.body.NewFeature)) msg=eval('eval(functions).'+req.body.NewFeature+'(req.body, eval(db), req.files)');
+  else msg[false, "requete inconnu"];
+  debugger;
   if(msg[0]) res.redirect(msg[1]);
   else newError=msg[1], res.redirect('back');
 

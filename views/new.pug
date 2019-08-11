@@ -69,15 +69,15 @@
           input#MenuSoir(type="text" name="MenuSoir")
 
 form#new.modals.active(action="/new", method="post" encType="multipart/form-data")
-  .lignecraie
-    input(type="hidden" value=lang[0])
-    table(style='margin:auto;')
+  .lignecraie.grid
+    input(type="hidden" value=lang[0] name='lang')
+    table
       tr
         td: label(for="FormType") New :
         td: select#FormType(name="NewFeature")
           option(value="NewMenu") Menu
           option(value="NewRecette") Recette
-          option(value="NewIngredient") Menu
+          option(value="NewIngredient") Ingredient
 
-    #newstuff
-    button(style='margin:auto') valider
+    #formfield
+    button valider

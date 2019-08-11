@@ -111,7 +111,13 @@ main {
   background-size: cover;
 }
 .modals.active{
-  display: block;
+  display: grid;
+}
+.grid{
+  display: grid;
+}
+.grid table{
+  margin: auto;
 }
 .container{
   position: relative;
@@ -303,6 +309,7 @@ main {
   font-family: craie;
   font: inherit;
   font-size: inherit;
+  margin: 0 0.5%;
 }
 .lignecraie option{
   background: #343434;
@@ -318,9 +325,6 @@ main {
 .lignecraie button img{
   margin-bottom: -30%;
   width: 2.5vw;
-}
-.lignecraie label{
- margin:0 0.5%;
 }
 footer{
    position: fixed;

@@ -7,3 +7,103 @@ script.
     else if ( url.includes("?Recettes") ) document.getElementById('RecettesLink').className+= " active";
     else document.getElementById('HomeLink').className+= " active";
   }
+  const forms = document.getElementById("forms");
+  const tables = forms.children;
+  const FormType=document.getElementById("FormType");
+  FormType.onchange=function(){
+    let formfield = document.getElementById("formfield");
+    formfield.innerHTML="";
+    switch (this.value) {
+      case "NewMenu": formfield.appendChild(tables[0].cloneNode(true)); break;
+      case "NewRecette": formfield.appendChild(tables[1].cloneNode(true)); break;
+      case "NewIngredient": formfield.appendChild(tables[2].cloneNode(true)); break;
+    }
+  }
+  FormType.onchange();
+if search||error  
+  script
+    if search
+      |  let In, By;
+      |  const Search = document.getElementById("SearchInput");
+      |  const baseInput = document.getElementById("InputType").children[0].cloneNode(true);
+      |  In = document.getElementById('InSelect').onchange = function(){
+      |    if(Search.children.length > 1) Search.innerHTML="", Search.appendChild(baseInput);
+      |    if (this.value == 'Select'){
+      |      Search.children[0].value = "";
+      |      Search.children[0].setAttributee("disabled", "");
+      |      Search.children[0].attributes["type"].value = "text"
+      |      for(i=By.length-1; i>=0; i-=1){By.remove(i)}
+      |    }
+      |    else if (this.value == 'Menus'){
+      |      for(i=By.length-1; i>=0; i-=1){By.remove(i)}
+      |      let myOptions=['Recettes', 'Date']
+      |      for(i=1; i<=myOptions.length; i++){
+      |        opt=document.createElement("option");
+      |        opt.value = myOptions[i-1];
+      |        opt.text = myOptions[i-1];
+      |        By.add(opt, i)
+      |      }
+      |      Search.children[0].attributes["type"].value = "text",
+      |      Search.children[0].attributes["Placeholder"].value = "ex: Recette 1, Recette 2",
+      |      Search.children[0].removeAttribute("disabled");
+      |    }
+      |    else if (this.value == 'Recettes'){
+      |      for(i=By.length-1; i>=0; i-=1){By.remove(i)}
+      |      let myOptions=['Nom', 'Ingredients']
+      |      for(i=1; i<=myOptions.length; i++){
+      |        let opt=document.createElement("option");
+      |        opt.value = myOptions[i-1];
+      |        opt.text = myOptions[i-1];
+      |        By.add(opt,i)
+      |      }
+      |      Search.children[0].attributes["type"].value = "text",
+      |      Search.children[0].attributes["Placeholder"].value = "ex: Ma recette",
+      |      Search.children[0].removeAttribute("disabled");
+      |    }
+      |    else {
+      |      for(i=By.length-1; i>=0; i-=1){By.remove(i)}
+      |      let myOptions=['Select']
+      |      for(i=1; i<=myOptions.length; i++){
+      |        opt=document.createElement("option");
+      |        opt.value = myOptions[i-1];
+      |        opt.text = myOptions[i-1];
+      |        By.add(opt, i)
+      |      }
+      |      Search.children[0].attributes["type"].value = "text";
+      |      Search.children[0].value = "";
+      |      Search.children[0].setAttribute("disabled", "");
+      |      Search.children[0].attributes["Placeholder"].value = "Disabled";
+      |    }
+      |  }
+      |  By = document.getElementById("BySelect")
+      |  By.onchange = function(){
+      |    if (this.value == 'Date') {
+      |      Search.innerHTML="<input name='Search' type='number' require Placeholder='Day' min=1 max=31 style='width:10%;'><input name='Search2' value='2010-01'  type='month' style='padding:1px; text-align: left; width: 29%;'>";
+      |      Search.children[1].onchange = function(){ if(this.value=="") this.value='2010-01';}
+      |    }
+      |    else if (this.value == 'Recettes') {
+      |      Search.innerHTML="";
+      |      Search.appendChild(baseInput);
+      |      Search.children[0].attributes["type"].value = "text";
+      |      Search.children[0].value = "";
+      |      Search.children[0].attributes["Placeholder"].value = "ex: Recette 1, Recette 2";
+      |      Search.children[0].removeAttribute("disabled");
+      |    }
+      |    else if (this.value == 'Ingredients'){
+      |      Search.children[0].attributes["type"].value = "text";
+      |      Search.children[0].attributes["Placeholder"].value = "ex: Ingredient 1, Ingredient 2";
+      |      Search.children[0].removeAttribute("disabled");
+      |    }
+      |    else if (this.value == 'Nom'){
+      |      Search.children[0].attributes["type"].value = "text";
+      |      Search.children[0].attributes["Placeholder"].value = "ex: Ma recette";
+      |      Search.children[0].removeAttribute("disabled");
+      |    }
+      |    else {
+      |      Search.children[0].value = "Unknown request";
+      |      Search.children[0].setAttribute("disabled", "")
+      |    }
+      |  }
+    if error
+      |alert("#{error}");
+  

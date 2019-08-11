@@ -37,7 +37,7 @@ functions = {
       return [false, "Le nom des recette doit avoir au moins 2 caractères"];
 
     }
-
+    debugger
     let N_Ingredients=params.RecettesIngredient.split(';');
     for (let i = 0; i < N_Ingredients.length; i++) {
 
@@ -80,6 +80,9 @@ functions = {
 
     }
 
+  },
+  NewIngredient: function(params, db){
+    return [false, "this function is a dummy"];
   }
 }
 functions

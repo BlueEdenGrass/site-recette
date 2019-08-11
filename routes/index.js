@@ -25,7 +25,7 @@ for (let i = 0; i < languages.length; i++) {
         Recettes: _.sortBy(eval(db).Recettes, 'Nom'),
         Today: D,
         ParamsGet: req.query,
-        error: newError
+        alertMsg: newError
       
       });
       
@@ -48,7 +48,7 @@ for (let i = 0; i < languages.length; i++) {
         Recettes: eval(db).Recettes,
         ParamsPost: req.body,
         search: true,
-        error: newError
+        alertMsg: newError
 
       });
 
@@ -61,13 +61,13 @@ for (let i = 0; i < languages.length; i++) {
 }
 
 router.post('/New', function(req, res, next) {
-  debugger;
+
   let msg;
   if(req.body.lang==""||!languages.some(row => row.includes(req.body.lang))) req.body.lang='en/';
   arr=["NewMenu", "NewRecette", "NewIngredient"]
+  console.log(req.body.NewFeature);
   if(arr.includes(req.body.NewFeature)) msg=eval('eval(functions).'+req.body.NewFeature+'(req.body, eval(db), req.files)');
   else msg[false, "requete inconnu"];
-  debugger;
   if(msg[0]) res.redirect(msg[1]);
   else newError=msg[1], res.redirect('back');
 

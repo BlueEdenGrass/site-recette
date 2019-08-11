@@ -1,12 +1,12 @@
 script.
-  window.onload = function(){
-    url = window.location;
-    url=url.toString()
-    if( url.includes('/Search')) document.getElementById('SearchLink').className+= " active";
-    else if ( url.includes("?Menus") ) document.getElementById('MenusLink').className+= " active";
-    else if ( url.includes("?Recettes") ) document.getElementById('RecettesLink').className+= " active";
-    else document.getElementById('HomeLink').className+= " active";
-  }
+    
+  url = window.location;
+  url=url.toString()
+  if( url.includes('/Search')) document.getElementById('SearchLink').className+= " active";
+  else if ( url.includes("?Menus") ) document.getElementById('MenusLink').className+= " active";
+  else if ( url.includes("?Recettes") ) document.getElementById('RecettesLink').className+= " active";
+  else document.getElementById('HomeLink').className+= " active";
+  
   const forms = document.getElementById("forms");
   const tables = forms.children;
   const FormType=document.getElementById("FormType");
@@ -20,9 +20,10 @@ script.
     }
   }
   FormType.onchange();
-if search||error  
+if search||alertMsg  
   script
     if search
+      |
       |  let In, By;
       |  const Search = document.getElementById("SearchInput");
       |  const baseInput = document.getElementById("InputType").children[0].cloneNode(true);
@@ -104,6 +105,9 @@ if search||error
       |      Search.children[0].setAttribute("disabled", "")
       |    }
       |  }
-    if error
-      |alert("#{error}");
+    if alertMsg
+      |
+      | window.onload = function(){
+      |   alert("#{alertMsg}");
+      | }
   

@@ -57,8 +57,8 @@ form.lignecraie(method='post' autocomplete="off")
         if match
           -found++
           if ParamsPost.In == 'Menus'
-            li: a.Menu(href="/?Menus="+new Date(key.Date).toLocaleDateString(lang[1]))=new Date(key.Date).toLocaleDateString(lang[1], Doption)
+            li: a.Menu(href="/"+lang[0]+"?Menus="+new Date(key.Date).toLocaleDateString(lang[1]))=new Date(key.Date).toLocaleDateString(lang[1], Doption)
           else
-            li: a.Recette(href="/?Recettes="+key.Nom)=key.Nom
+            li: a.Recette(href="/"+lang[0]+"?Recettes="+key.Nom)=key.Nom
     if found==0
       h3(style="text-align: center") Aucun resultat

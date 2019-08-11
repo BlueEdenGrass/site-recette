@@ -13,7 +13,7 @@ each menu in Menus
               if menu.Matin.includes(recette.Nom) 
                 -checkrecette = false
                 td
-                  a.Recette(href="/?Recettes="+recette.Nom)
+                  a.Recette(href="/"+lang[0]+"?Recettes="+recette.Nom)
                     img(src="/images/"+recette.Image, alt="No available" height="100" width="150", srcset="")
                     br
                     =recette.Nom
@@ -26,7 +26,7 @@ each menu in Menus
               if menu.Midi.includes(recette.Nom)
                 -checkrecette = false
                 td
-                  a.Recette(href="/?Recettes="+recette.Nom)
+                  a.Recette(href="/"+lang[0]+"?Recettes="+recette.Nom)
                     img(src="/images/"+recette.Image, alt="No available" height="100" width="150", srcset="")
                     br
                     =recette.Nom
@@ -39,7 +39,7 @@ each menu in Menus
               if menu.Soir.includes(recette.Nom)
                 -checkrecette = false
                 td
-                  a.Recette(href="/?Recettes="+recette.Nom)
+                  a.Recette(href="/"+lang[0]+"?Recettes="+recette.Nom)
                     img(src="/images/"+recette.Image, alt="No available" height="100" width="150", srcset="")
                     br
                     =recette.Nom

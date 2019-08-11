@@ -1,20 +1,19 @@
 extends layout
 
 block content
-  main
-    .container
-      .page
-          if search
-            include search
-          else if ParamsGet.Recettes && ParamsGet.Menus
+  .container
+    .page
+      if search
+        include search
+      else if ParamsGet.Recettes && ParamsGet.Menus
             h1 ERROR
             h4 Unavailable resquest
-          else if ParamsGet.Recettes
+      else if ParamsGet.Recettes
             include Recettes
-          else if ParamsGet.Menus
+      else if ParamsGet.Menus
             include Menus
-          else      
+      else      
             include Today
-          include new
-    .news
-      include course
+      include new
+  .news
+    include course

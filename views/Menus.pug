@@ -19,13 +19,13 @@ if ParamsGet.Menus=="All"
                   tbody
                     tr
                       th
-                        a.Menu(href="/?Menus="+new Date(date).toLocaleDateString(lang[1]))=new Date(date).toLocaleDateString(lang[1], Doption)
+                        a.Menu(href="/"+lang[0]+"?Menus="+new Date(date).toLocaleDateString(lang[1]))=new Date(date).toLocaleDateString(lang[1], Doption)
               -checkrecette = true
               each recette in Recettes
                 if recette.Nom == menu.Matin[0]
                   -checkrecette = false
                   div
-                    a.Recette(href="/?Recettes="+recette.Nom)
+                    a.Recette(href="/"+lang[0]+"?Recettes="+recette.Nom)
                       img(src="/images/"+recette.Image, alt="No available" height="100" width="150", srcset="")
                       br
                       =recette.Nom
@@ -36,7 +36,7 @@ if ParamsGet.Menus=="All"
                 if recette.Nom == menu.Midi[0]
                   -checkrecette = false
                   div
-                    a.Recette(href="/?Recettes="+recette.Nom)
+                    a.Recette(href="/"+lang[0]+"?Recettes="+recette.Nom)
                       img(src="/images/"+recette.Image, alt="No available" height="100" width="150", srcset="")
                       br
                       =recette.Nom
@@ -47,7 +47,7 @@ if ParamsGet.Menus=="All"
                 if recette.Nom == menu.Soir[0]
                   -checkrecette = false
                   div
-                    a.Recette(href="/?Recettes="+recette.Nom)
+                    a.Recette(href="/"+lang[0]+"?Recettes="+recette.Nom)
                       img(src="/images/"+recette.Image, alt="No available" height="100" width="150", srcset="")
                       br
                       =recette.Nom
@@ -60,7 +60,7 @@ if ParamsGet.Menus=="All"
                 tbody
                   tr
                     th
-                      a(href="/?Menus="+new Date(date).toLocaleDateString(lang[1]))=new Date(date).toLocaleDateString(lang[1], Doption)
+                      a(href="/"+lang[0]+"?Menus="+new Date(date).toLocaleDateString(lang[1]))=new Date(date).toLocaleDateString(lang[1], Doption)
             div Aucune programmation
             div Aucune programmation
             div Aucune programmation
@@ -82,7 +82,7 @@ else
                 if menu.Matin.includes(recette.Nom) 
                   -checkrecette = false
                   td
-                    a.Recette(href="/?Recettes="+recette.Nom)
+                    a.Recette(href="/"+lang[0]+"?Recettes="+recette.Nom)
                       img(src="/images/"+recette.Image, alt="No available" height="100" width="150", srcset="")
                       br
                       =recette.Nom
@@ -95,7 +95,7 @@ else
                 if menu.Midi.includes(recette.Nom)
                   -checkrecette = false
                   td
-                    a.Recette(href="/?Recettes="+recette.Nom)
+                    a.Recette(href="/"+lang[0]+"?Recettes="+recette.Nom)
                       img(src="/images/"+recette.Image, alt="No available" height="100" width="150", srcset="")
                       br
                       =recette.Nom
@@ -108,7 +108,7 @@ else
                 if menu.Soir.includes(recette.Nom)
                   -checkrecette = false
                   td
-                    a.Recette(href="/?Recettes="+recette.Nom)
+                    a.Recette(href="/"+lang[0]+"?Recettes="+recette.Nom)
                       img(src="/images/"+recette.Image, alt="No available" height="100" width="150", srcset="")
                       br
                       =recette.Nom

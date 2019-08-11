@@ -1,5 +1,5 @@
-if lang
-  header
+header
+  if lang
     a#HomeLink.navlink(href='/'+lang[0])
       span.langue.french.active Accueil
       span.langue.english Home
@@ -13,3 +13,5 @@ if lang
       span.langue.english Placement
       span.langue.spanish Colocacion
     a#SearchLink.navlink(href='/'+lang[0]+'Search')
+  else 
+    <a href=javascript:history.back()>Go back to the site</a>

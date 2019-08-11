@@ -96,6 +96,7 @@ main {
   border: ridge 4px #b66f22;
   border-bottom-style: groove;
   border-right-style: groove;
+  color: #fff;
 }
 .modals{
   display: none;

@@ -1,47 +1,55 @@
 functions = {
   NewMenu: function(params, db) {
-    debugger
-    let MyMenu;
-    if(Object.prototype.toString.call(new Date) === "[object Date]") MyMenu.Date=new Date(params.MenuDate).valueOf;
+    let MyMenu={Date:0, Matin:[], Midi:[], Soir:[]};
+    let a=new Date(params.MenuDate);
+    if(a!="Invalid Date") MyMenu.Date = a.valueOf();
     else return [false, "Invalid Date"];
-    for (let i = 0; i < params.MenuMatin.split(';').length; i++) {
-      
-      if(!db.Recettes.some(row => row.Nom==params.MenuMatin.split(';')[i])) return [false, params.MenuMatin.split(';')[i]+" ne fait pas partie des recettes connues"];
+    if(params.MenuMatin==""&&params.MenuMidi==""&&params.MenuSoir=="") return [false, "Un menu doit avoir au moins une recette"];
+    if(params.MenuMatin!=""){
+      for (let i = 0; i < params.MenuMatin.split(';').length; i++) {
+        
+        if(!db.Recettes.some(row => row.Nom==params.MenuMatin.split(';')[i])) return [false, params.MenuMatin.split(';')[i]+" ne fait pas partie des recettes connues"];
 
+      }
     }
     MyMenu.Matin=params.MenuMatin.split(';');
-    for (let i = 0; i < params.MenuMidi.split(';').length; i++) {
-      
-      if(!db.Recettes.some(row => row.Nom==params.MenuMidi.split(';')[i])) return [false, params.MenuMidi.split(';')[i]+" ne fait pas partie des recettes connues"];
+    if(params.MenuMidi!=""){
+      for (let i = 0; i < params.MenuMidi.split(';').length; i++) {
+        
+        if(!db.Recettes.some(row => row.Nom==params.MenuMidi.split(';')[i])) return [false, params.MenuMidi.split(';')[i]+" ne fait pas partie des recettes connues"];
 
+      }
     }
     MyMenu.Midi=params.MenuMidi.split(';');
-    for (let i = 0; i < params.MenuSoir.split(';').length; i++) {
-      
-      if(!db.Recettes.some(row => row.Nom==params.MenuSoir.split(';')[i])) return [false, params.MenuSoir.split(';')[i]+" ne fait pas partie des recettes connues"];
+    if(params.MenuSoir!=""){
+      for (let i = 0; i < params.MenuSoir.split(';').length; i++) {
+        
+        if(!db.Recettes.some(row => row.Nom==params.MenuSoir.split(';')[i])) return [false, params.MenuSoir.split(';')[i]+" ne fait pas partie des recettes connues"];
 
+      }
     }
     MyMenu.Soir=params.MenuSoir.split(';');
-    fs.writeFile('test.json', JSON.stringify(db, null, 2), dummy)
-    return [true,"/"+params.lang+"?Menus="+MyMenu.Date]
+    db.Menus.push(MyMenu);
+    fs.writeFile('bdd.json', JSON.stringify(db, null, 2), dummy);
+    return [true, "/"+params.lang+"?Menus="+new Date(MyMenu.Date).tolocaleDateString()]
   },
   NewRecette: function(params, db, file) {
     let MyRecette={Nom:"",Image:"",Ingredients:[],Preparation:""};
-    if(params.RecettesName.length<2){
-
-      if(db.Recettes.some(row => row.includes(params.RecettesNames))) MyRecette.Nom=params.RecettesName;
-      else [false, "Ce nom de recette est déja utilisé"];
-
-    } else {
+    if(params.RecetteNom.length<2){
 
       return [false, "Le nom des recette doit avoir au moins 2 caractères"];
 
+    } else {
+
+      if(db.Recettes.some(row => row.Nom==params.RecetteNom)) return [false, "Ce nom de recette est déja utilisé"];
+      else MyRecette.Nom=params.RecetteNom;
+
     }
-    debugger
-    let N_Ingredients=params.RecettesIngredient.split(';');
+    if(params.RecetteIngredients.substr(-1)==","||params.RecetteIngredients.substr(-1)==";") [false, "la liste des ingredients ne doit pas finir par ',' ou par ';'."];
+    let N_Ingredients=params.RecetteIngredients.split(';');
     for (let i = 0; i < N_Ingredients.length; i++) {
 
-      N_Ingredients[i].split(',');
+      N_Ingredients[i]=N_Ingredients[i].split(',');
       if(N_Ingredients[i][0].isNaN) return 'quantité invalide';
       if(!db.Ingredients.some(row => row.includes(N_Ingredients[i][1]))) return [false, "unknown ingredients"];
     
@@ -53,13 +61,13 @@ functions = {
       
     }
     
-    MyRecette.Ingredients=N_Ingredients;
-    MyRecette.Preparation=N_Preparation;
+    MyRecette.Preparation=params.Preparation;
 
-    if(file.RecettesImage) {
+    if(file.RecetteImage) {
 
-      fileName=params.RecettesName+'.'+file.RecettesImage.name.split('.').pop();
-      file.RecettesImage.mv(__dirname + '/public/images/' + fileName , function(err) {
+      fileName=params.RecetteNom+'.'+file.RecetteImage.name.split('.').pop();
+      debugger;
+      file.RecetteImage.mv(__dirname + '/../public/images/' + fileName , function(err) {
 
         if(err){
 
@@ -68,21 +76,22 @@ functions = {
 
         } else {
 
-          MyRecette.Image=fileName
           console.log("uploaded");
-          db.Recettes.push(MyRecette);
-          fs.writeFile('test.json', JSON.stringify(db, null, 2), dummy)
-          return [true, "/"+params.lang+"?Recettes="+MyRecette.Nom];
 
         }
 
       });
-
+      MyRecette.Image=fileName
+      db.Recettes.push(MyRecette);
+      fs.writeFile('bdd.json', JSON.stringify(db, null, 2), dummy)
+      return [true, "/"+params.lang+"?Recettes="+MyRecette.Nom];
     }
 
   },
   NewIngredient: function(params, db){
+
     return [false, "this function is a dummy"];
+  
   }
 }
 functions

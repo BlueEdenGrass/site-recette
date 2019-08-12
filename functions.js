@@ -57,7 +57,7 @@ functions = {
 
     for (let i = 0; i < N_Ingredients.length; i++) {
 
-      db.Ingredients.forEach(key => { if(key.includes(N_Ingredients[i][1])) MyRecette.Ingredients.push(N_Ingredients[i][0], key[0],key[1]); });
+      db.Ingredients.forEach(key => { if(key.includes(N_Ingredients[i][1])) MyRecette.Ingredients.push([N_Ingredients[i][0], key[0],key[1]]); });
       
     }
     
@@ -90,7 +90,15 @@ functions = {
   },
   NewIngredient: function(params, db){
 
-    return [false, "this function is a dummy"];
+    let Mesure = ["Gramme", "Litre", "Sachet", "Unité", "+"], MyIngredient=[];
+    if(!Mesure.includes(params.IngredientMesure)) return [false, "Unité de mesure inconnue"];
+    params.IngredientNom= params.IngredientNom.charAt(0).toUpperCase() + params.IngredientNom.slice(1).toLowerCase();
+    console.log(params.IngredientNom);
+    if(db.Ingredients.some(row => row[1]==params.IngredientNom)) return [false, paramsIngredientNom+" est déja dans la base de donnée"];
+    MyIngredient=[params.IngredientMesure, params.IngredientNom];
+    db.Ingredients.push(MyIngredient);
+    fs.writeFile('bdd.json', JSON.stringify(db, null, 2), dummy)
+    return [false, "L'ingredient "+MyIngredient[1]+" à été ajouté"];
   
   }
 }

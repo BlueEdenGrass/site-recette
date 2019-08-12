@@ -135,6 +135,14 @@ main {
   color: #fff;
   font-family: craie;
 }
+.page>.grid{
+  position:absolute;
+  top:0;
+  right:0;
+  bottom:0;
+  left:0;
+  grid-template-rows: 4em auto;
+}
 .page h1{
   text-align: center;
   background-image: url(../images/fondcraie.jpg);

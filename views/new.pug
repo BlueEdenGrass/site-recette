@@ -1,23 +1,34 @@
+form#new.modals(autocomplete='off' action="/new", metdod="post" encType="multipart/form-data")
+  .lignecraie.grid
+    input(type="hidden" value=lang[0] name='lang')
+    table
+      tr
+        td: label(for="FormType") New :
+        td: +newSelect(['Menu', 'Recette', 'Ingredient'])#FormType(name="NewFeature")
+    #formfield
+    div
+      span(onclick="Modals('new','close')") Fermer
+      button valider
 #forms(style='display:none')
   table
     tbody
       tr
-        th
+        td
           label(for="MenuDate") Menu du :
         td
           input#MenuDate(type="date" name="MenuDate")
       tr
-        th
+        td
           label(for="MenuMatin") Programmation du matin :
         td
           input#MenuMatin(type="text" name="MenuMatin")
       tr
-        th
+        td
           label(for="MenuMidi") Programmation du midi :
         td
           input#MenuMidi(type="text" name="MenuMidi")
       tr
-        th
+        td
           label(for="MenuSoir") Programmation du soir :
         td
           input#MenuSoir(type="text" name="MenuSoir")
@@ -25,22 +36,22 @@
   table
     tbody
       tr
-        th
+        td
           label(for="RecetteNom") Nom :
         td
           input#RecetteNom(type="text" name="RecetteNom")
       tr
-        th
+        td
           label(for="RecetteImage") Image :
         td
           input#RecetteImage(type="file" name="RecetteImage")
       tr
-        th
+        td
           label(for="RecetteIngredients") Ingredients :
         td
           input#RecetteIngredients(type="text" name="RecetteIngredients")
       tr
-        th
+        td
           label(for="Preparation") Preparation :
         td
           input#Preparation(type="text" name="Preparation")
@@ -48,38 +59,12 @@
   table
     tbody
       tr
-        th
+        td
+          label(for="IngredientNom") Nom
+        td
+          input#IngredientNom(type="text" name="IngredientNom")
+      tr
+        td
           label(for="Mesure") Mesure:
         td
-          +newSelect(['Gramme','Litre','Unité',''], b)#Mesure
-      tr
-        th
-          label(for="MenuMatin") Programmation du matin :
-        td
-          input#MenuMatin(type="text" name="MenuMatin")
-      tr
-        th
-          label(for="MenuMidi") Programmation du midi :
-        td
-          input#MenuMidi(type="text" name="MenuMidi")
-      tr
-        th
-          label(for="MenuSoir") Programmation du soir :
-        td
-          input#MenuSoir(type="text" name="MenuSoir")
-
-form#new.modals(action="/new", method="post" encType="multipart/form-data")
-  .lignecraie.grid
-    input(type="hidden" value=lang[0] name='lang')
-    table
-      tr
-        td: label(for="FormType") New :
-        td: select#FormType(name="NewFeature")
-          option(value="NewMenu") Menu
-          option(value="NewRecette") Recette
-          option(value="NewIngredient") Ingredient
-
-    #formfield
-    div
-      span(onclick="Modals('new','close')") Fermer
-      button valider
+          +newSelect(['Gramme','Litre','Unité',''], b)#Mesure(name='IngredientMesure')

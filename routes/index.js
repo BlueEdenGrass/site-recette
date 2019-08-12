@@ -64,9 +64,9 @@ router.post('/New', function(req, res, next) {
 
   let msg;
   if(req.body.lang==""||!languages.some(row => row.includes(req.body.lang))) req.body.lang='en/';
-  arr=["NewMenu", "NewRecette", "NewIngredient"]
+  arr=["Menu", "Recette", "Ingredient"]
   console.log(req.body.NewFeature);
-  if(arr.includes(req.body.NewFeature)) msg=eval('eval(functions).'+req.body.NewFeature+'(req.body, eval(db), req.files)');
+  if(arr.includes(req.body.NewFeature)) msg=eval('eval(functions).New'+req.body.NewFeature+'(req.body, eval(db), req.files)');
   else msg[false, "requete inconnu"];
   if(msg[0]) res.redirect(msg[1]);
   else newError=msg[1], res.redirect('back');

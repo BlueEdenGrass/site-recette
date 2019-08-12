@@ -21,9 +21,9 @@ script.
     let formfield = document.getElementById("formfield");
     formfield.innerHTML="";
     switch (this.value) {
-      case "NewMenu": formfield.appendChild(tables[0].cloneNode(true)); break;
-      case "NewRecette": formfield.appendChild(tables[1].cloneNode(true)); break;
-      case "NewIngredient": formfield.appendChild(tables[2].cloneNode(true)); break;
+      case "Menu": formfield.appendChild(tables[0].cloneNode(true)); break;
+      case "Recette": formfield.appendChild(tables[1].cloneNode(true)); break;
+      case "Ingredient": formfield.appendChild(tables[2].cloneNode(true)); break;
     }
   }
   FormType.onchange();

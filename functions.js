@@ -90,7 +90,7 @@ functions = {
   },
   NewIngredient: function(params, db){
 
-    let Mesure = ["Gramme", "Litre", "Sachet", "Unité", "+"], MyIngredient=[];
+    let Mesure = ["Gramme", "Litre", "Sachet", "Unité", "+"], MyIngredient=["",""];
     if(!Mesure.includes(params.IngredientMesure)) return [false, "Unité de mesure inconnue"];
     params.IngredientNom= params.IngredientNom.charAt(0).toUpperCase() + params.IngredientNom.slice(1).toLowerCase();
     console.log(params.IngredientNom);

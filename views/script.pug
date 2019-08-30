@@ -1,32 +1,5 @@
-script.
-    
-  url = window.location;
-  url=url.toString()
-  if( url.includes('/Search')) document.getElementById('SearchLink').className+= " active";
-  else if ( url.includes("?Menus") ) document.getElementById('MenusLink').className+= " active";
-  else if ( url.includes("?Recettes") ) document.getElementById('RecettesLink').className+= " active";
-  else document.getElementById('HomeLink').className+= " active";
-  
-  function Modals(action){
-    let target = document.getElementById('new');
-    if (target.classList.contains('active'))target.classList.remove('active');
-    if(action=="open") target.className += "  active";
-
-  }
-
-  const forms = document.getElementById("forms");
-  const tables = forms.children;
-  const FormType=document.getElementById("FormType");
-  FormType.onchange=function(){
-    let formfield = document.getElementById("formfield");
-    formfield.innerHTML="";
-    switch (this.value) {
-      case "Menu": formfield.appendChild(tables[0].cloneNode(true)); break;
-      case "Recette": formfield.appendChild(tables[1].cloneNode(true)); break;
-      case "Ingredient": formfield.appendChild(tables[2].cloneNode(true)); break;
-    }
-  }
-  FormType.onchange();
+script(src="/javascripts/broken-custom-framework.js")
+script(src="/javascripts/script.js")
 if search||alertMsg  
   script
     if search

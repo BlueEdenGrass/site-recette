@@ -4,13 +4,13 @@ form#new.modals(autocomplete='off' action="/new", metdod="post" encType="multipa
     table
       tr
         td: label(for="FormType") New :
-        td: +newSelect(['Menu', 'Recette', 'Ingredient'])#FormType(name="NewFeature")
+        td: +newSelect(['Menu', 'Recette', 'Ingredient'])#FormType(name="NewFeature" addEvent="['change', Form.Switch]" info="{Source: Get.Id('forms').children, Target: Get.Id('formfield'), Trigger: this}")
     #formfield
     div
-      span(onclick="Modals('new','close')") Fermer
+      span(addEvent="['click', Link.Close]" info="Get.Id('new')") Fermer
       button valider
 #forms(style='display:none')
-  table
+  table(name="Menu")
     tbody
       tr
         td
@@ -33,7 +33,7 @@ form#new.modals(autocomplete='off' action="/new", metdod="post" encType="multipa
         td
           input#MenuSoir(type="text" name="MenuSoir")
 
-  table
+  table(name="Recette")
     tbody
       tr
         td
@@ -56,7 +56,7 @@ form#new.modals(autocomplete='off' action="/new", metdod="post" encType="multipa
         td
           input#Preparation(type="text" name="Preparation")
 
-  table
+  table(name="Ingredient")
     tbody
       tr
         td

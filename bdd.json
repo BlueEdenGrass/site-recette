@@ -1,52 +1,12 @@
 {
   "Ingredients": [
     [
-      "Sachet",
-      "Pâtes à lasagne"
-    ],
-    [
-      "Gramme",
-      "Champignon"
-    ],
-    [
-      "Unité",
-      "Poivron"
-    ],
-    [
-      "Litre",
-      "Sauce tomate"
-    ],
-    [
-      "Litre",
-      "Tomates concassées"
-    ],
-    [
-      "Gramme",
-      "Fromage rapé"
-    ],
-    [
-      "Gramme",
-      "Beurre"
-    ],
-    [
-      "Litre",
-      "Lait"
-    ],
-    [
-      "Unité",
-      "Oignon"
+      "+",
+      "Bicarbonate de sodium"
     ],
     [
       "+",
-      "Laurier"
-    ],
-    [
-      "Gramme",
-      "Lentille"
-    ],
-    [
-      "Gramme",
-      "Giraumon"
+      "Cannelle"
     ],
     [
       "+",
@@ -54,47 +14,19 @@
     ],
     [
       "+",
-      "Persil"
-    ],
-    [
-      "Gousse",
-      "Ail"
-    ],
-    [
-      "Unité",
-      "Citron"
-    ],
-    [
-      "+",
-      "Moringa"
-    ],
-    [
-      "Unité",
-      "Piment végétarien"
-    ],
-    [
-      "+",
-      "Bicarbonate de sodium"
-    ],
-    [
-      "Unité",
-      "Tomate"
+      "Coriandre"
     ],
     [
       "+",
       "Huile"
     ],
     [
-      "Gramme",
-      "Sucre"
+      "+",
+      "Laurier"
     ],
     [
-      "Litre",
-      "Eau"
-    ],
-    [
-      "Unité",
-      "Banane"
+      "+",
+      "Moringa"
     ],
     [
       "+",
@@ -102,15 +34,31 @@
     ],
     [
       "+",
-      "Cannelle"
-    ],
-    [
-      "Unité",
-      "Pomme de terre"
+      "Persil"
     ],
     [
       "+",
       "Sel"
+    ],
+    [
+      "+",
+      "Thym"
+    ],
+    [
+      "+",
+      "Yaourt"
+    ],
+    [
+      "Gousse",
+      "Ail"
+    ],
+    [
+      "Gramme",
+      "Beurre"
+    ],
+    [
+      "Gramme",
+      "Champignon"
     ],
     [
       "Gramme",
@@ -125,6 +73,38 @@
       "Farine110"
     ],
     [
+      "Gramme",
+      "Fromage rapé"
+    ],
+    [
+      "Gramme",
+      "Giraumon"
+    ],
+    [
+      "Gramme",
+      "Lentille"
+    ],
+    [
+      "Gramme",
+      "Sucre"
+    ],
+    [
+      "Litre",
+      "Eau"
+    ],
+    [
+      "Litre",
+      "Lait"
+    ],
+    [
+      "Litre",
+      "Sauce tomate"
+    ],
+    [
+      "Litre",
+      "Tomates concassées"
+    ],
+    [
       "Sachet",
       "Levure boulangère"
     ],
@@ -133,8 +113,8 @@
       "Levure chimique"
     ],
     [
-      "+",
-      "Yaourt"
+      "Sachet",
+      "Pâtes à lasagne"
     ],
     [
       "Unité",
@@ -142,15 +122,35 @@
     ],
     [
       "Unité",
+      "Banane"
+    ],
+    [
+      "Unité",
+      "Citron"
+    ],
+    [
+      "Unité",
       "Oeuf"
     ],
     [
-      "+",
-      "Coriandre"
+      "Unité",
+      "Oignon"
     ],
     [
-      "+",
-      "Thym"
+      "Unité",
+      "Piment végétarien"
+    ],
+    [
+      "Unité",
+      "Pomme de terre"
+    ],
+    [
+      "Unité",
+      "Poivron"
+    ],
+    [
+      "Unité",
+      "Tomate"
     ]
   ],
   "Recettes": [
@@ -161,12 +161,12 @@
         [
           1,
           "Sachet",
-          "Pâtes à lasagne"
+          "pâtes à lasagne"
         ],
         [
           500,
           "Gramme",
-          "Champignon"
+          "champignon"
         ],
         [
           3,
@@ -175,62 +175,73 @@
         ],
         [
           1,
-          "Conserve",
-          "Tomates concassées"
+          "Gramme",
+          "tomates concassées"
         ],
         [
           200,
           "Gramme",
-          "Fromage rapé"
+          "fromage rapé"
         ],
         [
           100,
           "Gramme",
-          "Beurre"
+          "beurre"
         ],
         [
           100,
           "Gramme",
-          "Farine"
+          "farine"
         ],
         [
           1,
           "Litre",
-          "Lait"
+          "lait"
         ],
         [
           2,
           "Unité",
           "Oignon"
         ],
-        ["+",
-          "Sucre"
-        ],
-        ["+",
-          "Persil"
-        ],
-        ["+",
-          "Origan"
-        ],
-        ["+",
-          "Thym"
-        ],
-        ["+",
-          "Laurier"
+        [
+          2,
+          "Cuillère à café",
+          "sucre"
         ],
         [
+          100,
+          "Gramme",
+          "Persil"
+        ],
+        [
+          1,
+          "Cuillère à soupe",
+          "Origan"
+        ],
+        [
+          1,
+          "Cuillère à soupe",
+          "Thym"
+        ],
+        [
+          1,
+          "Feuille",
+          "laurier"
+        ],
+        [
+          1,
+          "Cuillère à café",
           "Sel"
         ],
         [
+          1,
+          "Cuillère à café",
           "Poivre"
         ],
         [
           1,
           "Unité",
           "Piment"
-        ],
-        [
-
         ]
 
       ],

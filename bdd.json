@@ -1,52 +1,44 @@
 {
   "Ingredients": [
     [
-      "+",
-      "Bicarbonate de sodium"
+      "Cuillère à café",
+      "bicarbonate de sodium"
     ],
     [
-      "+",
-      "Cannelle"
+      "Cuillère à café",
+      "cannelle"
     ],
     [
-      "+",
-      "Cive"
+      "Cuillère à café",
+      "moringa"
     ],
     [
-      "+",
-      "Coriandre"
+      "Cuillère à café",
+      "muscade"
     ],
     [
-      "+",
-      "Huile"
+      "Cuillère à café",
+      "persil"
     ],
     [
-      "+",
-      "Laurier"
-    ],
-    [
-      "+",
-      "Moringa"
-    ],
-    [
-      "+",
-      "Muscade"
-    ],
-    [
-      "+",
-      "Persil"
-    ],
-    [
-      "+",
+      "Cuillère à café",
       "Sel"
     ],
     [
-      "+",
+      "Cuillère à soupe",
+      "coriandre"
+    ],
+    [
+      "Cuillère à soupe",
+      "huile"
+    ],
+    [
+      "Cuillère à soupe",
       "Thym"
     ],
     [
-      "+",
-      "Yaourt"
+      "Feuille",
+      "Laurier"
     ],
     [
       "Gousse",
@@ -59,6 +51,10 @@
     [
       "Gramme",
       "Champignon"
+    ],
+    [
+      "Gramme",
+      "Cive"
     ],
     [
       "Gramme",
@@ -87,6 +83,10 @@
     [
       "Gramme",
       "Sucre"
+    ],
+    [
+      "Gramme",
+      "Yaourt"
     ],
     [
       "Litre",

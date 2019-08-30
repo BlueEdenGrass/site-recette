@@ -16,14 +16,18 @@ else
               ul Ingredients:
                 li.nopuce
                 each ingredient in recette.Ingredients
+                  if ingredient[0] > 1
+                    -pluriel="s"
+                  else
+                    -pluriel=""
                   if ["Cuillère à café","Cuillère à soupe","Feuille","Gousse","Gramme","Litre","Sachet"].includes(ingredient[1])
                     if ["a","e","i","o","u"].includes(ingredient[2].charAt(0))||ingredient[2]=="huile"
                       -de=" d'"
                     else
                       -de=" de "
-                    li=ingredient[0]+" "+ingredient[1]+de+ingredient[2]+"(s)"
+                    li=ingredient[0]+" "+ingredient[1]+de+ingredient[2]+pluriel
                   else
-                    li=ingredient[0]+" "+ingredient[2]+"(s)"
+                    li=ingredient[0]+" "+ingredient[2]+pluriel
           p 
             span.soustitre Préparation:
             br

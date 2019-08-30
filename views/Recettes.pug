@@ -21,4 +21,8 @@ else
                     default: li=ingredient[0]+" "+ingredient[1]+" de "+ingredient[2]    
           p 
             span.soustitre Préparation:
-            blockquote=recette.Preparation
+            br
+            br
+            each line in recette.Preparation
+              =line
+              br

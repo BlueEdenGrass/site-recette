@@ -264,8 +264,8 @@
         " ",
         " ",
         "Variante :",
-        "- Remplacer les pâtes par des lamelles de courgettes",
-        "- Remplacer les poivrons par des carottes et des courgettes"
+        "- Remplacer les pâtes par des lamelles de courgettes.",
+        "- Remplacer les poivrons par des carottes et des courgettes."
       ]
     },
     {
@@ -330,23 +330,23 @@
       ] 
     },
     {
-      "Nom": "Accras",
+      "Nom": "Accras de légumes",
       "Image": "Accras.jpeg",
       "Ingredients": [
         [
           300,
           "Gramme",
-          "Farine"
+          "Farine110"
         ],
         [
-          0.5,
+          2,
           "Unité",
-          "Moringa"
+          "Carotte"
         ],
         [
-          100,
-          "Gramme",
-          "Cive"
+          1,
+          "Cuillère à soupe",
+          "Moringa"
         ],
         [
           100,
@@ -354,7 +354,7 @@
           "Persil"
         ],
         [
-          2,
+          3,
           "Unité",
           "Gousse d'ail"
         ],
@@ -372,23 +372,44 @@
           1,
           "Cuillère à café",
           "Bicarbonate"
+        ],
+        [
+          0,4,
+          "litre",
+          "Eau"
+        ],
+        [
+          1,
+          "Unité",
+          "Citron vert"
         ]
       ],
-      "Preparation": "Commencer par faire ceci, puis faire cela sans oublier le truc machin chose bidule chouette.mettre au four prechaufé à 4500° eteindre le four et patienté 2ans. et c pret"
+      "Preparation": [
+        "Pour commencer, préparer les ingrédients.",
+        "Rapper les carottes, émincer l'oignon et le piment végétarien, ciseler le persil et écraser l'ail, couper le citron en deux et presser qu'une moitié. Réserver",
+        " ",
+        "Dans un saladier, mettre les carottes, l'oignon, le piment, l'ail, le persil et ajouter la farine et le bicarbonate. Mélanger, saler et poivrer.",
+        "Après l'obtention d'une pâte homogème ni trop épaisse, ni trop liquide, laisser reposer l'appareil.Faire chauffer l'huile à 180 degrés.",
+        "Ajouter le jus du citron, mélanger. Former une petite boule de farce à l'aide d'une cuillère à café et plonger la dans l'huile deux minutes, recommencer jusqu'à épuisement.",
+        " ",
+        "C'est prêt !",
+        " ",
+        " ",
+        "Variante :",
+        " ",
+        "- Remplacer les carottes par 200g de fleurs de moringa ou une demie courgette ou encore une petite chayotte.",
+        "Version viande : Déssaler 150g de chair de morue dans de l'eau bouillante, laisser refroidir puis émietter, enfin incorporer à l'appareil.",
+        "- Ajouter à l'appreil une cuillère à soupe de thym et une pincée de clou de girofle en pourdre."
+      ]
     },
     {
       "Nom": "Sauce tomate",
       "Image": "Sauce-tomate.jpeg",
       "Ingredients": [
         [
-          1,
+          6,
           "Unité",
           "Tomate"
-        ],
-        [
-          0.25,
-          "Unité",
-          "Gousse d'ail"
         ],
         [
           1,
@@ -396,12 +417,29 @@
           "Oignon"
         ],
         [
+          1, 
+          "Cuillère à soupe",
+          "Origan"
+        ],
+        [
+          1,
+          "Cuillère à soupe",
+          "Basilic"
+        ],
+        [
           4,
           "Cuillère à soupe",
           "Huile"
         ]
       ],
-      "Preparation": "Commencer par faire ceci, puis faire cela sans oublier le truc machin chose bidule chouette.mettre au four prechaufé à 4500° eteindre le four et patienté 2ans. et c pret"
+      "Preparation": [
+        "Pour commencer, préparer les ingrédients.",
+        "Blanchir les tomates dans de l'eau salée trente secondes. Oter la peau et couper grossièrement. Emincer l'oignon.",
+        "Dans une poèle mettre quatre cuillère à soupe d'huile d'olive. Une fois que celle-ci est chaude ajouter l'oignon et le faire suer dix minutes. Ajouter les tomates avec le basilic, laisser mijoter vingt minutes",
+        "Mixer l'appareil puis refaire mijoter dix minutes avec l'origan.",
+        " ",
+        "C'est prêt !"
+      ]
     },
     {
       "Nom": "Citronade",

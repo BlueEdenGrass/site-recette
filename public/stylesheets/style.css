@@ -97,6 +97,7 @@ main {
   border-bottom-style: groove;
   border-right-style: groove;
   color: #fff;
+  font-size: 1.5vw;
 }
 .modals{
   display: none;

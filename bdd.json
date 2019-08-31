@@ -250,10 +250,11 @@
 
       ],
       "Preparation" : [
-        "Pour commencer préchauffer le four à 170 degrés, préparer tous les ingrédients.",
+        "Pour commencer, préchauffer le four à 170 degrés, préparer tous les ingrédients.",
         " ",
         "Précuire les pâtes à lasagne. Mettre de l'eau salée sur le feu. Une fois bouillie y plonger les pâtes durant le temps indiqué sur le paquet. Egoutter puis éponger l'excedent d'eau. Réserver.",
         "Emincer les oignons, les champignons, les poivrons. Les faire revenir dans un peu d'huile dans l'ordre précédemment établi, chacun une dizaine de minutes. Ajouter les tomates concassées et les diverses épices, le poivre. Laisser mijoter une vingtaine de minutes, saler. Réserver.",
+        " ",
         "Préparer la béchamel. Faire un roux. Mettre le beurre dans une poêle et laisser fondre. Ajouter la farine au beurre fondu et déssécher la pâte obtenue. Incorporer le lait petit à petit jusqu'à l'obtention d'une pâte homogène. Faire cuire trois minutes et ajouter le sel, le poivre et la muscade. Ajouter la moitié du fromage, mélanger.",
         " ",
         "Assembler tous les éléments.",
@@ -292,9 +293,19 @@
           "Persil"
         ],
         [
+          1,
+          "Cuillère à soupe",
+          "Thym"
+        ],
+        [
+          1,
+          "Cuillère à soupe",
+          "Coriandre"
+        ],
+        [
           5,
-          "Unité",
-          "Gousse d'ail"
+          "Gousse",
+          "Ail"
         ],
         [
           1,
@@ -307,7 +318,16 @@
           "Oignon"
         ]
       ],
-      "Preparation": "Commencer par faire ceci, puis faire cela sans oublier le truc machin chose bidule chouette.mettre au four prechaufé à 4500° eteindre le four et patienté 2ans. et c pret"
+      "Preparation" : [
+        "Pour commencer, préparer les ingrédients.",
+        " ",
+        "Laisser tremper les lentilles cinq heures, rincer et égoutter.",
+        "Couper le giraumon en cubes de deux centimètres environ, émincer les oignons, ciseler la cive et le persil, écraser l'ail, préparer le jus du citron. Bien.",
+        "Mettre les lentilles dans une eau froide, laisser quinze minutes. Pendant ce temps, faire revenir les oignons, la cive, le thym, la coriandre, le persil puis ajouter aux lentilles. Laisser mijoter pendant quarante cinq minutes",
+        "Ajouter l'ail écrasé, le sel et le jus de citron.",
+        " ",
+        "C'est prêt ! Servir chaud avec du riz blanc basmati."
+      ] 
     },
     {
       "Nom": "Accras",

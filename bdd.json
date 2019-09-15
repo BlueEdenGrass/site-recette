@@ -18,10 +18,6 @@
     ],
     [
       "Cuillère à café",
-      "persil"
-    ],
-    [
-      "Cuillère à café",
       "Sel"
     ],
     [
@@ -31,6 +27,10 @@
     [
       "Cuillère à soupe",
       "huile"
+    ],
+    [
+      "Cuillère à soupe",
+      "Persil"
     ],
     [
       "Cuillère à soupe",
@@ -247,12 +247,11 @@
           "Unité",
           "Piment"
         ]
-
       ],
       "Preparation" : [
         "Pour commencer, préchauffer le four à 170 degrés, préparer tous les ingrédients.",
         " ",
-        "Précuire les pâtes à lasagne. Mettre de l'eau salée sur le feu. Une fois bouillie y plonger les pâtes durant le temps indiqué sur le paquet. Egoutter puis éponger l'excedent d'eau. Réserver.",
+        "Précuire les pâtes à lasagne. Mettre de l'eau salée sur le feu. Une fois bouillie, plonger les pâtes durant le temps indiqué sur le paquet. Egoutter puis éponger l'excedent d'eau. Réserver.",
         "Emincer les oignons, les champignons, les poivrons. Les faire revenir dans un peu d'huile dans l'ordre précédemment établi, chacun une dizaine de minutes. Ajouter les tomates concassées et les diverses épices, le poivre. Laisser mijoter une vingtaine de minutes, saler. Réserver.",
         " ",
         "Préparer la béchamel. Faire un roux. Mettre le beurre dans une poêle et laisser fondre. Ajouter la farine au beurre fondu et déssécher la pâte obtenue. Incorporer le lait petit à petit jusqu'à l'obtention d'une pâte homogène. Faire cuire trois minutes et ajouter le sel, le poivre et la muscade. Ajouter la moitié du fromage, mélanger.",
@@ -323,7 +322,8 @@
         " ",
         "Laisser tremper les lentilles cinq heures, rincer et égoutter.",
         "Couper le giraumon en cubes de deux centimètres environ, émincer les oignons, ciseler la cive et le persil, écraser l'ail, préparer le jus du citron. Bien.",
-        "Mettre les lentilles dans une eau froide, laisser quinze minutes. Pendant ce temps, faire revenir les oignons, la cive, le thym, la coriandre, le persil puis ajouter aux lentilles. Laisser mijoter pendant quarante cinq minutes",
+        " ",
+        "Mettre les lentilles dans une eau froide, laisser quinze minutes. Pendant ce temps, faire revenir les oignons, la cive, le thym, la coriandre, le persil puis ajouter aux lentilles. Laisser mijoter pendant quarante cinq minutes.",
         "Ajouter l'ail écrasé, le sel et le jus de citron.",
         " ",
         "C'est prêt ! Servir chaud avec du riz blanc basmati."
@@ -606,13 +606,14 @@
           "Eau"
         ],
         [
-          1,
+          3,
           "Cuillère à soupe",
           "Huile"
         ],
         [
           1,
-          "Cuillère à café, Sucre"
+          "Cuillère à café",
+          "Sucre"
         ],
         [
           0.5,
@@ -620,10 +621,17 @@
           "Bicarbonate"
         ]
       ],
-      "Preparation": "Commencer par faire ceci, puis faire cela sans oublier le truc machin chose bidule chouette.mettre au four prechaufé à 4500° eteindre le four et patienté 2ans. et c pret"
+      "Preparation": [
+        "Mélanger tous les ingrédients sec, la farine, le bicarbonate, le sucre. Puis ajouter l'huile, le yaourt et le sel, mélanger.",
+        "Ajouter l'eau à petite dose ( une à deux cuillerées à la fois). Jauger la constistance de la et travailler quelques secondes la pâte, badigeonner d'huile.",
+        "Réserver douze heures.",
+        "Dans une poêle bien chaude sans huile mettre un naan (aplati préalablement à deux centimètre au rouleau), baisser le feu recouvrir. Quand celui-ci gonfle, retourner le et laisser cuire une à deux minutes.",
+        "C'est prêt !",
+        "Agrémenter de ghee avec de l'ail écrasé et de la coriandre ciselée."
+      ]
     },
     {
-      "Nom": "Purée d'aubergines",
+      "Nom": "Purée d'aubergines au curry",
       "Image": "Puree-daubergine.jpg",
       "Ingredients": [
         [
@@ -647,17 +655,21 @@
           "Yaourt"
         ],
         [
-          3,
-          "Unité",
-          "Citron"
+          2,
+          "Cuilère à soupe",
+          "Garam masala"
         ],
         [
-          0.5,
-          "Litre",
-          "Eau"
+          1,
+          "Cuillère à soupe",
+          "Coriandre"
         ]
       ],
-      "Preparation": "Commencer par faire ceci, puis faire cela sans oublier le truc machin chose bidule chouette.mettre au four prechaufé à 4500° eteindre le four et patienté 2ans. et c pret"
+      "Preparation": [
+        "Pour commencer préparer les ingrédients",
+        "Faire cuire les aubergines incisées à 210 pendant 30 minutes avec le garam masala et l'huile, laisser refroidir. Couper la tomate en dés et écraser l'ail. Faire cuire le tout dans un peu d'huile avec un peu de sel duranr cinq minutes.",
+        "Prélever la chair des aubergines et écraser grossièrement. Mélanger le tout, ajouter le yaourt et la coriandre. Rectifier l'assaisonnement." 
+      ]
     },
     {
       "Nom": "Pâte brisée",
@@ -717,7 +729,54 @@
         ],
         [
           0.5,
-          "Bouquet",
+          "Co=uillère à soupe",
+          "Persil"
+        ],
+        [
+          1,
+          "Cuillère à soupe",
+          "Coriandre"
+        ],
+        [
+          1,
+          "Cuillère à soupe",
+          "Thym"
+        ],
+        [
+          1,
+          "Cuillère à café",
+          "Bicarbonate de soude"
+        ]
+      ],
+      "Preparation": [
+        "Pour commencer préparer les ingrédients",
+        "Laisser tremper les lentilles cinq heures, rincer et égoutter. Dépelliculer-les.",
+        "Emincer les oignons, écraser l'ail, ciseler le persil.",
+        " ",
+        "Dans un faitout disposer les lentilles et couvrer d'eau. Ajouter les oignons, l'ail, le persil, la coriandre, le thym, le bicarbonate et le poivre, laisser mijoter une demie-heure.",
+        "C'est prêt ! Saler.",
+        " ",
+        " ",
+        "Ajouter un peu de persil haché avec un peu d'huile directement dans l'assiette selon la convenance. A manger avec du pain, des naans, des pâtes."
+      ]
+    },
+    {
+      "Nom": "Velouté de pois cassés",
+      "Image": "veloute-de-pois-casses.jpg",
+      "Ingredients": [
+        [
+          "250",
+          "Gramme",
+          "Pois cassés"
+        ],
+        [
+          1,
+          "Unité",
+          "Oignon"
+        ],
+        [
+          1,
+          "Cuillère à soupe",
           "Persil"
         ],
         [
@@ -731,21 +790,9 @@
           "Thym"
         ]
       ],
-      "Preparation": "Commencer par faire ceci, puis faire cela sans oublier le truc machin chose bidule chouette.mettre au four prechaufé à 4500° eteindre le four et patienté 2ans. et c pret"
-    },
-    {
-      "Nom": "ragout d'orque",
-      "Image": "ragout d'orque.png",
-      "Ingredients": [
-        [
-          "2",
-          "Litre",
-          "Lait"
-        ]
+      "Preparation":[
+        
       ],
-      "Preparation": "ou pas bisoin save"
-    }
-  ],
   "Menus": [
     {
       "Date": 1565064000000,

@@ -73,6 +73,13 @@ router.post('/New', function(req, res, next) {
 
 });
 
+router.get('/*', function(req, res, next) {
+
+  res.redirect('/en/');
+
+  
+});
+
 function dummy() {
   //do nothing
 }

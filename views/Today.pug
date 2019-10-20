@@ -1,4 +1,8 @@
-h1: span.fondcraie Today menu is
+h1: span.fondcraie
+  if lang[0]=="en/"
+    |Today menu is
+  else
+    |Menu du jour
 -checkmenu = true
 each menu in Menus
   if menu.Date==Today
@@ -7,7 +11,11 @@ each menu in Menus
       table(style="text-align: center;")
         tbody
           tr
-            th: h3.fondcraie Matin: 
+            th: h3.fondcraie 
+              if lang[0]=="en/"
+                |Morning
+              else
+                |Matin: 
             -checkrecette = true
             each recette in Recettes
               if menu.Matin.includes(recette.Nom) 
@@ -18,7 +26,11 @@ each menu in Menus
                     br
                     =recette.Nom
             if checkrecette
-              td Aucune programmation
+              td 
+                if lang[0]=="en/"
+                  |No programming
+                else
+                  |Aucune programmation
           tr
             th: h3.fondcraie Midi: 
             -checkrecette = true
@@ -31,9 +43,17 @@ each menu in Menus
                     br
                     =recette.Nom
             if checkrecette
-              td Aucune programmation
+              td 
+                if lang[0]=="en/"
+                  |No programming
+                else
+                  |Aucune programmation
           tr
-            th: h3.fondcraie Soir: 
+            th: h3.fondcraie 
+              if lang[0]=="en/"
+                |Evening
+              else
+                |Soir
             -checkrecette = true
             each recette in Recettes
               if menu.Soir.includes(recette.Nom)
@@ -44,7 +64,15 @@ each menu in Menus
                     br
                     =recette.Nom
             if checkrecette
-              td Aucune programmation
+              td 
+                if lang[0]=="en/"
+                  |No programming
+                else
+                  |Aucune programmation
 
 if checkmenu
-  h3(style="text-align:center; font-family: monospace;") NOTHING, Aucun menu n'est programmé pour Aujourd'hui
+  h3(style="text-align:center; font-family: monospace;") 
+  if lang[0]=="en/"
+    |No menu is programmed today
+  else
+    |Aucun menu n'est programmé pour Aujourd'hui

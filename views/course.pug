@@ -1,15 +1,32 @@
 .head
-  h2.fondcraie Courses:
+  h2.fondcraie 
+  if lang[0]=="en/"
+    |Shopping
+  else
+    |Courses
 .body.scroll
   div
     div
-      h4.fondcraie Du jour
+      h4.fondcraie 
+  if lang[0]=="en/"
+    |Of the Day
+  else
+    |Du jour
     div
   div
     div
-      h4.fondcraie De la semaine
+      h4.fondcraie 
+      
+  if lang[0]=="en/"
+    |Of the Week
+  else
+    |De la semaine
     div
   div
     div
-      h4.fondcraie Du mois
+      h4.fondcraie 
+  if lang[0]=="en/"
+    |Of the Mouth
+  else
+    |Du mois
     div

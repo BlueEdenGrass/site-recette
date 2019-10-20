@@ -461,7 +461,7 @@
           "Eau"
         ]
       ],
-      "Preparation": "Commencer par faire ceci, puis faire cela sans oublier le truc machin chose bidule chouette.mettre au four prechaufé à 4500° eteindre le four et patienté 2ans. et c pret"
+      "Preparation": ["Commencer par faire ceci, puis faire cela sans oublier le truc machin chose bidule chouette.mettre au four prechaufé à 4500° eteindre le four et patienté 2ans. et c pret"]
     },
     {
       "Nom": "Milkshake à la banane",
@@ -493,7 +493,7 @@
           "Cannelle"
         ]
       ],
-      "Preparation": "Commencer par faire ceci, puis faire cela sans oublier le truc machin chose bidule chouette.mettre au four prechaufé à 4500° eteindre le four et patienté 2ans. et c pret"
+      "Preparation": ["Commencer par faire ceci, puis faire cela sans oublier le truc machin chose bidule chouette.mettre au four prechaufé à 4500° eteindre le four et patienté 2ans. et c pret"]
     },
     {
       "Nom": "Pomme de terre sauté",
@@ -520,7 +520,7 @@
           "Sel"
         ]
       ],
-      "Preparation": "Commencer par faire ceci, puis faire cela sans oublier le truc machin chose bidule chouette.mettre au four prechaufé à 4500° eteindre le four et patienté 2ans. et c pret"
+      "Preparation": ["Commencer par faire ceci, puis faire cela sans oublier le truc machin chose bidule chouette.mettre au four prechaufé à 4500° eteindre le four et patienté 2ans. et c pret"]
     },
     {
       "Nom": "Pain complet",
@@ -557,7 +557,7 @@
           "Huile"
         ]
       ],
-      "Preparation": "Commencer par faire ceci, puis faire cela sans oublier le truc machin chose bidule chouette.mettre au four prechaufé à 4500° eteindre le four et patienté 2ans. et c pret"
+      "Preparation": ["Commencer par faire ceci, puis faire cela sans oublier le truc machin chose bidule chouette.mettre au four prechaufé à 4500° eteindre le four et patienté 2ans. et c pret"]
     },
     {
       "Nom": "Gratin de patate",
@@ -584,7 +584,7 @@
           "Huile"
         ]
       ],
-      "Preparation": "Commencer par faire ceci, puis faire cela sans oublier le truc machin chose bidule chouette.mettre au four prechaufé à 4500° eteindre le four et patienté 2ans. et c pret"
+      "Preparation": ["Commencer par faire ceci, puis faire cela sans oublier le truc machin chose bidule chouette.mettre au four prechaufé à 4500° eteindre le four et patienté 2ans. et c pret"]
     },
     {
       "Nom": "Naan",
@@ -706,7 +706,7 @@
           "Huile"
         ]
       ],
-      "Preparation": "Commencer par faire ceci, puis faire cela sans oublier le truc machin chose bidule chouette.mettre au four prechaufé à 4500° eteindre le four et patienté 2ans. et c pret"
+      "Preparation": ["Commencer par faire ceci, puis faire cela sans oublier le truc machin chose bidule chouette.mettre au four prechaufé à 4500° eteindre le four et patienté 2ans. et c pret"]
     },
     {
       "Nom": "Soupe de lentilles",
@@ -792,7 +792,9 @@
       ],
       "Preparation":[
         
-      ],
+      ]
+    }
+  ],
   "Menus": [
     {
       "Date": 1565064000000,

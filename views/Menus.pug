@@ -3,10 +3,26 @@
 if ParamsGet.Menus=="All"
   .calendar
     .head
-      div: h3.fondcraie Menus
-      div: h3.fondcraie Matin
-      div: h3.fondcraie Midi
-      div: h3.fondcraie Soir
+      div: h3.fondcraie 
+        if lang[0]=="en/"
+          |Menus
+        else
+          |Menus
+      div: h3.fondcraie
+        if lang[0]=="en/"
+          |Morning
+        else
+          |Matin
+      div: h3.fondcraie 
+        if lang[0]=="en/"
+          |Noon
+        else
+          |Midi
+      div: h3.fondcraie 
+        if lang[0]=="en/"
+          |Evening
+        else
+          |Soir
     .body.scroll
       each date in nextDate
         -checkmenu = true
@@ -30,8 +46,12 @@ if ParamsGet.Menus=="All"
                       br
                       =recette.Nom
               if checkrecette
-                div Aucune programmation
-                -checkrecette = true
+                div 
+                  if lang[0]=="en/"
+                    |No programmation
+                  else
+                    |Aucune programmation
+              -checkrecette = true
               each recette in Recettes
                 if recette.Nom == menu.Midi[0]
                   -checkrecette = false
@@ -41,7 +61,11 @@ if ParamsGet.Menus=="All"
                       br
                       =recette.Nom
               if checkrecette
-                div Aucune programmation
+                div 
+                  if lang[0]=="en/"
+                    |No programmation
+                  else
+                    |Aucune programmation
               -checkrecette = true
               each recette in Recettes
                 if recette.Nom == menu.Soir[0]
@@ -52,7 +76,11 @@ if ParamsGet.Menus=="All"
                       br
                       =recette.Nom
               if checkrecette
-                div Aucune programmation
+                div 
+                  if lang[0]=="en/"
+                    |No programmation
+                  else
+                    |Aucune programmation
         if checkmenu
           .line
             div
@@ -61,9 +89,21 @@ if ParamsGet.Menus=="All"
                   tr
                     th
                       a(href="/"+lang[0]+"?Menus="+new Date(date).toLocaleDateString(lang[1]))=new Date(date).toLocaleDateString(lang[1], Doption)
-            div Aucune programmation
-            div Aucune programmation
-            div Aucune programmation
+            div 
+              if lang[0]=="en/"
+                |No programmation
+              else
+                |Aucune programmation
+            div 
+              if lang[0]=="en/"
+                |No programmation
+              else
+                |Aucune programmation
+            div 
+              if lang[0]=="en/"
+                |No programmation
+              else
+                |Aucune programmation
 else
   if lang[1] == 'fr-FR'
     -ParamsGet.Menus= ParamsGet.Menus.slice(3,5)+ParamsGet.Menus.slice(2,3)+ParamsGet.Menus.slice(0,2)+ParamsGet.Menus.slice(5,6)+ParamsGet.Menus.slice(6)
@@ -76,7 +116,11 @@ else
         table
           tbody
             tr
-              th.fondcraie Matin: 
+              th.fondcraie 
+                if lang[0]=="en/"
+                  |Morning:
+                else
+                  |Matin: 
               -checkrecette = true
               each recette in Recettes
                 if menu.Matin.includes(recette.Nom) 
@@ -87,9 +131,17 @@ else
                       br
                       =recette.Nom
               if checkrecette
-                td Aucune programmation
+                td 
+                  if lang[0]=="en/"
+                    |No programmmation
+                  else
+                    |Aucune programmation
             tr
-              th: h3.fondcraie Midi: 
+              th: h3.fondcraie 
+                if lang[0]=="en/"
+                  |Noon:
+                else
+                  |Midi: 
               -checkrecette = true
               each recette in Recettes
                 if menu.Midi.includes(recette.Nom)
@@ -100,9 +152,17 @@ else
                       br
                       =recette.Nom
               if checkrecette
-                td Aucune programmation
+                td 
+                  if lang[0]=="en/"
+                    |No programmation
+                  else
+                    |Aucune programmation
             tr
-              th: h3.fondcraie Soir: 
+              th: h3.fondcraie 
+                if lang[0]=="en/"
+                  |Evening:
+                else
+                  |Soir: 
               -checkrecette = true
               each recette in Recettes
                 if menu.Soir.includes(recette.Nom)
@@ -113,6 +173,14 @@ else
                       br
                       =recette.Nom
               if checkrecette
-                td Aucune programmation
+                td 
+                  if lang[0]=="en/"
+                    |No programmation
+                  else
+                    |Aucune programmation
   if checkmenu
-    h3(style="text-align:center; font-family: monospace;") Aucun menu n'est programmé pour cette date
+    h3(style="text-align:center; font-family: monospace;") 
+        if lang[0]=="en/"
+          |No menu programming for this date
+        else
+          |Aucun menu n'est programmé pour cette date

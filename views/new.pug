@@ -3,33 +3,57 @@ form#new.modals(autocomplete='off' action="/new", metdod="post" encType="multipa
     input(type="hidden" value=lang[0] name='lang')
     table
       tr
-        td: label(for="FormType") New :
+        td: label(for="FormType") 
         td: +newSelect(['Menu', 'Recette', 'Ingredient'])#FormType(name="NewFeature" addEvent="['change', Form.Switch]" info="{Source: Get.Id('forms').children, Target: Get.Id('formfield'), Trigger: this}")
     #formfield
     div
-      span(addEvent="['click', Link.Close]" info="Get.Id('new')") Fermer
-      button valider
+      span(addEvent="['click', Link.Close]" info="Get.Id('new')") 
+        if lang[0]=="en/"
+          |Close
+        else
+          |Fermer
+      button 
+        if lang[0]=="en/"
+          |Validate
+        else
+          |Valider
 #forms(style='display:none')
   table(name="Menu")
     tbody
       tr
         td
-          label(for="MenuDate") Menu du :
+          label(for="MenuDate") 
+            if lang[0]=="en/"
+              |Menu of :
+            else
+              |Menu du :
         td
           input#MenuDate(type="date" name="MenuDate")
       tr
         td
-          label(for="MenuMatin") Programmation du matin :
+          label(for="MenuMatin") 
+            if lang[0]=="en/"
+              |Morning programming :
+            else
+              |Programmation du matin :
         td
           input#MenuMatin(type="text" name="MenuMatin")
       tr
         td
-          label(for="MenuMidi") Programmation du midi :
+          label(for="MenuMidi") 
+            if lang[0]=="en/"
+              |Noon programming :
+            else
+              |Programmation du midi :
         td
           input#MenuMidi(type="text" name="MenuMidi")
       tr
         td
-          label(for="MenuSoir") Programmation du soir :
+          label(for="MenuSoir") 
+            if lang[0]=="en/"
+              |Evening programming :
+            else
+              |Programmation du soir :
         td
           input#MenuSoir(type="text" name="MenuSoir")
 
@@ -37,22 +61,38 @@ form#new.modals(autocomplete='off' action="/new", metdod="post" encType="multipa
     tbody
       tr
         td
-          label(for="RecetteNom") Nom :
+          label(for="RecetteNom") 
+            if lang[0]=="en/"
+              |Name :
+            else
+              |Nom :
         td
           input#RecetteNom(type="text" name="RecetteNom")
       tr
         td
-          label(for="RecetteImage") Image :
+          label(for="RecetteImage") 
+            if lang[0]=="en/"
+              |Picture :
+            else
+              |Image :
         td
           input#RecetteImage(type="file" name="RecetteImage")
       tr
         td
-          label(for="RecetteIngredients") Ingredients :
+          label(for="RecetteIngredients") 
+            if lang[0]=="en/"
+              |Ingredients :
+            else
+              |Ingrédients :
         td
           input#RecetteIngredients(type="text" name="RecetteIngredients")
       tr
         td
-          label(for="Preparation") Preparation :
+          label(for="Preparation") 
+            if lang[0]=="en/"
+              |Preparation :
+            else
+              |Préparation :
         td
           textarea#Preparation(name="Preparation" rows="5" style=" width: 100%; background: transparent; border: dashed white 2px; margin: 10px 0;")
 
@@ -60,11 +100,19 @@ form#new.modals(autocomplete='off' action="/new", metdod="post" encType="multipa
     tbody
       tr
         td
-          label(for="IngredientNom") Nom
+          label(for="IngredientNom") 
+            if lang[0]=="en/"
+              |Name
+            else
+              |Nom
         td
           input#IngredientNom(type="text" name="IngredientNom")
       tr
         td
-          label(for="Mesure") Mesure:
+          label(for="Mesure") 
+            if lang[0]=="en/"
+              |Measure :
+            else
+              |Mesure:
         td
           +newSelect(['Gramme','Litre','Unité','Sachet'], b)#Mesure(name='IngredientMesure')

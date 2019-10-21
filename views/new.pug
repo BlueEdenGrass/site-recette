@@ -1,10 +1,18 @@
+if lang[0]=="en/"
+  -option1="Menu"
+  -option2="Recepice"
+  -option3="ingredient"
+else
+  -option1="Menu"
+  -option2="Recette"
+  -option3="ingrédient"
 form#new.modals(autocomplete='off' action="/new", metdod="post" encType="multipart/form-data")
   .lignecraie.grid
     input(type="hidden" value=lang[0] name='lang')
     table
       tr
         td: label(for="FormType") 
-        td: +newSelect(['Menu', 'Recette', 'Ingredient'])#FormType(name="NewFeature" addEvent="['change', Form.Switch]" info="{Source: Get.Id('forms').children, Target: Get.Id('formfield'), Trigger: this}")
+        td: +newSelect([option1, option2, option3])#FormType(name="NewFeature" addEvent="['change', Form.Switch]" info="{Source: Get.Id('forms').children, Target: Get.Id('formfield'), Trigger: this}")
     #formfield
     div
       span(addEvent="['click', Link.Close]" info="Get.Id('new')") 
@@ -18,7 +26,7 @@ form#new.modals(autocomplete='off' action="/new", metdod="post" encType="multipa
         else
           |Valider
 #forms(style='display:none')
-  table(name="Menu")
+  table(name=option1)
     tbody
       tr
         td
@@ -57,7 +65,7 @@ form#new.modals(autocomplete='off' action="/new", metdod="post" encType="multipa
         td
           input#MenuSoir(type="text" name="MenuSoir")
 
-  table(name="Recette")
+  table(name=option2)
     tbody
       tr
         td
@@ -96,7 +104,7 @@ form#new.modals(autocomplete='off' action="/new", metdod="post" encType="multipa
         td
           textarea#Preparation(name="Preparation" rows="5" style=" width: 100%; background: transparent; border: dashed white 2px; margin: 10px 0;")
 
-  table(name="Ingredient")
+  table(name=option3)
     tbody
       tr
         td

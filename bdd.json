@@ -1,161 +1,161 @@
 {
   "Ingredients": [
-    [
-      "Cuillère à café",
-      "bicarbonate de sodium"
-    ],
-    [
-      "Cuillère à café",
-      "cannelle"
-    ],
-    [
-      "Cuillère à café",
-      "moringa"
-    ],
-    [
-      "Cuillère à café",
-      "muscade"
-    ],
-    [
-      "Cuillère à café",
-      "Sel"
-    ],
-    [
-      "Cuillère à soupe",
-      "coriandre"
-    ],
-    [
-      "Cuillère à soupe",
-      "huile"
-    ],
-    [
-      "Cuillère à soupe",
-      "Persil"
-    ],
-    [
-      "Cuillère à soupe",
-      "Thym"
-    ],
-    [
-      "Feuille",
-      "Laurier"
-    ],
-    [
-      "Gousse",
-      "Ail"
-    ],
-    [
-      "Gramme",
-      "Beurre"
-    ],
-    [
-      "Gramme",
-      "Champignon"
-    ],
-    [
-      "Gramme",
-      "Cive"
-    ],
-    [
-      "Gramme",
-      "Farine80"
-    ],
-    [
-      "Gramme",
-      "Farine55"
-    ],
-    [
-      "Gramme",
-      "Farine110"
-    ],
-    [
-      "Gramme",
-      "Fromage rapé"
-    ],
-    [
-      "Gramme",
-      "Giraumon"
-    ],
-    [
-      "Gramme",
-      "Lentille"
-    ],
-    [
-      "Gramme",
-      "Sucre"
-    ],
-    [
-      "Gramme",
-      "Yaourt"
-    ],
-    [
-      "Litre",
-      "Eau"
-    ],
-    [
-      "Litre",
-      "Lait"
-    ],
-    [
-      "Litre",
-      "Sauce tomate"
-    ],
-    [
-      "Litre",
-      "Tomates concassées"
-    ],
-    [
-      "Sachet",
-      "Levure boulangère"
-    ],
-    [
-      "Sachet",
-      "Levure chimique"
-    ],
-    [
-      "Sachet",
-      "Pâtes à lasagne"
-    ],
-    [
-      "Unité",
-      "Aubergine"
-    ],
-    [
-      "Unité",
-      "Banane"
-    ],
-    [
-      "Unité",
-      "Citron"
-    ],
-    [
-      "Unité",
-      "Oeuf"
-    ],
-    [
-      "Unité",
-      "Oignon"
-    ],
-    [
-      "Unité",
-      "Piment rouge"
-    ],
-    [
-      "Unité",
-      "Piment végétarien"
-    ],
-    [
-      "Unité",
-      "Pomme de terre"
-    ],
-    [
-      "Unité",
-      "Poivron"
-    ],
-    [
-      "Unité",
-      "Tomate"
-    ]
+    {
+      "Nom": "bicarbonate de sodium",
+      "Mesure": "Cuillère à café"
+    },
+    {
+      "Nom": "cannelle",
+      "Mesure": "Cuillère à café"
+    },
+    {
+      "Nom": "moringa",
+      "Mesure": "Cuillère à café"
+    },
+    {
+      "Nom": "muscade",
+      "Mesure": "Cuillère à café"
+    },
+    {
+      "Nom": "Sel",
+      "Mesure": "Cuillère à café"
+    },
+    {
+      "Nom": "coriandre",
+      "Mesure": "Cuillère à soupe"
+    },
+    {
+      "Nom": "huile",
+      "Mesure": "Cuillère à soupe"
+    },
+    {
+      "Nom": "Persil",
+      "Mesure": "Cuillère à soupe"
+    },
+    {
+      "Nom": "Thym",
+      "Mesure": "Cuillère à soupe"
+    },
+    {
+      "Nom": "Laurier",
+      "Mesure": "Feuille"
+    },
+    {
+      "Nom": "Ail",
+      "Mesure": "Gousse"
+    },
+    {
+      "Nom": "Beurre",
+      "Mesure": "Gramme"
+    },
+    {
+      "Nom": "Champignon",
+      "Mesure": "Gramme"
+    },
+    {
+      "Nom": "Cive",
+      "Mesure": "Gramme"
+    },
+    {
+      "Nom": "Farine80",
+      "Mesure": "Gramme"
+    },
+    {
+      "Nom": "Farine55",
+      "Mesure": "Gramme"
+    },
+    {
+      "Nom": "Farine110",
+      "Mesure": "Gramme"
+    },
+    {
+      "Nom": "Fromage rapé",
+      "Mesure": "Gramme"
+    },
+    {
+      "Nom": "Giraumon",
+      "Mesure": "Gramme"
+    },
+    {
+      "Nom": "Lentille",
+      "Mesure": "Gramme"
+    },
+    {
+      "Nom": "Sucre",
+      "Mesure": "Gramme"
+    },
+    {
+      "Nom": "Yaourt",
+      "Mesure": "Gramme"
+    },
+    {
+      "Nom": "Eau",
+      "Mesure": "Litre"
+    },
+    {
+      "Nom": "Lait",
+      "Mesure": "Litre"
+    },
+    {
+      "Nom": "Sauce tomate",
+      "Mesure": "Litre"
+    },
+    {
+      "Nom": "Tomates concassées",
+      "Mesure": "Litre"
+    },
+    {
+      "Nom": "Levure boulangère",
+      "Mesure": "Sachet"
+    },
+    {
+      "Nom": "Levure chimique",
+      "Mesure": "Sachet"
+    },
+    {
+      "Nom": "Pâtes à lasagne",
+      "Mesure": "Sachet"
+    },
+    {
+      "Nom": "Aubergine",
+      "Mesure": "Unité"
+    },
+    {
+      "Nom": "Banane",
+      "Mesure": "Unité"
+    },
+    {
+      "Nom": "Citron",
+      "Mesure": "Unité"
+    },
+    {
+      "Nom": "Oeuf",
+      "Mesure": "Unité"
+    },
+    {
+      "Nom": "Oignon",
+      "Mesure": "Unité"
+    },
+    {
+      "Nom": "Piment rouge",
+      "Mesure": "Unité"
+    },
+    {
+      "Nom": "Piment végétarien",
+      "Mesure": "Unité"
+    },
+    {
+      "Nom": "Pomme de terre",
+      "Mesure": "Unité"
+    },
+    {
+      "Nom": "Poivron",
+      "Mesure": "Unité"
+    },
+    {
+      "Nom": "Tomate",
+      "Mesure": "Unité"
+    }
   ],
   "Recettes": [
     {
@@ -164,87 +164,70 @@
       "Ingredients": [
         [
           1,
-          "Sachet",
           "pâtes à lasagne"
         ],
         [
           500,
-          "Gramme",
           "champignon"
         ],
         [
           3,
-          "Unité",
           "Poivron"
         ],
         [
           1,
-          "Gramme",
           "tomates concassées"
         ],
         [
           200,
-          "Gramme",
           "fromage rapé"
         ],
         [
           100,
-          "Gramme",
           "beurre"
         ],
         [
           100,
-          "Gramme",
           "farine"
         ],
         [
           1,
-          "Litre",
           "lait"
         ],
         [
           2,
-          "Unité",
           "Oignon"
         ],
         [
           2,
-          "Cuillère à café",
           "sucre"
         ],
         [
           100,
-          "Gramme",
           "Persil"
         ],
         [
           1,
-          "Cuillère à soupe",
           "Origan"
         ],
         [
           1,
-          "Cuillère à soupe",
           "Thym"
         ],
         [
           1,
-          "Feuille",
           "laurier"
         ],
         [
           1,
-          "Cuillère à café",
           "Sel"
         ],
         [
           1,
-          "Cuillère à café",
           "Poivre"
         ],
         [
           1,
-          "Unité",
           "Piment"
         ]
       ],
@@ -271,51 +254,42 @@
       "Nom": "Dhal de lentilles",
       "Image": "DhalDeLentilles.jpg",
       "Ingredients": [
-        [
-          500,
-          "Gramme",
-          "Lentille"
-        ],
-        [
-          0.5,
-          "Unité",
-          "Giraumon"
-        ],
-        [
-          100,
-          "Gramme",
-          "Cive"
-        ],
-        [
-          100,
-          "Gramme",
-          "Persil"
-        ],
-        [
-          1,
-          "Cuillère à soupe",
-          "Thym"
-        ],
-        [
-          1,
-          "Cuillère à soupe",
-          "Coriandre"
-        ],
-        [
-          5,
-          "Gousse",
-          "Ail"
-        ],
-        [
-          1,
-          "Unité",
-          "Citron"
-        ],
-        [
-          2,
-          "Unité",
-          "Oignon"
-        ]
+        {
+          "Nom": "Lentille",
+          "Quantité":500
+        },
+        {
+          "Nom": "Giraumon",
+          "Quantité": 0.5
+        },
+        {
+          "Nom": "Cive",
+          "Quantité": 100
+        },
+        {
+          "Nom": "Persil",
+          "Quantité": 100
+        },
+        {
+          "Nom": "Thym",
+          "Quantité": 1
+        },
+        {
+          "Nom": "Coriandre",
+          "Quantité": 1
+        },
+        {
+          "Nom": "Ail",
+          "Quantité": 5
+        },
+        {
+          "Nom": "Citron",
+          "Quantité": 1
+        },
+        {
+          "Nom": "Oignon",
+          "Quantité": 2
+        }
       ],
       "Preparation" : [
         "Pour commencer, préparer les ingrédients.",
@@ -335,52 +309,42 @@
       "Ingredients": [
         [
           300,
-          "Gramme",
           "Farine110"
         ],
         [
           2,
-          "Unité",
           "Carotte"
         ],
         [
           1,
-          "Cuillère à soupe",
           "Moringa"
         ],
         [
           100,
-          "Gramme",
           "Persil"
         ],
         [
           3,
-          "Unité",
           "Gousse d'ail"
         ],
         [
           1,
-          "Unité",
           "Piment végétarien"
         ],
         [
           1,
-          "Unité",
           "Oignon"
         ],
         [
           1,
-          "Cuillère à café",
           "Bicarbonate"
         ],
         [
           0,4,
-          "litre",
           "Eau"
         ],
         [
           1,
-          "Unité",
           "Citron vert"
         ]
       ],
@@ -408,27 +372,22 @@
       "Ingredients": [
         [
           6,
-          "Unité",
           "Tomate"
         ],
         [
           1,
-          "Unité",
           "Oignon"
         ],
         [
-          1, 
-          "Cuillère à soupe",
+          1,
           "Origan"
         ],
         [
           1,
-          "Cuillère à soupe",
           "Basilic"
         ],
         [
           4,
-          "Cuillère à soupe",
           "Huile"
         ]
       ],
@@ -447,17 +406,14 @@
       "Ingredients": [
         [
           5,
-          "Cuillère à soupe",
           "Sucre"
         ],
         [
           3,
-          "Unité",
           "Citron"
         ],
         [
           0.5,
-          "Litre",
           "Eau"
         ]
       ],
@@ -469,27 +425,22 @@
       "Ingredients": [
         [
           0.4,
-          "Litre",
           "Lait"
         ],
         [
           1,
-          "Unité",
           "Citron"
         ],
         [
           3,
-          "Unité",
           "Banane"
         ],
         [
           0.25,
-          "Cuillère à café",
           "Muscade"
         ],
         [
           0.5,
-          "Cuillère à café",
           "Cannelle"
         ]
       ],
@@ -501,22 +452,18 @@
       "Ingredients": [
         [
           500,
-          "Gramme",
           "Pomme de terre"
         ],
         [
           0.5,
-          "Gousse",
           "Ail"
         ],
         [
           1,
-          "Unité",
           "Citron"
         ],
         [
           1,
-          "Cuillère à café",
           "Sel"
         ]
       ],
@@ -528,32 +475,26 @@
       "Ingredients": [
         [
           250,
-          "Gramme",
           "Farine80"
         ],
         [
           250,
-          "Gramme",
           "Farine150"
         ],
         [
           0.4,
-          "Litre",
           "Eau"
         ],
         [
           2,
-          "Cuillère à soupe",
           "Levure boulangère"
         ],
         [
           1,
-          "Cuillère à soupe",
           "Sel"
         ],
         [
           3,
-          "Cuillère à soupe",
           "Huile"
         ]
       ],
@@ -565,22 +506,18 @@
       "Ingredients": [
         [
           500,
-          "Gramme",
           "Pomme de terre"
         ],
         [
           1,
-          "Litre",
           "Lait"
         ],
         [
           100,
-          "Gramme",
           "Farine110"
         ],
         [
           0.1,
-          "Litre",
           "Huile"
         ]
       ],
@@ -592,32 +529,26 @@
       "Ingredients": [
         [
           200,
-          "Gramme",
           "Farine110"
         ],
         [
           125,
-          "Gramme",
           "Yaourt"
         ],
         [
           0.7,
-          "Litre",
           "Eau"
         ],
         [
           3,
-          "Cuillère à soupe",
           "Huile"
         ],
         [
           1,
-          "Cuillère à café",
           "Sucre"
         ],
         [
           0.5,
-          "Cuillère à café",
           "Bicarbonate"
         ]
       ],
@@ -636,32 +567,26 @@
       "Ingredients": [
         [
           2,
-          "Unité",
           "Aubergine"
         ],
         [
           1,
-          "Unité",
           "Tomate"
         ],
         [
           2,
-          "Gousse",
           "Ail"
         ],
         [
           2,
-          "Cuillère à soupe",
           "Yaourt"
         ],
         [
           2,
-          "Cuilère à soupe",
           "Garam masala"
         ],
         [
           1,
-          "Cuillère à soupe",
           "Coriandre"
         ]
       ],
@@ -677,32 +602,26 @@
       "Ingredients": [
         [
           250,
-          "Gramme",
           "Farine110"
         ],
         [
           125,
-          "Gramme",
           "Beurre"
         ],
         [
           0.4,
-          "Litre",
           "Eau"
         ],
         [
           1,
-          "Unité",
           "Oeuf"
         ],
         [
           1,
-          "Cuillère à soupe",
           "Sel"
         ],
         [
           3,
-          "Cuillère à soupe",
           "Huile"
         ]
       ],
@@ -714,37 +633,30 @@
       "Ingredients": [
         [
           250,
-          "Gramme",
           "Lentille"
         ],
         [
           2,
-          "Unité",
           "Oignon"
         ],
         [
           3,
-          "Gousse",
           "Ail"
         ],
         [
           0.5,
-          "Co=uillère à soupe",
           "Persil"
         ],
         [
           1,
-          "Cuillère à soupe",
           "Coriandre"
         ],
         [
           1,
-          "Cuillère à soupe",
           "Thym"
         ],
         [
           1,
-          "Cuillère à café",
           "Bicarbonate de soude"
         ]
       ],
@@ -766,27 +678,22 @@
       "Ingredients": [
         [
           "250",
-          "Gramme",
           "Pois cassés"
         ],
         [
           1,
-          "Unité",
           "Oignon"
         ],
         [
           1,
-          "Cuillère à soupe",
           "Persil"
         ],
         [
           1,
-          "Cuillère à soupe",
           "Coriandre"
         ],
         [
           1,
-          "Cuillère à soupe",
           "Thym"
         ]
       ],
@@ -797,7 +704,7 @@
   ],
   "Menus": [
     {
-      "Date": 1565064000000,
+      "Date": 1571668000000,
       "Matin": [
         "Dhal de lentilles"
       ],
@@ -807,7 +714,7 @@
       "Soir": []
     },
     {
-      "Date": 1565150400000,
+      "Date": 1571716800000,
       "Matin": [
         "Milkshake à la banane"
       ],
@@ -820,7 +727,7 @@
       ]
     },
     {
-      "Date": 1565236800000,
+      "Date": 1571803200000,
       "Matin": [
         "Pain complet",
         "Citronade"
@@ -836,9 +743,7 @@
     },
     {
       "Date": 1565323200000,
-      "Matin": [
-        "Citronade"
-      ],
+      "Matin": [],
       "Midi": [
         "Naan",
         "Citronade"

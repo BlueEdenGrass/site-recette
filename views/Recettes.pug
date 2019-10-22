@@ -1,19 +1,29 @@
 if ParamsGet.Recettes == "All"
-  h1: span.fondcraie Liste des Recettes
+  h1: span.fondcraie
+    if lang[0]=="en/"
+      |Recepices List
+    else
+      |Liste des Recettes
   div.liste.scroll
     ul.columns2
       each recette in Recettes
         li: a.Recette(href="/"+lang[0]+"?Recettes="+recette.Nom)=recette.Nom
 else
+  -checkrecette = true
   each recette in Recettes
     if ParamsGet.Recettes == recette.Nom
+      -checkrecette=false
       div.grid.scroll
         h1: span.fondcraie=recette.Nom
         div
           div(style="display: flex; margin: 0 2%;")
             img(src="/images/"+recette.Image, alt="No available" width="60%", srcset="")
             .imgside
-              ul Ingredients:
+              ul
+                if lang[0]=="en/"
+                  |Ingredients:
+                else
+                  |Ingrédients:
                 li.nopuce
                 each ingredient in recette.Ingredients
                   if ingredient[0] > 1
@@ -29,9 +39,19 @@ else
                   else
                     li=ingredient[0]+" "+ingredient[2]+pluriel
           p 
-            span.soustitre Préparation:
+            span.soustitre 
+              if lang[0]=="en/"
+                |Preparation:
+              else
+                |Préparation:
             br
             br
             each line in recette.Preparation
               =line
               br
+  if checkrecette
+    h3 
+      if lang[0]=="en/"
+        |Recepice not found
+      else
+        |Recettes introuvable

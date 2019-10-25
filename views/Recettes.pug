@@ -4,10 +4,12 @@ if ParamsGet.Recettes == "All"
       |Recepices List
     else
       |Liste des Recettes
+
   div.liste.scroll
     ul.columns2
       each recette in Recettes
         li: a.Recette(href="/"+lang[0]+"?Recettes="+recette.Nom)=recette.Nom
+
 else
   -checkrecette = true
   each recette in Recettes
@@ -26,18 +28,19 @@ else
                   |Ingrédients:
                 li.nopuce
                 each ingredient in recette.Ingredients
-                  if ingredient[0] > 1
+                  if ingredient.Quantity > 1
                     -pluriel="s"
                   else
                     -pluriel=""
-                  if ["Cuillère à café","Cuillère à soupe","Feuille","Gousse","Gramme","Litre","Sachet"].includes(ingredient[1])
-                    if ["a","e","i","o","u"].includes(ingredient[2].charAt(0))||ingredient[2]=="huile"
+                  if ["Cuillère à café","Cuillère à soupe","Feuille","Gousse","Gramme","Litre","Sachet"].includes(ingredient.Mesure)
+                    if ["a","e","i","o","u"].includes(ingredient.Nom.charAt(0))||ingredient.Nom=="huile"
                       -de=" d'"
                     else
                       -de=" de "
-                    li=ingredient[0]+" "+ingredient[1]+de+ingredient[2]+pluriel
+                    li=ingredient.Quantity+" "+ingredient.Mesure+de+ingredient.Nom+pluriel
                   else
-                    li=ingredient[0]+" "+ingredient[2]+pluriel
+                    li=ingredient.Quantity+" "+ingredient.Nom+pluriel
+
           p 
             span.soustitre 
               if lang[0]=="en/"
@@ -49,6 +52,7 @@ else
             each line in recette.Preparation
               =line
               br
+              
   if checkrecette
     h3 
       if lang[0]=="en/"

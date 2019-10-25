@@ -3,7 +3,8 @@ extends layout
 block content
   .container
     .page
-      if search
+      -console.log(ParamsGet)
+      if ParamsGet.Search
         include search
       else if ParamsGet.Recettes && ParamsGet.Menus
             h1 ERROR

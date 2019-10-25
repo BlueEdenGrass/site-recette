@@ -10,51 +10,27 @@ let newError = false;
 for (let i = 0; i < languages.length; i++) {
 
   router.all('/'+languages[i][0], function(req, res, next) {
-    
-    if(languages[i][0]=="") res.redirect('/en/');
-    else {
 
-      let D = new Date().toDateString();
-      D = new Date(D).valueOf();
-
-      res.render('index', {
-
-        Title: 'Recettes à gogo',
-        lang: languages[i],
-        Menus: eval(db).Menus,
-        Recettes: _.sortBy(eval(db).Recettes, 'Nom'),
-        Today: D,
-        ParamsGet: req.query,
-        alertMsg: newError
+    let D = new Date().toDateString();
+    D = new Date(D).valueOf();
+    console.log(req.query, req.body)
+    res.render('index', {
       
-      });
-      
-      newError = false;
-
-    }
+      Title: 'Recettes à gogo',
+      lang: languages[i],
+      Menus: eval(db).Menus,
+      Recettes: _.sortBy(eval(db).Recettes, 'Nom'),
+      Commodity: _.sortBy(eval(db).Commodity, 'Nom'),
+      Today: D,
+      ParamsGet: req.query,
+      ParamsPost: req.body,
+      alertMsg: newError
     
-  });
+    });
+    
+    newError = false;
 
-  router.all('/'+languages[i][0]+'Search', function(req, res, next) {
-
-    if(languages[i][0]=="") res.redirect('/en/Search');
-    else {
-
-      res.render('index', { 
-
-        Title: 'Recettes à gogo',
-        lang: languages[i],
-        Menus: eval(db).Menus,
-        Recettes: eval(db).Recettes,
-        ParamsPost: req.body,
-        search: true,
-        alertMsg: newError
-
-      });
-
-      newError = false;
-
-    }
+    
     
   });
   

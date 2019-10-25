@@ -1,7 +1,7 @@
 {
   "Ingredients": [
     {
-      "Nom": "bicarbonate de sodium",
+      "Nom": "Bicarbonate de sodium",
       "Mesure": "Cuillère à café"
     },
     {
@@ -57,11 +57,11 @@
       "Mesure": "Gramme"
     },
     {
-      "Nom": "Farine80",
+      "Nom": "Farine55",
       "Mesure": "Gramme"
     },
     {
-      "Nom": "Farine55",
+      "Nom": "Farine80",
       "Mesure": "Gramme"
     },
     {
@@ -162,74 +162,90 @@
       "Nom": "Lasagnes",
       "Image": "Lasagnes.jpg",
       "Ingredients": [
-        [
-          1,
-          "pâtes à lasagne"
-        ],
-        [
-          500,
-          "champignon"
-        ],
-        [
-          3,
-          "Poivron"
-        ],
-        [
-          1,
-          "tomates concassées"
-        ],
-        [
-          200,
-          "fromage rapé"
-        ],
-        [
-          100,
-          "beurre"
-        ],
-        [
-          100,
-          "farine"
-        ],
-        [
-          1,
-          "lait"
-        ],
-        [
-          2,
-          "Oignon"
-        ],
-        [
-          2,
-          "sucre"
-        ],
-        [
-          100,
-          "Persil"
-        ],
-        [
-          1,
-          "Origan"
-        ],
-        [
-          1,
-          "Thym"
-        ],
-        [
-          1,
-          "laurier"
-        ],
-        [
-          1,
-          "Sel"
-        ],
-        [
-          1,
-          "Poivre"
-        ],
-        [
-          1,
-          "Piment"
-        ]
+        {
+          "Nom": "pâtes à lasagne",
+          "Mesure": "Sachet",
+          "Quantity": 1
+        },
+        {
+          "Nom": "champignon",
+          "Mesure": "Gramme",
+          "Quantity": 500
+        },
+        {
+          "Nom": "Poivron",
+          "Mesure":"Unité",
+          "Quantity": 3
+        },
+        {
+          "Nom": "tomates concassées",
+          "Quantity": 1
+        },
+        {
+          "Nom": "fromage rapé",
+          "Mesure":"Gramme",
+          "Quantity": 200
+        },
+        {
+          "Nom": "beurre",
+          "Mesure":"Gramme",
+          "Quantity": 100
+        },
+        {
+          "Nom": "farine55",
+          "Mesure":"Gramme",
+          "Quantity": 100
+        },
+        {
+          "Nom": "lait",
+          "Mesure":"Gramme",
+          "Quantity": 1
+        },
+        {
+          "Nom": "Oignon",
+          "Mesure":"Unité",
+          "Quantity": 2
+        },
+        {
+          "Nom": "sucre",
+          "Mesure":"Gramme",
+          "Quantity": 2
+        },
+        {
+          "Nom": "Persil",
+          "Mesure":"Gramme",
+          "Quantity": 100
+        },
+        {
+          "Nom": "Origan",
+          "Mesure":"Gramme",
+          "Quantity": 1
+        },
+        {
+          "Nom": "Thym",
+          "Mesure":"Gramme",
+          "Quantity": 1
+        },
+        {
+          "Nom": "laurier",
+          "Mesure":"Feuille",
+          "Quantity": 1
+        },
+        {
+          "Nom": "Sel",
+          "Mesure":"Cuillère à café",
+          "Quantity": 1
+        },
+        {
+          "Nom": "Poivre",
+          "Mesure":"Gramme",
+          "Quantity": 1
+        },
+        {
+          "Nom": "Piment végétarien",
+          "Mesure":"Unité",
+          "Quantity": 1
+        }
       ],
       "Preparation" : [
         "Pour commencer, préchauffer le four à 170 degrés, préparer tous les ingrédients.",
@@ -256,38 +272,47 @@
       "Ingredients": [
         {
           "Nom": "Lentille",
+          "Mesure":"Gramme",
           "Quantité":500
         },
         {
           "Nom": "Giraumon",
+          "Mesure":"Gramme",
           "Quantité": 0.5
         },
         {
           "Nom": "Cive",
+          "Mesure":"Gramme",
           "Quantité": 100
         },
         {
           "Nom": "Persil",
+          "Mesure":"Gramme",
           "Quantité": 100
         },
         {
           "Nom": "Thym",
+          "Mesure":"Gramme",
           "Quantité": 1
         },
         {
           "Nom": "Coriandre",
+          "Mesure":"Gramme",
           "Quantité": 1
         },
         {
           "Nom": "Ail",
+          "Mesure":"Gousse",
           "Quantité": 5
         },
         {
           "Nom": "Citron",
+          "Mesure":"Unité",
           "Quantité": 1
         },
         {
           "Nom": "Oignon",
+          "Mesure":"Unité",
           "Quantité": 2
         }
       ],
@@ -307,52 +332,62 @@
       "Nom": "Accras de légumes",
       "Image": "Accras.jpeg",
       "Ingredients": [
-        [
-          300,
-          "Farine110"
-        ],
-        [
-          2,
-          "Carotte"
-        ],
-        [
-          1,
-          "Moringa"
-        ],
-        [
-          100,
-          "Persil"
-        ],
-        [
-          3,
-          "Gousse d'ail"
-        ],
-        [
-          1,
-          "Piment végétarien"
-        ],
-        [
-          1,
-          "Oignon"
-        ],
-        [
-          1,
-          "Bicarbonate"
-        ],
-        [
-          0,4,
-          "Eau"
-        ],
-        [
-          1,
-          "Citron vert"
-        ]
+        {
+          "Nom": "Farine110",
+          "Mesure":"Gramme",
+          "Quantity": 300
+        },
+        {
+          "Nom": "Carotte",
+          "Mesure":"Unité",
+          "Quantity": 2
+        },
+        {
+          "Nom": "Moringa",
+          "Mesure":"Cuillère à café",
+          "Quantity": 1
+        },
+        {
+          "Nom": "Persil",
+          "Mesure":"Gramme",
+          "Quantity": 100
+        },
+        {
+          "Nom": "ail",
+          "Mesure": "Gousse",
+          "Quantity": 3
+        },
+        {
+          "Nom": "Piment végétarien",
+          "Mesure":"Unité",
+          "Quantity": 1
+        },
+        {
+          "Nom": "Oignon",
+          "Mesure":"Unité",
+          "Quantity": 1
+        },
+        {
+          "Nom": "Bicarbonate de sodium",
+          "Mesure":"Cuillère à café",
+          "Quantity": 1
+        },
+        {
+          "Nom": "Eau",
+          "Mesure":"Litre",
+          "Quantity": 0.4
+        },
+        {
+          "Nom": "Citron vert",
+          "Mesure":"Unité",
+          "Quantity": 1
+        }
       ],
       "Preparation": [
         "Pour commencer, préparer les ingrédients.",
-        "Rapper les carottes, émincer l'oignon et le piment végétarien, ciseler le persil et écraser l'ail, couper le citron en deux et presser qu'une moitié. Réserver",
+        "Rapper les carottes, émincer l'oignon et le piment, ciseler le persil et écraser l'ail, couper le citron en deux et presser qu'une moitié. Réserver",
         " ",
-        "Dans un saladier, mettre les carottes, l'oignon, le piment, l'ail, le persil et ajouter la farine et le bicarbonate. Mélanger, saler et poivrer.",
+        "Dans un saladier, mettre les carottes, l'oignon, le piment, l'ail, le persil et ajouter la farine et le Bicarbonate de sodium. Mélanger, saler et poivrer.",
         "Après l'obtention d'une pâte homogème ni trop épaisse, ni trop liquide, laisser reposer l'appareil.Faire chauffer l'huile à 180 degrés.",
         "Ajouter le jus du citron, mélanger. Former une petite boule de farce à l'aide d'une cuillère à café et plonger la dans l'huile deux minutes, recommencer jusqu'à épuisement.",
         " ",
@@ -370,26 +405,31 @@
       "Nom": "Sauce tomate",
       "Image": "Sauce-tomate.jpeg",
       "Ingredients": [
-        [
-          6,
-          "Tomate"
-        ],
-        [
-          1,
-          "Oignon"
-        ],
-        [
-          1,
-          "Origan"
-        ],
-        [
-          1,
-          "Basilic"
-        ],
-        [
-          4,
-          "Huile"
-        ]
+        {
+          "Nom": "Tomate",
+          "Mesure":"Unité",
+          "Quantity": 6
+        },
+        {
+          "Nom": "Oignon",
+          "Mesure":"Unité",
+          "Quantity": 1
+        },
+        {
+          "Nom": "Origan",
+          "Mesure":"Gramme",
+          "Quantity": 1
+        },
+        {
+          "Nom": "Basilic",
+          "Mesure":"Gramme",
+          "Quantity": 1
+        },
+        {
+          "Nom": "Huile",
+          "Mesure":"Cuillère à soupe",
+          "Quantity": 4
+        }
       ],
       "Preparation": [
         "Pour commencer, préparer les ingrédients.",
@@ -404,18 +444,21 @@
       "Nom": "Citronade",
       "Image": "Citronnade.jpg",
       "Ingredients": [
-        [
-          5,
-          "Sucre"
-        ],
-        [
-          3,
-          "Citron"
-        ],
-        [
-          0.5,
-          "Eau"
-        ]
+        {
+          "Nom": "Sucre",
+          "Mesure":"Gramme",
+          "Quantity": 5
+        },
+        {
+          "Nom": "Citron",
+          "Mesure":"Unité",
+          "Quantity": 3
+        },
+        {
+          "Nom": "Eau",
+          "Mesure":"Litre",
+          "Quantity": 0.5
+        }
       ],
       "Preparation": ["Commencer par faire ceci, puis faire cela sans oublier le truc machin chose bidule chouette.mettre au four prechaufé à 4500° eteindre le four et patienté 2ans. et c pret"]
     },
@@ -423,26 +466,31 @@
       "Nom": "Milkshake à la banane",
       "Image": "Milkshake-Banane.jpg",
       "Ingredients": [
-        [
-          0.4,
-          "Lait"
-        ],
-        [
-          1,
-          "Citron"
-        ],
-        [
-          3,
-          "Banane"
-        ],
-        [
-          0.25,
-          "Muscade"
-        ],
-        [
-          0.5,
-          "Cannelle"
-        ]
+        {
+          "Nom": "Lait",
+          "Mesure":"Gramme",
+          "Quantity": 0.4
+        },
+        {
+          "Nom": "Citron",
+          "Mesure":"Unité",
+          "Quantity": 1
+        },
+        {
+          "Nom": "Banane",
+          "Mesure":"Unité",
+          "Quantity": 3
+        },
+        {
+          "Nom": "Muscade",
+          "Mesure":"Cuillère à café",
+          "Quantity": 0.25
+        },
+        {
+          "Nom": "Cannelle",
+          "Mesure":"Cuillère à café",
+          "Quantity": 0.5
+        }
       ],
       "Preparation": ["Commencer par faire ceci, puis faire cela sans oublier le truc machin chose bidule chouette.mettre au four prechaufé à 4500° eteindre le four et patienté 2ans. et c pret"]
     },
@@ -450,22 +498,26 @@
       "Nom": "Pomme de terre sauté",
       "Image": "Pomme-de-terre-sauté.jpeg",
       "Ingredients": [
-        [
-          500,
-          "Pomme de terre"
-        ],
-        [
-          0.5,
-          "Ail"
-        ],
-        [
-          1,
-          "Citron"
-        ],
-        [
-          1,
-          "Sel"
-        ]
+        {
+          "Nom": "Pomme de terre",
+          "Mesure":"Unité",
+          "Quantity": 500
+        },
+        {
+          "Nom": "Ail",
+          "Mesure":"Gousse",
+          "Quantity": 0.5
+        },
+        {
+          "Nom": "Citron",
+          "Mesure":"Unité",
+          "Quantity": 1
+        },
+        {
+          "Nom": "Sel",
+          "Mesure":"Cuillère à café",
+          "Quantity": 1
+        }
       ],
       "Preparation": ["Commencer par faire ceci, puis faire cela sans oublier le truc machin chose bidule chouette.mettre au four prechaufé à 4500° eteindre le four et patienté 2ans. et c pret"]
     },
@@ -473,30 +525,33 @@
       "Nom": "Pain complet",
       "Image": "pain-complet.webp",
       "Ingredients": [
-        [
-          250,
-          "Farine80"
-        ],
-        [
-          250,
-          "Farine150"
-        ],
-        [
-          0.4,
-          "Eau"
-        ],
-        [
-          2,
-          "Levure boulangère"
-        ],
-        [
-          1,
-          "Sel"
-        ],
-        [
-          3,
-          "Huile"
-        ]
+        {
+          "Nom": "Farine80",
+          "Quantity": 250
+        },
+        {
+          "Nom": "Farine150",
+          "Quantity": 250
+        },
+        {
+          "Nom": "Eau",
+          "Mesure":"Litre",
+          "Quantity": 0.4
+        },
+        {
+          "Nom": "Levure boulangère",
+          "Quantity": 2
+        },
+        {
+          "Nom": "Sel",
+          "Mesure":"Cuillère à café",
+          "Quantity": 1
+        },
+        {
+          "Nom": "Huile",
+          "Mesure":"Cuillère à soupe",
+          "Quantity": 3
+        }
       ],
       "Preparation": ["Commencer par faire ceci, puis faire cela sans oublier le truc machin chose bidule chouette.mettre au four prechaufé à 4500° eteindre le four et patienté 2ans. et c pret"]
     },
@@ -504,22 +559,26 @@
       "Nom": "Gratin de patate",
       "Image": "Gratin-de-patate.jpg",
       "Ingredients": [
-        [
-          500,
-          "Pomme de terre"
-        ],
-        [
-          1,
-          "Lait"
-        ],
-        [
-          100,
-          "Farine110"
-        ],
-        [
-          0.1,
-          "Huile"
-        ]
+        {
+          "Nom": "Pomme de terre",
+          "Mesure":"Unité",
+          "Quantity": 500
+        },
+        {
+          "Nom": "Lait",
+          "Mesure":"Gramme",
+          "Quantity": 1
+        },
+        {
+          "Nom": "Farine110",
+          "Mesure":"Gramme",
+          "Quantity": 100
+        },
+        {
+          "Nom": "Huile",
+          "Mesure":"Cuillère à soupe",
+          "Quantity": 0.1
+        }
       ],
       "Preparation": ["Commencer par faire ceci, puis faire cela sans oublier le truc machin chose bidule chouette.mettre au four prechaufé à 4500° eteindre le four et patienté 2ans. et c pret"]
     },
@@ -527,33 +586,38 @@
       "Nom": "Naan",
       "Image": "naan.jpg",
       "Ingredients": [
-        [
-          200,
-          "Farine110"
-        ],
-        [
-          125,
-          "Yaourt"
-        ],
-        [
-          0.7,
-          "Eau"
-        ],
-        [
-          3,
-          "Huile"
-        ],
-        [
-          1,
-          "Sucre"
-        ],
-        [
-          0.5,
-          "Bicarbonate"
-        ]
+        {
+          "Nom": "Farine110",
+          "Mesure":"Gramme",
+          "Quantity": 200
+        },
+        {
+          "Nom": "Yaourt",
+          "Quantity": 125
+        },
+        {
+          "Nom": "Eau",
+          "Mesure":"Litre",
+          "Quantity": 0.7
+        },
+        {
+          "Nom": "Huile",
+          "Mesure":"Cuillère à soupe",
+          "Quantity": 3
+        },
+        {
+          "Nom": "Sucre",
+          "Mesure":"Gramme",
+          "Quantity": 1
+        },
+        {
+          "Nom": "Bicarbonate de sodium",
+          "Mesure":"Cuillère à café",
+          "Quantity": 0.5
+        }
       ],
       "Preparation": [
-        "Mélanger tous les ingrédients sec, la farine, le bicarbonate, le sucre. Puis ajouter l'huile, le yaourt et le sel, mélanger.",
+        "Mélanger tous les ingrédients sec, la farine, le Bicarbonate de sodium, le sucre. Puis ajouter l'huile, le yaourt et le sel, mélanger.",
         "Ajouter l'eau à petite dose ( une à deux cuillerées à la fois). Jauger la constistance de la et travailler quelques secondes la pâte, badigeonner d'huile.",
         "Réserver douze heures.",
         "Dans une poêle bien chaude sans huile mettre un naan (aplati préalablement à deux centimètre au rouleau), baisser le feu recouvrir. Quand celui-ci gonfle, retourner le et laisser cuire une à deux minutes.",
@@ -565,30 +629,33 @@
       "Nom": "Purée d'aubergines au curry",
       "Image": "Puree-daubergine.jpg",
       "Ingredients": [
-        [
-          2,
-          "Aubergine"
-        ],
-        [
-          1,
-          "Tomate"
-        ],
-        [
-          2,
-          "Ail"
-        ],
-        [
-          2,
-          "Yaourt"
-        ],
-        [
-          2,
-          "Garam masala"
-        ],
-        [
-          1,
-          "Coriandre"
-        ]
+        {
+          "Nom": "Aubergine",
+          "Quantity": 2
+        },
+        {
+          "Nom": "Tomate",
+          "Mesure":"Unité",
+          "Quantity": 1
+        },
+        {
+          "Nom": "Ail",
+          "Mesure":"Gousse",
+          "Quantity": 2
+        },
+        {
+          "Nom": "Yaourt",
+          "Quantity": 2
+        },
+        {
+          "Nom": "Garam masala",
+          "Quantity": 2
+        },
+        {
+          "Nom": "Coriandre",
+          "Mesure":"Gramme",
+          "Quantity": 1
+        }
       ],
       "Preparation": [
         "Pour commencer préparer les ingrédients",
@@ -600,30 +667,35 @@
       "Nom": "Pâte brisée",
       "Image": "patebrisee.JPG",
       "Ingredients": [
-        [
-          250,
-          "Farine110"
-        ],
-        [
-          125,
-          "Beurre"
-        ],
-        [
-          0.4,
-          "Eau"
-        ],
-        [
-          1,
-          "Oeuf"
-        ],
-        [
-          1,
-          "Sel"
-        ],
-        [
-          3,
-          "Huile"
-        ]
+        {
+          "Nom": "Farine110",
+          "Mesure":"Gramme",
+          "Quantity": 250
+        },
+        {
+          "Nom": "Beurre",
+          "Mesure":"Gramme",
+          "Quantity": 125
+        },
+        {
+          "Nom": "Eau",
+          "Mesure":"Litre",
+          "Quantity": 0.4
+        },
+        {
+          "Nom": "Oeuf",
+          "Quantity": 1
+        },
+        {
+          "Nom": "Sel",
+          "Mesure":"Cuillère à café",
+          "Quantity": 1
+        },
+        {
+          "Nom": "Huile",
+          "Mesure":"Cuillère à soupe",
+          "Quantity": 3
+        }
       ],
       "Preparation": ["Commencer par faire ceci, puis faire cela sans oublier le truc machin chose bidule chouette.mettre au four prechaufé à 4500° eteindre le four et patienté 2ans. et c pret"]
     },
@@ -631,41 +703,48 @@
       "Nom": "Soupe de lentilles",
       "Image": "soupedelentilles.jpg",
       "Ingredients": [
-        [
-          250,
-          "Lentille"
-        ],
-        [
-          2,
-          "Oignon"
-        ],
-        [
-          3,
-          "Ail"
-        ],
-        [
-          0.5,
-          "Persil"
-        ],
-        [
-          1,
-          "Coriandre"
-        ],
-        [
-          1,
-          "Thym"
-        ],
-        [
-          1,
-          "Bicarbonate de soude"
-        ]
+        {
+          "Nom": "Lentille",
+          "Mesure":"Gramme",
+          "Quantity": 250
+        },
+        {
+          "Nom": "Oignon",
+          "Mesure":"Unité",
+          "Quantity": 2
+        },
+        {
+          "Nom": "Ail",
+          "Mesure":"Gousse",
+          "Quantity": 3
+        },
+        {
+          "Nom": "Persil",
+          "Mesure":"Gramme",
+          "Quantity": 0.5
+        },
+        {
+          "Nom": "Coriandre",
+          "Mesure":"Gramme",
+          "Quantity": 1
+        },
+        {
+          "Nom": "Thym",
+          "Mesure":"Gramme",
+          "Quantity": 1
+        },
+        {
+          "Nom": "Bicarbonate de sodium",
+          "Mesure":"Cuillère à café",
+          "Quantity": 1
+        }
       ],
       "Preparation": [
         "Pour commencer préparer les ingrédients",
         "Laisser tremper les lentilles cinq heures, rincer et égoutter. Dépelliculer-les.",
         "Emincer les oignons, écraser l'ail, ciseler le persil.",
         " ",
-        "Dans un faitout disposer les lentilles et couvrer d'eau. Ajouter les oignons, l'ail, le persil, la coriandre, le thym, le bicarbonate et le poivre, laisser mijoter une demie-heure.",
+        "Dans un faitout disposer les lentilles et couvrer d'eau. Ajouter les oignons, l'ail, le persil, la coriandre, le thym, le Bicarbonate de sodium et le poivre, laisser mijoter une demie-heure.",
         "C'est prêt ! Saler.",
         " ",
         " ",
@@ -676,26 +755,30 @@
       "Nom": "Velouté de pois cassés",
       "Image": "veloute-de-pois-casses.jpg",
       "Ingredients": [
-        [
-          "250",
-          "Pois cassés"
-        ],
-        [
-          1,
-          "Oignon"
-        ],
-        [
-          1,
-          "Persil"
-        ],
-        [
-          1,
-          "Coriandre"
-        ],
-        [
-          1,
-          "Thym"
-        ]
+        {
+          "Nom": "Pois cassés",
+          "Quantity": 250
+        },
+        {
+          "Nom": "Oignon",
+          "Mesure":"Unité",
+          "Quantity": 1
+        },
+        {
+          "Nom": "Persil",
+          "Mesure":"Gramme",
+          "Quantity": 1
+        },
+        {
+          "Nom": "Coriandre",
+          "Mesure":"Gramme",
+          "Quantity": 1
+        },
+        {
+          "Nom": "Thym",
+          "Mesure":"Gramme",
+          "Quantity": 1
+        }
       ],
       "Preparation":[
         

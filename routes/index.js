@@ -15,14 +15,18 @@ for (let i = 0; i < languages.length; i++) {
     D = new Date(D).valueOf();
     console.log(req.query, req.body)
     res.render('index', {
-      
+      // envoie des données au fichier pug
       Title: 'Recettes à gogo',
       lang: languages[i],
+      //parametre stoquant les menus
       Menus: eval(db).Menus,
+      //parametre stoquant les recettes
       Recettes: _.sortBy(eval(db).Recettes, 'Nom'),
-      Commodity: _.sortBy(eval(db).Commodity, 'Nom'),
+      //parametre stoquant la date du jour
       Today: D,
+      //parametre stoquant les requete get
       ParamsGet: req.query,
+      //parametre stoquant les requete post
       ParamsPost: req.body,
       alertMsg: newError
     

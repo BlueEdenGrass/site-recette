@@ -1,5 +1,6 @@
 -var findDate =  function(mydate, diff){ return mydate+(86400000*diff)}
 -nextDate=[Today, findDate(Today, 1), findDate(Today, 2), findDate(Today, 3), findDate(Today, 4), findDate(Today, 5), findDate(Today, 6)]
+// si == all afficher le menu du jour et les 6 prochain
 if ParamsGet.Menus=="All"
   .calendar
     .head
@@ -104,6 +105,7 @@ if ParamsGet.Menus=="All"
                 |No programmation
               else
                 |Aucune programmation
+// sinon afficher le menu demandé
 else
   if lang[1] == 'fr-FR'
     -ParamsGet.Menus= ParamsGet.Menus.slice(3,5)+ParamsGet.Menus.slice(2,3)+ParamsGet.Menus.slice(0,2)+ParamsGet.Menus.slice(5,6)+ParamsGet.Menus.slice(6)

@@ -1,3 +1,4 @@
+//si == all affiché la liste des recettes
 if ParamsGet.Recettes == "All"
   h1: span.fondcraie
     if lang[0]=="en/"
@@ -10,6 +11,7 @@ if ParamsGet.Recettes == "All"
       each recette in Recettes
         li: a.Recette(href="/"+lang[0]+"?Recettes="+recette.Nom)=recette.Nom
 
+// sinon afficher la recette demandé
 else
   -checkrecette = true
   each recette in Recettes

@@ -12,7 +12,7 @@
     "express-fileupload": "^1.1.5",
     "fs": "0.0.1-security",
     "http-errors": "~1.6.3",
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "lodash": "^4.17.15",
     "morgan": "~1.9.1",
     "pug": "^2.0.4"

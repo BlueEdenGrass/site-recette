@@ -7,30 +7,30 @@ RESTHOME est une application d'aide à l'organisation en cuisine.
 ## Fonctionnalitées :
 
  * Comptes utilisateurs
-		- Enregistrement des préférences et alergies
+  - Enregistrement des préférences et alergies
 		- Liste des ustensils à disposition
 
-	* Gestion d'un répertoire de recettes
-		- Mise à disposition d'une liste de recettes préfaites
-		- Ajout des recettes personnelles
+ * Gestion d'un répertoire de recettes
+  - Mise à disposition d'une liste de recettes préfaites
+  - Ajout des recettes personnelles
 
-	* Création de menus à partir des recettes enregistrées
-		- Adaptation des recettes en fonction du nombres d'usagers
-		- Proposer des recettes en fonction des restes
+ * Création de menus à partir des recettes enregistrées
+  - Adaptation des recettes en fonction du nombres d'usagers
+  - Proposer des recettes en fonction des restes
 
-	* Planning des menus de la semaine, sur le mois
-		- Liste de courses
+ * Planning des menus de la semaine, sur le mois
+  - Liste de courses
 
-	* Notifications
-		- Début de mois proche
-		- Ingrédients manquants
-		- Préparations à éffectuer à l'avance pour les recettes
+ * Notifications
+  - Début de mois proche
+  - Ingrédients manquants
+  - Préparations à éffectuer à l'avance pour les recettes
 
-	* Astuces cuisine
-		- Adaptation des menus pour utilisateurs seuls
-		- Proposer des recettes anti-gaspillage 
+ * Astuces cuisine
+  - Adaptation des menus pour utilisateurs seuls
+  - Proposer des recettes anti-gaspillage 
 
-	* Système de notes
+ * Système de notes
 
 
 ## Plan de l'application :

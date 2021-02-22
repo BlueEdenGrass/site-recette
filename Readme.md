@@ -38,10 +38,13 @@ RESTHOME est une application d'aide à l'organisation en cuisine.
 
 ## Plan de l'application :
 
-	1. 
 
 ## Carnet de route :
 
+	O. Maquettes et plan de site
+	I. Affichage, stockage et édition de recettes (Recherche)
+	II. Menus, plannings et listes de courses
+	III. Comptes utilisateur / Adaptation des menus
 
 
 

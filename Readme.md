@@ -30,6 +30,9 @@ RESTHOME est une application d'aide à l'organisation en cuisine.
 	- Adaptation des menus pour utilisateurs seuls
 	- Proposer des recettes anti-gaspillage 
 
+ * Fonction de recherche
+	- Permettre une recherche par nom ou tag de recette ou dates dans le menu
+
  * Système de notes
 
 
@@ -42,20 +45,6 @@ RESTHOME est une application d'aide à l'organisation en cuisine.
 
 
 
-
-
-
-
-
-
-
-
-
-
-Ce que doit faire le site
-	-Afficher la liste de recettes et permettre une recherche par nom ou tag
-	-Afficher le menu de jour avec le denrée manquante et permettre une recherche pour afficher le menu d'une date ou la date d'un menu
-	-Afficher le calendrier des menu de la semaine
 
 
 TEGG num: 0690 82 65 65

@@ -6,7 +6,7 @@ RESTHOME est une application d'aide à l'organisation en cuisine.
 
 ## Fonctionnalitées :
 
-	* Comptes utilisateurs
+ * Comptes utilisateurs
 		- Enregistrement des préférences et alergies
 		- Liste des ustensils à disposition
 
